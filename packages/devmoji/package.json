@@ -24,13 +24,14 @@
   },
   "scripts": {},
   "dependencies": {
-    "commander": "^4.1.0",
-    "node-emoji": "^1.10.0"
+    "chalk": "^3.0.0",
+    "commander": "^4.1.0"
   },
   "devDependencies": {
     "@types/jest": "^24.0.25",
     "@types/node": "^13.1.6",
     "@types/node-emoji": "^1.8.1",
+    "@types/node-fetch": "^2.5.4",
     "@typescript-eslint/eslint-plugin": "^2.13.0",
     "@typescript-eslint/parser": "^2.13.0",
     "eslint": "^6.8.0",
@@ -39,6 +40,7 @@
     "eslint-plugin-jest": "^23.4.0",
     "eslint-plugin-prettier": "^3.1.2",
     "jest": "^24.9.0",
+    "node-fetch": "^2.6.0",
     "prettier": "^1.19.1",
     "rimraf": "^3.0.0",
     "ts-jest": "^24.3.0",
