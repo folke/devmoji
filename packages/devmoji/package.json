@@ -22,7 +22,10 @@
     "type": "git",
     "url": "git+https://github.com/folke/devmoji.git"
   },
-  "scripts": {},
+  "scripts": {
+    "tn": "yarn -s ts-node --transpile-only",
+    "update-emoji": "yarn tn src/updater.ts"
+  },
   "dependencies": {
     "chalk": "^3.0.0",
     "commander": "^4.1.0"
