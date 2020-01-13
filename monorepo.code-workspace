@@ -1,0 +1,19 @@
+{
+  "folders": [
+    {
+      "name": "monorepo",
+      "path": "."
+    },
+    {
+      "path": "packages/devmoji"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "lib": true,
+      "packages": true,
+      "node_modules": true
+    },
+    "typescript.tsdk": "monorepo/node_modules/typescript/lib"
+  }
+}
