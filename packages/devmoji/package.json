@@ -1,0 +1,48 @@
+{
+  "name": "devmoji",
+  "version": "0.0.0",
+  "description": "Enhance your conventional commits with gitmoji",
+  "keywords": [
+    "gitmoji",
+    "emoji",
+    "git-commit",
+    "commitlint"
+  ],
+  "author": "Folke Lemaitre <folke.lemaitre@gmail.com>",
+  "homepage": "https://github.com/folke/devmoji#readme",
+  "license": "MIT",
+  "main": "lib/devmoji.js",
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/folke/devmoji.git"
+  },
+  "scripts": {},
+  "dependencies": {
+    "commander": "^4.1.0",
+    "node-emoji": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.25",
+    "@types/node": "^13.1.6",
+    "@types/node-emoji": "^1.8.1",
+    "@typescript-eslint/eslint-plugin": "^2.13.0",
+    "@typescript-eslint/parser": "^2.13.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jest": "^23.4.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.0",
+    "ts-jest": "^24.3.0",
+    "ts-node": "^8.6.1",
+    "typescript": "^3.7.4"
+  }
+}
