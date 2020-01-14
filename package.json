@@ -7,7 +7,9 @@
   "private": true,
   "gitHooks": {
     "prepare-commit-msg": "devmoji -e",
-    "commit-msg": "yarn -s commitlint -e -V",
+    "commit-msg": "yarn -s commitlint -e -V"
+  },
+  "scripts": {
     "changelog": "yarn conventional-changelog -p angular -i CHANGELOG.md -s",
     "changelog:all": "yarn workspaces run conventional-changelog --preset angular --release-count 0 --outfile ./CHANGELOG.md --pkg package.json --commit-path ."
   },
