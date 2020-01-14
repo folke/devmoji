@@ -7,12 +7,12 @@
   "private": true,
   "gitHooks": {
     "prepare-commit-msg": "devmoji -e",
-    "commit-msg": "yarn -s commitlint -e -V",
-    "pre-push": "yarn build"
+    "commit-msg": "yarn -s commitlint -e -V"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
     "commitlint": "^8.3.4",
+    "conventional-changelog-cli": "^2.0.31",
     "yorkie": "^2.0.0"
   },
   "workspaces": [
