@@ -15,6 +15,9 @@
   "files": [
     "lib"
   ],
+  "bin": {
+    "devmoji": "bin/devmoji.js"
+  },
   "publishConfig": {
     "registry": "https://registry.yarnpkg.com"
   },
@@ -23,8 +26,14 @@
     "url": "git+https://github.com/folke/devmoji.git"
   },
   "scripts": {
-    "tn": "yarn -s ts-node --transpile-only",
-    "update-emoji": "yarn tn src/updater.ts"
+    "tn": "ts-node --transpile-only",
+    "update-emoji": "yarn tn src/updater.ts",
+    "prebuild": "yarn clean && yarn lint && yarn test",
+    "clean": "yarn rimraf lib",
+    "test": "yarn jest",
+    "build": "yarn tsc -p tsconfig.build.json",
+    "lint": "yarn eslint bin/*.js src/*.ts",
+    "prepublishOnly": "yarn build"
   },
   "dependencies": {
     "chalk": "^3.0.0",

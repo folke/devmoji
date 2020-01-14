@@ -11,33 +11,33 @@ module.exports = {
     "plugin:import/warnings",
     "plugin:import/typescript",
     "prettier",
-    "prettier/@typescript-eslint"
+    "prettier/@typescript-eslint",
   ],
   env: {
     node: true,
     browser: false,
-    jest: true
+    jest: true,
   },
   plugins: ["@typescript-eslint", "prettier", "jest", "import"],
   parserOptions: {
     ecmaVersion: 2019, // Allows for the parsing of modern ECMAScript features
     sourceType: "module", // Allows for the use of imports
     project: "./tsconfig.json",
-    impliedStrict: true
+    impliedStrict: true,
   },
   rules: {
     "prettier/prettier": "warn",
     "lines-between-class-members": [
       "error",
       "always",
-      { exceptAfterSingleLine: true }
+      { exceptAfterSingleLine: true },
     ],
     "@typescript-eslint/explicit-function-return-type": "off",
     "jest/expect-expect": [
       "error",
       {
-        assertFunctionNames: ["expect", "request.get.expect"]
-      }
-    ]
-  }
+        assertFunctionNames: ["expect", "request.get.expect"],
+      },
+    ],
+  },
 }
