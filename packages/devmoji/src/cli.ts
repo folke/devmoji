@@ -13,11 +13,17 @@ export class Cli {
     this.commits = new ConventionalCommits(devmoji)
   }
 
-  format(text: string, format = "unicode", processCommit = false) {
-    if (processCommit) text = this.commits.format(text)
+  format(
+    text: string,
+    format = "unicode",
+    processCommit = false,
+    processLog = false
+  ) {
+    if (processCommit && !processLog) text = this.commits.formatCommit(text)
+    if (processLog) text = this.commits.formatLog(text)
     switch (format) {
       case "unicode":
-        return text
+        return this.devmoji.emojify(text)
       case "shortcode":
         return this.devmoji.demojify(text)
       case "devmoji":
@@ -54,7 +60,7 @@ export class Cli {
     const program = new Command()
     if (exitOverride) program.exitOverride()
     program
-      .version(require("../package.json").version)
+      .version(require("../../../package.json").version)
       .option("-g|--config <file>", "location of the devmoji.config.js file")
       .option("-l|--list", "list all known devmojis")
       .option(
@@ -72,6 +78,12 @@ export class Cli {
         true
       )
       .option(
+        "-C|--no-commit",
+        "do not process conventional commit headers",
+        true
+      )
+      .option("--log", "format conventional commits in text similar to git log")
+      .option(
         "-e|--edit",
         "read last commit message from the specified file or fallbacks to ./.git/COMMIT_EDITMSG"
       )
@@ -82,21 +94,22 @@ export class Cli {
   }
 
   run() {
-    if (this.program.list) return this.list()
+    const opts = this.program.opts()
+    if (opts.list) return this.list()
 
-    if (this.program.text)
+    if (opts.text)
       return console.log(
-        this.format(this.program.text, this.program.format, this.program.commit)
+        this.format(opts.text, opts.format, opts.commit, opts.log)
       )
 
-    if (this.program.edit) {
+    if (opts.edit) {
       let commitMsgFile = this.gitRoot()
       if (commitMsgFile) {
         commitMsgFile = path.resolve(commitMsgFile, "COMMIT_EDITMSG")
       }
       if (commitMsgFile && fs.existsSync(commitMsgFile)) {
         let text = fs.readFileSync(commitMsgFile, "utf-8")
-        text = this.format(text, this.program.format, this.program.commit)
+        text = this.format(text, opts.format, opts.commit)
         fs.writeFileSync(commitMsgFile, text, "utf-8")
         return console.log(text)
       } else {
@@ -111,19 +124,22 @@ export class Cli {
         terminal: false,
       })
 
-      let lineNumber = 0
+      let firstLine = true
       rl.on("line", line => {
         try {
-          console.log(this.format(line, this.program.format, !lineNumber++))
+          console.log(
+            this.format(line, opts.format, opts.commit && firstLine, opts.log)
+          )
+          firstLine = false
         } catch (err) {
           this.error(err)
         }
       })
       return
     }
-
+    console.log("foo")
     this.program.outputHelp()
-    return process.exit(1)
+    // return process.exit(1)
   }
 }
 

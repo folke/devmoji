@@ -46,4 +46,9 @@ export const codes: TDevmoji[] = [
     description: "code deployment or publishing to external repositories",
     emoji: "rocket",
   },
+  {
+    code: "chore-release",
+    description: "code deployment or publishing to external repositories",
+    emoji: "rocket",
+  },
 ]

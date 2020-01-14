@@ -8,9 +8,18 @@ export class Devmoji {
   constructor(public config: Config) {}
 
   get(code: string): string {
-    const ret = this.config.codes.get(code)
+    const ret = this.config.codes.get(emoji.unwrap(code))
     if (ret) return this.get(ret.emoji)
     return emoji.get(code)
+  }
+
+  getDevmoji(type: string, scope?: string) {
+    if (scope) {
+      // console.log(`${type}-${scope}`)
+      const ret = this.config.codes.get(`${type}-${scope}`)
+      if (ret) return this.get(ret.emoji)
+    }
+    return this.get(type)
   }
 
   emojify(text: string): string {
