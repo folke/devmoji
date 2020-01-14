@@ -33,9 +33,9 @@ test("devmojify", () => {
   const devmoji = new Devmoji(new Config())
 
   const tests: [string, string][] = [
-    [":rocket:", ":chore-release:"],
+    [":rocket:", ":release:"],
     [":sparkles:", ":feat:"],
-    ["🚀", ":chore-release:"],
+    ["🚀", ":release:"],
     ["testing 123", "testing 123"],
   ]
 

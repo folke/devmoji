@@ -8,6 +8,7 @@ export class ConventionalCommits {
     text = this.devmoji.devmojify(text)
     return this.devmoji.emojify(
       text.replace(regex, (match, type, scope) => {
+        if (type.startsWith(":")) return match
         const code = this.devmoji.getDevmoji(type, scope)
         if (!code.startsWith(":")) {
           return `${match}${code} `
@@ -24,6 +25,7 @@ export class ConventionalCommits {
       text.replace(
         regex,
         (match, type: string, scope: string, other: string) => {
+          if (type.startsWith(":")) return match
           const code = this.devmoji.getDevmoji(type, scope)
           if (!code.startsWith(":")) {
             if (other && this.devmoji.get(other) == code) return match

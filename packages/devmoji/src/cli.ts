@@ -34,7 +34,7 @@ export class Cli {
 
   list() {
     console.log(chalk.magenta.underline("all configured devmoji"))
-    for (const code of this.devmoji.config.codes.values()) {
+    for (const code of this.devmoji.config.pack.codes.values()) {
       console.log(
         this.devmoji.get(code.emoji),
         " ",

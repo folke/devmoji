@@ -1,33 +1,45 @@
-import { codes, TDevmoji } from "./codes"
 import path = require("path")
 import fs = require("fs")
+import { defaults } from "./config-options-defaults"
+import fooTI from "./config-options-ti"
+import { createCheckers } from "ts-interface-checker"
+import { EmojiPack, gitmoji, TEmoji } from "./emoji-pack"
 
 export class Config {
-  codes = new Map<string, TDevmoji>()
-  emojis = new Map<string, TDevmoji>()
+  options: ConfigOptions = { types: [], devmoji: [] }
+  pack = new EmojiPack()
 
-  constructor(config?: { codes: TDevmoji[] }) {
-    codes.forEach(c => this.codes.set(c.code, c))
+  constructor(options?: ConfigOptions) {
+    this._load(defaults)
+    if (options) {
+      this.validate(options)
+      this._load(options)
+    }
+  }
 
-    if (config?.codes) {
-      for (let code of config.codes) {
-        if (!code.code)
-          throw `Missing property 'code' for ${JSON.stringify(code)}`
-        if (!code.emoji)
-          throw `Missing property 'emoji' for ${JSON.stringify(code)}`
-        code = {
-          ...{
-            description: "",
-          },
-          ...this.codes.get(code.code),
-          ...code,
+  _load(options: ConfigOptions) {
+    if (options.types) {
+      const types: string[] = [...(this.options.types || []), ...options.types]
+      this.options.types = [...new Set<string>(types)]
+    }
+    if (options.devmoji)
+      for (const def of options.devmoji) {
+        if (def.gitmoji) {
+          if (!def.emoji) def.emoji = def.gitmoji
+          if (!def.description)
+            def.description = gitmoji.get(def.gitmoji)?.description
         }
-        this.codes.set(code.code, code)
+        if (def.emoji) {
+          this.pack.add({ ...this.pack.get(def.code), ...(def as TEmoji) })
+          this.options.devmoji?.push(def)
+        } else
+          throw `Missing 'emoji' or 'gitmoji' for ${def.code} in config file`
       }
-    }
-    for (const code of this.codes.values()) {
-      this.emojis.set(code.emoji, code)
-    }
+  }
+
+  validate(options: ConfigOptions) {
+    const checker = createCheckers(fooTI)
+    checker.ConfigOptions.check(options)
   }
 
   static async load(configFile?: string, cwd = process.cwd()) {

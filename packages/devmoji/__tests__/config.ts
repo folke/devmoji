@@ -1,24 +1,26 @@
 import { Config } from "../src/config"
-import { TDevmoji } from "../src/codes"
 
 test("load config", async () => {
   const config = await Config.load("__tests__/ignore.devmoji.config.js")
-  expect(config.codes.get("feat")?.emoji).toBe("poop")
-  expect(config.codes.get("fuckup")?.emoji).toBe("poop")
+  expect(config.pack.get("feat")?.emoji).toBe("poop")
+  expect(config.pack.get("fuckup")?.emoji).toBe("poop")
 })
 
 test("missing prop code", () => {
   expect(() => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const config: { codes: TDevmoji[] } = { codes: [{ foo: 1 }] } as any
+    const config: ConfigOptions = { devmoji: [{ foo: 1 }] } as any
     new Config(config)
-  }).toThrow(/Missing.*code.*/)
+  }).toThrow(/code is missing/)
 })
 
 test("missing prop emoji", () => {
   expect(() => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const config: { codes: TDevmoji[] } = { codes: [{ code: "foo" }] } as any
+    const config: ConfigOptions = {
+      devmoji: [{ code: "foo" }],
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    } as any
     new Config(config)
   }).toThrow(/Missing.*emoji.*/)
 })

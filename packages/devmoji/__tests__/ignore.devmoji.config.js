@@ -1,5 +1,5 @@
 module.exports = {
-  codes: [
+  devmoji: [
     {
       code: "fuckup",
       emoji: "poop",

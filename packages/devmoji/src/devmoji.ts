@@ -1,5 +1,5 @@
 import { Config } from "./config"
-import { emoji } from "./emoji"
+import { github, gitmoji } from "./emoji-pack"
 
 export class Devmoji {
   shortcodeRegex = /:([a-zA-Z0-9_\-+]+):/g
@@ -8,15 +8,14 @@ export class Devmoji {
   constructor(public config: Config) {}
 
   get(code: string): string {
-    const ret = this.config.codes.get(emoji.unwrap(code))
+    const ret = this.config.pack.get(code)
     if (ret) return this.get(ret.emoji)
-    return emoji.get(code)
+    return github.get(code)?.emoji ?? github.wrap(code)
   }
 
   getDevmoji(type: string, scope?: string) {
     if (scope) {
-      // console.log(`${type}-${scope}`)
-      const ret = this.config.codes.get(`${type}-${scope}`)
+      const ret = this.config.pack.get(`${type}-${scope}`)
       if (ret) return this.get(ret.emoji)
     }
     return this.get(type)
@@ -30,18 +29,23 @@ export class Devmoji {
 
   demojify(text: string): string {
     return text.replace(this.unicodeRegex, s => {
-      return emoji.getCode(s)
+      return github.wrap(github.getCode(s) ?? text)
     })
   }
 
   devmojify(text: string): string {
     text = this.demojify(text)
     return text.replace(this.shortcodeRegex, (match, code) => {
-      const unicode = emoji.get(code)
-      const codes = emoji.getCodes(unicode)
-      for (const c of codes) {
-        const ret = this.config.emojis.get(emoji.unwrap(c))
-        if (ret) return `:${ret.code}:`
+      const unicode = github.get(code)?.emoji
+      if (unicode) {
+        const codes = [
+          ...(gitmoji.getCodes(unicode) || []),
+          ...(github.getCodes(unicode) || []),
+        ]
+        for (const c of codes) {
+          const ret = this.config.pack.getCode(c.code)
+          if (ret) return ret
+        }
       }
       return match
     })

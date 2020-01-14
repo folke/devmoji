@@ -11,5 +11,6 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "plugins": []
-  }
+  },
+  "exclude": ["node_modules", "lib"]
 }

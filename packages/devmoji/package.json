@@ -27,8 +27,9 @@
   },
   "scripts": {
     "tn": "ts-node --transpile-only",
-    "update-emoji": "yarn tn src/updater.ts",
-    "prebuild": "yarn clean && yarn lint && yarn test",
+    "update:emoji": "yarn tn src/updater.ts",
+    "update:config": "yarn ts-interface-builder src/config-options.ts",
+    "prebuild": "yarn clean && yarn update:config && yarn lint --fix && yarn test",
     "clean": "yarn rimraf lib",
     "test": "yarn jest",
     "build": "yarn tsc -p tsconfig.build.json",
@@ -37,7 +38,8 @@
   },
   "dependencies": {
     "chalk": "^3.0.0",
-    "commander": "^4.1.0"
+    "commander": "^4.1.0",
+    "ts-interface-checker": "^0.1.10"
   },
   "devDependencies": {
     "@types/jest": "^24.0.25",
@@ -55,6 +57,7 @@
     "node-fetch": "^2.6.0",
     "prettier": "^1.19.1",
     "rimraf": "^3.0.0",
+    "ts-interface-builder": "^0.2.1",
     "ts-jest": "^24.3.0",
     "ts-node": "^8.6.1",
     "typescript": "^3.7.4"
