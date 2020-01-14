@@ -24,6 +24,14 @@ test("type with scope release commit msg", () => {
   )
 })
 
+test("type with scope release commit msg and devmoji", () => {
+  const dm = new Devmoji(new Config())
+  const cc = new ConventionalCommits(dm)
+  expect(cc.formatCommit("feat(security): testing")).toBe(
+    dm.emojify("feat(security): :sparkles: :security: testing")
+  )
+})
+
 test("invalid commit msg ", () => {
   const cc = new ConventionalCommits(new Devmoji(new Config()))
   expect(cc.formatCommit("invalid commit")).toBe("invalid commit")
@@ -62,4 +70,31 @@ test("should ", () => {
   expect(cc.formatLog(text)).toBe(
     "* 8f16492 - feat(cli): ✨ added cli for working with devmoji 🚀 (19 hours ago) <Folke Lemaitre>"
   )
+})
+
+test("multi log & commit ", () => {
+  const tests: [string, string][] = [
+    ["feat(foo): testing", "feat(foo): :sparkles: testing"],
+    ["foo(security): testing", "foo(security): :security: testing"],
+    [
+      "feat(test): :art: testing",
+      "feat(test): :sparkles: :test: :art: testing",
+    ],
+    ["feat(foo): :art: testing", "feat(foo): :sparkles: :art: testing"],
+    ["fix(security): testing", "fix(security): :bug: :security: testing"],
+
+    ["feat(test): testing", "feat(test): :sparkles: :test: testing"],
+    ["chore(deps): testing", "chore(deps): :chore-deps: testing"],
+  ]
+  const cc = new ConventionalCommits(new Devmoji(new Config()))
+
+  for (let [input, output] of tests) {
+    input += ""
+    output = cc.devmoji.emojify(output)
+    expect(cc.formatLog(input)).toBe(output)
+    expect(cc.formatCommit(input)).toBe(output)
+    expect(cc.formatCommit("not a header " + input)).toBe(
+      cc.devmoji.emojify("not a header " + input)
+    )
+  }
 })

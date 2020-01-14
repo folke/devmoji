@@ -13,14 +13,6 @@ export class Devmoji {
     return github.get(code)?.emoji ?? github.wrap(code)
   }
 
-  getDevmoji(type: string, scope?: string) {
-    if (scope) {
-      const ret = this.config.pack.get(`${type}-${scope}`)
-      if (ret) return this.get(ret.emoji)
-    }
-    return this.get(type)
-  }
-
   emojify(text: string): string {
     return text.replace(this.shortcodeRegex, (match, code) => {
       return this.get(code)
@@ -29,7 +21,9 @@ export class Devmoji {
 
   demojify(text: string): string {
     return text.replace(this.unicodeRegex, s => {
-      return github.wrap(github.getCode(s) ?? text)
+      const ret = github.getCode(s)
+      if (ret) return github.wrap(ret)
+      return s
     })
   }
 

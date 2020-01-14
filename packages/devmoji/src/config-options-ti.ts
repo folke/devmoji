@@ -12,8 +12,8 @@ export const TDevmoji = t.iface([], {
 })
 
 export const ConfigOptions = t.iface([], {
-  types: t.opt(t.array("string")),
-  devmoji: t.opt(t.array("TDevmoji")),
+  types: t.array("string"),
+  devmoji: t.array("TDevmoji"),
 })
 
 const exportedTypeSuite: t.ITypeSuite = {

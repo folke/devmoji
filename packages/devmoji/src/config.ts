@@ -12,29 +12,30 @@ export class Config {
   constructor(options?: ConfigOptions) {
     this._load(defaults)
     if (options) {
+      if (!options.types) options.types = []
+      if (!options.devmoji) options.devmoji = []
       this.validate(options)
       this._load(options)
     }
   }
 
   _load(options: ConfigOptions) {
-    if (options.types) {
-      const types: string[] = [...(this.options.types || []), ...options.types]
-      this.options.types = [...new Set<string>(types)]
-    }
-    if (options.devmoji)
-      for (const def of options.devmoji) {
-        if (def.gitmoji) {
+    const types: string[] = [...this.options.types, ...options.types]
+    this.options.types = [...new Set<string>(types)]
+
+    for (const def of options.devmoji) {
+      if (def.gitmoji) {
+        const gm = gitmoji.get(def.gitmoji)
+        if (gm) {
           if (!def.emoji) def.emoji = def.gitmoji
-          if (!def.description)
-            def.description = gitmoji.get(def.gitmoji)?.description
-        }
-        if (def.emoji) {
-          this.pack.add({ ...this.pack.get(def.code), ...(def as TEmoji) })
-          this.options.devmoji?.push(def)
-        } else
-          throw `Missing 'emoji' or 'gitmoji' for ${def.code} in config file`
+          if (!def.description) def.description = gm.description
+        } else throw `Gitmoji '${def.gitmoji}' not found`
       }
+      if (def.emoji) {
+        this.pack.add({ ...this.pack.get(def.code), ...(def as TEmoji) })
+        this.options.devmoji.push(def)
+      } else throw `Missing 'emoji' or 'gitmoji' for ${def.code} in config file`
+    }
   }
 
   validate(options: ConfigOptions) {
@@ -53,7 +54,8 @@ export class Config {
 
     if (configFile) {
       configFile = path.resolve(cwd, configFile)
-      return new Config(await import(configFile))
+      const options = await import(configFile)
+      return new Config(options)
     }
 
     return new Config()

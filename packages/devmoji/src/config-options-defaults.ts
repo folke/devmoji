@@ -43,6 +43,16 @@ export const defaults: ConfigOptions = {
       emoji: "wrench",
     },
     {
+      code: "chore-release",
+      description: "code deployment or publishing to external repositories",
+      emoji: "rocket",
+    },
+    {
+      code: "chore-deps",
+      description: "add or delete dependencies",
+      emoji: "link",
+    },
+    {
       code: "build",
       description: "changes related to build processes",
       emoji: "package",
@@ -57,14 +67,18 @@ export const defaults: ConfigOptions = {
       description: "code deployment or publishing to external repositories",
       emoji: "rocket",
     },
+
     {
-      code: "chore-release",
-      description: "code deployment or publishing to external repositories",
-      emoji: "rocket",
+      code: "security",
+      gitmoji: "lock",
     },
     {
-      code: "css",
-      gitmoji: "art",
+      code: "i18n",
+      gitmoji: "globe_with_meridians",
+    },
+    {
+      code: "breaking",
+      gitmoji: "boom",
     },
   ],
 }

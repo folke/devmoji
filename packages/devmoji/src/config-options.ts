@@ -6,6 +6,6 @@ type TDevmoji = {
 }
 
 interface ConfigOptions {
-  types?: string[]
-  devmoji?: TDevmoji[]
+  types: string[]
+  devmoji: TDevmoji[]
 }

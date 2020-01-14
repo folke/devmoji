@@ -17,10 +17,11 @@ export class Cli {
     text: string,
     format = "unicode",
     processCommit = false,
-    processLog = false
+    processLog = false,
+    color = false
   ) {
     if (processCommit && !processLog) text = this.commits.formatCommit(text)
-    if (processLog) text = this.commits.formatLog(text)
+    if (processLog) text = this.commits.formatLog(text, color)
     switch (format) {
       case "unicode":
         return this.devmoji.emojify(text)
@@ -35,11 +36,21 @@ export class Cli {
   list() {
     console.log(chalk.magenta.underline("all configured devmoji"))
     for (const code of this.devmoji.config.pack.codes.values()) {
+      let cc = ""
+      if (this.devmoji.config.options.types.includes(code.code)) {
+        cc = `${code.code}: `
+      }
+      if (code.code.includes("-")) {
+        const [type, scope] = code.code.split("-")
+        if (this.devmoji.config.options.types.includes(type)) {
+          cc = `${type}(${scope}): `
+        }
+      }
       console.log(
         this.devmoji.get(code.emoji),
         " ",
-        chalk.blue(`:${code.code}:`.padEnd(10)),
-        code.description
+        chalk.blue(`:${code.code}:`.padEnd(15)),
+        chalk.green(cc) + code.description
       )
     }
   }
@@ -81,6 +92,10 @@ export class Cli {
         "-C|--no-commit",
         "do not process conventional commit headers",
         true
+      )
+      .option(
+        "--color",
+        "color the conventional commit header when formatting git logs"
       )
       .option("--log", "format conventional commits in text similar to git log")
       .option(
@@ -128,7 +143,13 @@ export class Cli {
       rl.on("line", line => {
         try {
           console.log(
-            this.format(line, opts.format, opts.commit && firstLine, opts.log)
+            this.format(
+              line,
+              opts.format,
+              opts.commit && firstLine,
+              opts.log,
+              opts.color
+            )
           )
           firstLine = false
         } catch (err) {

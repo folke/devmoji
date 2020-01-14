@@ -34,6 +34,25 @@ test("missing config file", async () => {
   }
 })
 
+test("config without devmoji", () => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const config: ConfigOptions = { types: [] } as any
+  expect(() => {
+    new Config(config)
+  }).not.toThrow()
+})
+
+test("invalid gitmoji", () => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const config: ConfigOptions = {
+    devmoji: [{ code: "test", gitmoji: "foobar" }],
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  } as any
+  expect(() => {
+    new Config(config)
+  }).toThrow(/Gitmoji .* not found/)
+})
+
 test("default config file", async () => {
   try {
     await Config.load()
