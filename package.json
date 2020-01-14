@@ -5,7 +5,16 @@
   "author": "Folke Lemaitre <folke.lemaitre@gmail.com>",
   "license": "MIT",
   "private": true,
-  "devDependencies": {},
+  "gitHooks": {
+    "prepare-commit-msg": "devmoji -e",
+    "commit-msg": "yarn -s commitlint -e -V",
+    "pre-push": "yarn build"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^8.3.4",
+    "commitlint": "^8.3.4",
+    "yorkie": "^2.0.0"
+  },
   "workspaces": [
     "packages/*"
   ]
