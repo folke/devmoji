@@ -1,6 +1,6 @@
 {
   "name": "@devmoji/monorepo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "git@github.com:folke/devmoji.git",
   "author": "Folke Lemaitre <folke.lemaitre@gmail.com>",
   "license": "MIT",
