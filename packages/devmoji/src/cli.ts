@@ -80,8 +80,7 @@ export class Cli {
     const program = new Command()
     if (exitOverride) program.exitOverride()
     program
-      .version(require("../../../package.json").version)
-      .option("-g|--config <file>", "location of the devmoji.config.js file")
+      .option("-c|--config <file>", "location of the devmoji.config.js file")
       .option("-l|--list", "list all known devmojis")
       .option(
         "-t|--text <text>",
@@ -99,16 +98,17 @@ export class Cli {
       )
       .option("--no-commit", "do not process conventional commit headers")
       .option(
-        "-c|--color",
+        "-e|--edit",
+        "read last commit message from .git/COMMIT_EDITMSG in the git root"
+      )
+      .option("--log", "format conventional commits in text similar to git log")
+      .option(
+        "--color",
         "use colors for formatting. Colors are enabled by default, unless output is piped to another command",
         process.stdout.isTTY
       )
       .option("--no-color", "don't use colors")
-      .option("--log", "format conventional commits in text similar to git log")
-      .option(
-        "-e|--edit",
-        "read last commit message from .git/COMMIT_EDITMSG in the git root"
-      )
+      .version(require("../../../package.json").version, "--version")
       .parse(argv)
     // console.log(program.opts())
     const config = await Config.load(program.config)

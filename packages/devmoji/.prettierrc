@@ -4,5 +4,6 @@
   "tabWidth": 2,
   "useTabs": false,
   "printWidth": 80,
-  "trailingComma": "es5"
+  "trailingComma": "es5",
+  "proseWrap": "always"
 }
