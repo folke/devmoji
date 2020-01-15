@@ -26,12 +26,12 @@
     "url": "git+https://github.com/folke/devmoji.git"
   },
   "scripts": {
-    "generate:emoji": "npx ts-node --transpile-only src/updater.ts",
+    "generate:emoji": "npx ts-node --transpile-only src/scripts/updater.ts",
     "generate:config": "npx ts-interface-builder src/config-options.ts",
     "prebuild": "npx concurrently -c grey.dim,blue.dim yarn:clean yarn:generate* && yarn lint && npx jest",
     "build:rollup": "npx rollup -c",
     "build": "yarn build:rollup",
-    "clean": "npx rimraf lib",
+    "clean": "npx rimraf lib coverage *.log",
     "test": "npx jest",
     "test:cov": "npx jest --coverage",
     "lint": "npx concurrently -c grey.dim,blue.dim yarn:lint:eslint yarn:lint:ts",
