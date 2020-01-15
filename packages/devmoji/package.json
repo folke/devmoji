@@ -1,6 +1,6 @@
 {
   "name": "devmoji",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Enhance your conventional commits with gitmoji",
   "keywords": [
     "cli",

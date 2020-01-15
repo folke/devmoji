@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/folke/devmoji/compare/v1.2.0...v1.2.1) (2020-01-15)
+
+
+### Bug Fixes
+
+* **docs:** 🐛 📚 updated README.md ([6366bd3](https://github.com/folke/devmoji/commit/6366bd3b437706a9d2d079df2ea7b711ccf943c5))
+
 # [1.2.0](https://github.com/folke/devmoji/compare/v1.1.1...v1.2.0) (2020-01-15)
 
 
