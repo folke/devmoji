@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/folke/devmoji/compare/v1.0.1...v1.1.0) (2020-01-15)
+
+
+### Features
+
+* ✨ added semantic-release ([a597cd1](https://github.com/folke/devmoji/commit/a597cd1167911a3cdc6d42f62e30106519bc27c0))
+
 # 0.0.0 (2020-01-14)
 
 
@@ -21,6 +28,3 @@
 
 * devmoji can now be used as a prepare-commit-msg hook to
 automagically add emojis to commit messages
-
-
-
