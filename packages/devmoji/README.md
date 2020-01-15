@@ -17,12 +17,19 @@ Some of the things **Devmoji** can do:
 
 - **emojify:** convert input between diferent emoji formats `unicode`,
   `shortcode` (like `:smile:`), `devmoji`
-- use aliases that are easy to remember like: `:test:`, `:refactor:`, `:docs:`,
-  `:security` instead of non-related names of gitmoji
-- us as a `prepare-commit-msg` commit hook to :sparkles: **automagically**
+- use **devmoji aliases** that are easy to remember like: `:test:`,
+  `:refactor:`, `:docs:`, `:security` instead of hard to remember emoji codes
+- install a **`prepare-commit-msg` commit hook** to :sparkles: automagically
   emojify your commit message
 - emojify and colorify the output of `git log` even for projects not using
   emojis
+
+How does it look like?
+
+- see the commit messages of the Devmoji
+  [github repository](https://github.com/folke/devmoji)
+- generated Devmoji
+  [CHANGELOG.md](https://github.com/folke/devmoji/blob/master/CHANGELOG.md)
 
 ## :package: Installation
 
