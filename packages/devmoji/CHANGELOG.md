@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/folke/devmoji/compare/v1.1.1...v1.2.0) (2020-01-15)
+
+
+### Bug Fixes
+
+* **cli:** 🐛 all output now honors --no-color ([a44e628](https://github.com/folke/devmoji/commit/a44e6280510869e00a10552026839139dab0262b))
+
+
+### Features
+
+* **config:** ✨ ⚙ ➕ devmojis for config, add, remove ([faa3aac](https://github.com/folke/devmoji/commit/faa3aacc05cccb212da84459321453b91414dffe))
+
 ## [1.1.1](https://github.com/folke/devmoji/compare/v1.1.0...v1.1.1) (2020-01-15)
 
 
