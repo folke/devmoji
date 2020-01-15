@@ -81,7 +81,6 @@
     "rollup-plugin-sizes": "^1.0.1",
     "rollup-plugin-terser": "^5.2.0",
     "semantic-release": "^16.0.1",
-    "semantic-release-cli": "^5.2.3",
     "ts-interface-builder": "^0.2.1",
     "ts-jest": "^24.3.0",
     "ts-node": "^8.6.1",

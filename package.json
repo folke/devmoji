@@ -13,8 +13,8 @@
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
     "commitlint": "^8.3.5",
-    "yorkie": "^2.0.0",
-    "devmoji": "^1.0.0"
+    "devmoji": "^1.0.0",
+    "yorkie": "^2.0.0"
   },
   "workspaces": [
     "packages/*"
