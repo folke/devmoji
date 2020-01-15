@@ -1,5 +1,5 @@
 import { Devmoji } from "./devmoji"
-import chalk = require("chalk")
+import chalk from "chalk"
 
 export class ConventionalCommits {
   regexCommit = /^(?<type>:?[a-z-]+)(?:\((?<scope>[a-z-]+)\))?:\s*(?::(?<other>[a-z-]+):\s*)?/gm

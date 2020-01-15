@@ -1,4 +1,5 @@
 import { Config } from "../src/config"
+import { ConfigOptions } from "../src/config-options"
 
 test("load config", async () => {
   const config = await Config.load("__tests__/ignore.devmoji.config.js")

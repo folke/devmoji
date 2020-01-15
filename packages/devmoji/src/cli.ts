@@ -1,11 +1,11 @@
-import { Config } from "./config"
-import { Command } from "commander"
-import readline = require("readline")
-import { Devmoji } from "./devmoji"
 import chalk from "chalk"
-import { ConventionalCommits } from "./conventional-commits"
-import * as path from "path"
+import { Command } from "commander"
 import * as fs from "fs"
+import * as path from "path"
+import * as readline from "readline"
+import { Config } from "./config"
+import { ConventionalCommits } from "./conventional-commits"
+import { Devmoji } from "./devmoji"
 
 export class Cli {
   commits: ConventionalCommits

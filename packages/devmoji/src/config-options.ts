@@ -1,11 +1,11 @@
-type TDevmoji = {
+export type TDevmoji = {
   code: string
   emoji?: string
   gitmoji?: string
   description?: string
 }
 
-interface ConfigOptions {
+export interface ConfigOptions {
   types: string[]
   devmoji: TDevmoji[]
 }

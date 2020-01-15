@@ -1,4 +1,4 @@
-import * as gitmojis from "../src/data/gitmoji.emoji.json"
+import gitmojis from "../src/data/gitmoji.emoji"
 import { github, gitmoji } from "../src/emoji-pack"
 
 test("all gitmoji should be valid", () => {

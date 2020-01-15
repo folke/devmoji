@@ -1,9 +1,10 @@
-import path = require("path")
-import fs = require("fs")
+import * as path from "path"
+import * as fs from "fs"
 import { defaults } from "./config-options-defaults"
 import fooTI from "./config-options-ti"
 import { createCheckers } from "ts-interface-checker"
 import { EmojiPack, gitmoji, TEmoji } from "./emoji-pack"
+import { ConfigOptions } from "./config-options"
 
 export class Config {
   options: ConfigOptions = { types: [], devmoji: [] }

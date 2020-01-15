@@ -1,3 +1,5 @@
+import { ConfigOptions } from "./config-options"
+
 export const defaults: ConfigOptions = {
   types: [
     "feat",
