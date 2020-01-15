@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/folke/devmoji/compare/v1.1.0...v1.1.1) (2020-01-15)
+
+
+### Bug Fixes
+
+* **security:** 🐛 🔒 upgraded lodash & underscore from security advisory ([d2d39be](https://github.com/folke/devmoji/commit/d2d39bebfb961f1f6d7178b6c8b9fe119c3c5843))
+
 # [1.1.0](https://github.com/folke/devmoji/compare/v1.0.1...v1.1.0) (2020-01-15)
 
 
