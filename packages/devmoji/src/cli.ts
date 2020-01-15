@@ -59,6 +59,8 @@ export class Cli {
   }
 
   static chalk(text: string, chalk: chalk.Chalk) {
+    if (process.env.NODE_ENV == "test" || process.env.JEST_WORKER_ID)
+      return text
     return Cli.color ? chalk.call(chalk, text) : text
   }
 
