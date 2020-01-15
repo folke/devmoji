@@ -28,7 +28,8 @@
   "scripts": {
     "generate:emoji": "npx ts-node --transpile-only src/scripts/updater.ts",
     "generate:config": "npx ts-interface-builder src/config-options.ts",
-    "prebuild": "npx concurrently -c grey.dim,blue.dim yarn:clean yarn:generate* && yarn lint && npx jest",
+    "prebuild": "npx concurrently -c grey.dim,blue.dim yarn:clean yarn:generate* yarn:build:docs && yarn lint && npx jest",
+    "build:docs": "npx copyfiles *.md ../../",
     "build:rollup": "npx rollup -c",
     "build": "yarn build:rollup",
     "clean": "npx rimraf lib coverage *.log",
@@ -58,6 +59,7 @@
     "@typescript-eslint/eslint-plugin": "^2.13.0",
     "@typescript-eslint/parser": "^2.13.0",
     "concurrently": "^5.0.2",
+    "copyfiles": "^2.1.1",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-import": "^2.20.0",

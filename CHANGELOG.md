@@ -1,39 +1,18 @@
-# Changelog
-
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
-
-### [1.0.1](https://github.com/folke/devmoji/compare/v1.0.0...v1.0.1) (2020-01-15)
-
-## 1.0.0 (2020-01-14)
+## [1.1.1](https://github.com/folke/devmoji/compare/v1.1.0...v1.1.1) (2020-01-15)
 
 
-### ⚠ BREAKING CHANGES
+### Bug Fixes
 
-* devmoji can now be used as a prepare-commit-msg hook to
-automagically add emojis to commit messages
+* **security:** 🐛 🔒 upgraded lodash & underscore from security advisory ([d2d39be](https://github.com/folke/devmoji/commit/d2d39bebfb961f1f6d7178b6c8b9fe119c3c5843))
+
+# [1.1.0](https://github.com/folke/devmoji/compare/v1.0.1...v1.1.0) (2020-01-15)
+
 
 ### Features
 
-* ✨ added support for git hooks ([799f156](https://github.com/folke/devmoji/commit/799f1569b441a2ab708ad18df46f4bd969534514))
-* ✨ refactored config files and added runtime validation ([cc94e2c](https://github.com/folke/devmoji/commit/cc94e2c71e7a79422dde32faab21313c60331631))
-* ✨ we now support scope based devmojis and --color for --log ([a3df981](https://github.com/folke/devmoji/commit/a3df981a205ca1def58b57e3f408274500811fa1))
-* **cli:** ✨ added cli for working with devmoji 🚀 ([8f16492](https://github.com/folke/devmoji/commit/8f16492295908f26db5f5e4b93a075f516629a13))
-* **config:** ✨ added devmoji configs ([4379667](https://github.com/folke/devmoji/commit/43796674bfb9061995a687ea90b7b3c81226d015))
-* **emoji:** :sparkles: added script to fetch github and gitmoji ([aecf9df](https://github.com/folke/devmoji/commit/aecf9dfa41350520788e1a57657eff16b13434cd))
-* ✨ devmoji package ([e7e2b61](https://github.com/folke/devmoji/commit/e7e2b61105bf86305d2ec632db731b22c0008370))
-* ✨ monorepo setup ([dade671](https://github.com/folke/devmoji/commit/dade671a3a076c2e6ff81828083c231f1a444c15))
+* ✨ added semantic-release ([a597cd1](https://github.com/folke/devmoji/commit/a597cd1167911a3cdc6d42f62e30106519bc27c0))
 
-
-### Bug Fixes
-
-* **changelog:** 🐛 fixed changelog scripts on monorepo ([da9f804](https://github.com/folke/devmoji/commit/da9f8048754e16fd2cc470df628b4c49a174aa69))
-
-# 1.0.0 (2020-01-14)
-
-
-### Bug Fixes
-
-* **changelog:** 🐛 fixed changelog scripts on monorepo ([da9f804](https://github.com/folke/devmoji/commit/da9f8048754e16fd2cc470df628b4c49a174aa69))
+# 0.0.0 (2020-01-14)
 
 
 ### Features
@@ -45,7 +24,6 @@ automagically add emojis to commit messages
 * **config:** ✨ added devmoji configs ([4379667](https://github.com/folke/devmoji/commit/43796674bfb9061995a687ea90b7b3c81226d015))
 * **emoji:** :sparkles: added script to fetch github and gitmoji ([aecf9df](https://github.com/folke/devmoji/commit/aecf9dfa41350520788e1a57657eff16b13434cd))
 * ✨ devmoji package ([e7e2b61](https://github.com/folke/devmoji/commit/e7e2b61105bf86305d2ec632db731b22c0008370))
-* ✨ monorepo setup ([dade671](https://github.com/folke/devmoji/commit/dade671a3a076c2e6ff81828083c231f1a444c15))
 
 
 ### Performance Improvements
@@ -57,16 +35,3 @@ automagically add emojis to commit messages
 
 * devmoji can now be used as a prepare-commit-msg hook to
 automagically add emojis to commit messages
-
-
-
-# 1.0.0 (2020-01-14)
-
-
-### Features
-
-* **cli:** ✨ added cli for working with devmoji 🚀 ([8f16492](https://github.com/folke/devmoji/commit/8f16492295908f26db5f5e4b93a075f516629a13))
-* **config:** ✨ added devmoji configs ([4379667](https://github.com/folke/devmoji/commit/43796674bfb9061995a687ea90b7b3c81226d015))
-* **emoji:** :sparkles: added script to fetch github and gitmoji ([aecf9df](https://github.com/folke/devmoji/commit/aecf9dfa41350520788e1a57657eff16b13434cd))
-* ✨ devmoji package ([e7e2b61](https://github.com/folke/devmoji/commit/e7e2b61105bf86305d2ec632db731b22c0008370))
-* ✨ monorepo setup ([dade671](https://github.com/folke/devmoji/commit/dade671a3a076c2e6ff81828083c231f1a444c15))
