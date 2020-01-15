@@ -9,14 +9,10 @@
     "prepare-commit-msg": "devmoji -e",
     "commit-msg": "yarn -s commitlint -e -V"
   },
-  "scripts": {
-    "release": "yarn standard-version",
-    "release:test": "yarn standard-version --dry-run"
-  },
+  "scripts": {},
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
-    "commitlint": "^8.3.4",
-    "standard-version": "^7.0.1",
+    "commitlint": "^8.3.5",
     "yorkie": "^2.0.0"
   },
   "workspaces": [
