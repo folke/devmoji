@@ -1,5 +1,5 @@
-import * as emojis from "./data/github.emoji.json"
-import * as gitmojis from "./data/gitmoji.emoji.json"
+import emojis from "./data/github.emoji"
+import gitmojis from "./data/gitmoji.emoji"
 
 export type TEmoji = { code: string; emoji: string; description?: string }
 
@@ -36,7 +36,7 @@ export class EmojiPack {
 }
 
 export const github = new EmojiPack()
-for (const [code, emoji] of Object.entries(emojis)) {
+for (const [code, emoji] of emojis.emojis) {
   github.add({ code, emoji })
 }
 

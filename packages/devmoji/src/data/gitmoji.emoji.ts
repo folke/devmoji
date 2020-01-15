@@ -1,4 +1,4 @@
-{
+export default {
   "gitmojis": [
     {
       "emoji": "🎨",
