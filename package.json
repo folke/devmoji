@@ -6,14 +6,15 @@
   "license": "MIT",
   "private": true,
   "gitHooks": {
-    "prepare-commit-msg": "devmoji -e",
-    "commit-msg": "yarn -s commitlint -e -V"
+    "prepare-commit-msg": "npx --no-install devmoji -e",
+    "commit-msg": "npx --no-install commitlint -e -V"
   },
   "scripts": {},
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
     "commitlint": "^8.3.5",
-    "yorkie": "^2.0.0"
+    "yorkie": "^2.0.0",
+    "devmoji": "^1.0.0"
   },
   "workspaces": [
     "packages/*"

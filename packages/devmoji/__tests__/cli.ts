@@ -32,7 +32,7 @@ test("--list", async () => {
     const cli = await Cli.create(["", "", "--list"], true)
     cli.run()
   })
-  expect(mockCli.stdout?.data).toMatch(/all configured/)
+  expect(mockCli.stdout?.data).toMatch(/Available Devmoji/)
 })
 
 test("--text", async () => {

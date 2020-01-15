@@ -1,5 +1,6 @@
 import { Devmoji } from "./devmoji"
 import chalk from "chalk"
+import { Cli } from "./cli"
 
 export class ConventionalCommits {
   regexCommit = /^(?<type>:?[a-z-]+)(?:\((?<scope>[a-z-]+)\))?:\s*(?::(?<other>[a-z-]+):\s*)?/gm
@@ -11,8 +12,8 @@ export class ConventionalCommits {
     return this.format(text, this.regexCommit)
   }
 
-  formatLog(text: string, color = false) {
-    return this.format(text, this.regexLog, color)
+  formatLog(text: string) {
+    return this.format(text, this.regexLog)
   }
 
   formatEmoji(type: string, scope?: string, other?: string) {
@@ -33,7 +34,7 @@ export class ConventionalCommits {
     return ret.join(" ")
   }
 
-  format(text: string, regex: RegExp, color = false) {
+  format(text: string, regex: RegExp) {
     text = this.devmoji.devmojify(text)
     return this.devmoji.emojify(
       text.replace(
@@ -43,9 +44,9 @@ export class ConventionalCommits {
           const emoji = this.formatEmoji(type, scope, other)
           if (!emoji.length) return match
           let ret = type
-          if (scope) ret += color ? chalk.bold(`(${scope})`) : `(${scope})`
+          if (scope) ret += Cli.chalk(`(${scope})`, chalk.bold)
           ret += ":"
-          if (color) ret = chalk.grey(ret)
+          ret = Cli.chalk(ret, chalk.grey)
           return ret + ` ${emoji} `
         }
       )

@@ -3,10 +3,18 @@
   "version": "1.1.1",
   "description": "Enhance your conventional commits with gitmoji",
   "keywords": [
-    "gitmoji",
+    "cli",
+    "command-line",
+    "commit",
+    "commitlint",
+    "commitzen",
+    "conventional-commits",
     "emoji",
-    "git-commit",
-    "commitlint"
+    "emojify",
+    "gitmoji",
+    "pre-commit",
+    "precommit",
+    "terminal"
   ],
   "author": "Folke Lemaitre <folke.lemaitre@gmail.com>",
   "homepage": "https://github.com/folke/devmoji#readme",
@@ -44,8 +52,7 @@
   "dependencies": {
     "chalk": "^3.0.0",
     "commander": "^4.1.0",
-    "ts-interface-checker": "^0.1.10",
-    "tslib": "^1.10.0"
+    "ts-interface-checker": "^0.1.10"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.1",

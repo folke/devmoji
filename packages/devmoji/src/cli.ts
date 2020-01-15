@@ -9,19 +9,22 @@ import { Devmoji } from "./devmoji"
 
 export class Cli {
   commits: ConventionalCommits
+  opts: { [key: string]: string | boolean | undefined }
+  static color = true
+
   constructor(public program: Command, public devmoji: Devmoji) {
     this.commits = new ConventionalCommits(devmoji)
+    this.opts = program.opts()
   }
 
   format(
     text: string,
     format = "unicode",
     processCommit = false,
-    processLog = false,
-    color = false
+    processLog = false
   ) {
     if (processCommit && !processLog) text = this.commits.formatCommit(text)
-    if (processLog) text = this.commits.formatLog(text, color)
+    if (processLog) text = this.commits.formatLog(text)
     switch (format) {
       case "unicode":
         return this.devmoji.emojify(text)
@@ -34,7 +37,7 @@ export class Cli {
   }
 
   list() {
-    console.log(chalk.magenta.underline("all configured devmoji"))
+    console.log(Cli.chalk("Available Devmoji", chalk.grey.dim.underline))
     for (const code of this.devmoji.config.pack.codes.values()) {
       let cc = ""
       if (this.devmoji.config.options.types.includes(code.code)) {
@@ -49,14 +52,18 @@ export class Cli {
       console.log(
         this.devmoji.get(code.emoji),
         " ",
-        chalk.blue(`:${code.code}:`.padEnd(15)),
-        chalk.green(cc) + code.description
+        Cli.chalk(`:${code.code}:`.padEnd(15), chalk.blue),
+        Cli.chalk(cc, chalk.green) + code.description
       )
     }
   }
 
+  static chalk(text: string, chalk: chalk.Chalk) {
+    return Cli.color ? chalk.call(chalk, text) : text
+  }
+
   error(msg: string) {
-    console.error(chalk.red("[error] ") + msg)
+    console.error(Cli.chalk("[error] ", chalk.red) + msg)
     process.exit(1)
   }
 
@@ -84,23 +91,21 @@ export class Cli {
         "unicode"
       )
       .option(
-        "-c|--commit",
+        "--commit",
         "automatically add a devmoji to the conventional commit header",
         true
       )
+      .option("--no-commit", "do not process conventional commit headers")
       .option(
-        "-C|--no-commit",
-        "do not process conventional commit headers",
-        true
+        "-c|--color",
+        "use colors for formatting. Colors are enabled by default, unless output is piped to another command",
+        process.stdout.isTTY
       )
-      .option(
-        "--color",
-        "color the conventional commit header when formatting git logs"
-      )
+      .option("--no-color", "don't use colors")
       .option("--log", "format conventional commits in text similar to git log")
       .option(
         "-e|--edit",
-        "read last commit message from the specified file or fallbacks to ./.git/COMMIT_EDITMSG"
+        "read last commit message from .git/COMMIT_EDITMSG in the git root"
       )
       .parse(argv)
     // console.log(program.opts())
@@ -143,13 +148,7 @@ export class Cli {
       rl.on("line", line => {
         try {
           console.log(
-            this.format(
-              line,
-              opts.format,
-              opts.commit && firstLine,
-              opts.log,
-              opts.color
-            )
+            this.format(line, opts.format, opts.commit && firstLine, opts.log)
           )
           firstLine = false
         } catch (err) {
@@ -158,9 +157,8 @@ export class Cli {
       })
       return
     }
-    console.log("foo")
     this.program.outputHelp()
-    // return process.exit(1)
+    return process.exit(1)
   }
 }
 
