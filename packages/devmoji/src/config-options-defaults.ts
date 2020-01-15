@@ -26,7 +26,7 @@ export const defaults: ConfigOptions = {
     {
       code: "refactor",
       description: "a code change that neither fixes a bug nor adds a feature",
-      emoji: "hammer",
+      emoji: "recycle",
     },
     {
       code: "perf",
@@ -81,6 +81,21 @@ export const defaults: ConfigOptions = {
     {
       code: "breaking",
       gitmoji: "boom",
+    },
+    {
+      code: "config",
+      gitmoji: "wrench",
+      emoji: "gear",
+    },
+    {
+      code: "add",
+      emoji: "heavy_plus_sign",
+      description: "add something",
+    },
+    {
+      code: "remove",
+      emoji: "heavy_minus_sign",
+      description: "remove something",
     },
   ],
 }
