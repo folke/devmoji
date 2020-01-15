@@ -1,6 +1,6 @@
 {
   "name": "devmoji",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "description": "Enhance your conventional commits with gitmoji",
   "keywords": [
     "gitmoji",
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/folke/devmoji.git"
+    "url": "https://github.com/folke/devmoji.git"
   },
   "scripts": {
     "generate:emoji": "npx ts-node --transpile-only src/scripts/updater.ts",
@@ -37,7 +37,8 @@
     "lint": "npx concurrently -c grey.dim,blue.dim yarn:lint:eslint yarn:lint:ts",
     "lint:eslint": "npx eslint bin/*.js src/*.ts --fix",
     "lint:ts": "npx tsc -p tsconfig.build.json --noEmit",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "yarn build",
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "chalk": "^3.0.0",
@@ -49,6 +50,8 @@
     "@rollup/plugin-commonjs": "^11.0.1",
     "@rollup/plugin-node-resolve": "^7.0.0",
     "@rollup/plugin-typescript": "^2.1.0",
+    "@semantic-release/changelog": "^3.0.6",
+    "@semantic-release/git": "^8.0.0",
     "@types/jest": "^24.0.25",
     "@types/node": "^13.1.6",
     "@types/node-fetch": "^2.5.4",
@@ -68,6 +71,8 @@
     "rollup-plugin-progress": "^1.1.1",
     "rollup-plugin-sizes": "^1.0.1",
     "rollup-plugin-terser": "^5.2.0",
+    "semantic-release": "^16.0.1",
+    "semantic-release-cli": "^5.2.3",
     "ts-interface-builder": "^0.2.1",
     "ts-jest": "^24.3.0",
     "ts-node": "^8.6.1",
