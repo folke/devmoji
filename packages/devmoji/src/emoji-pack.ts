@@ -6,6 +6,7 @@ export type TEmoji = { code: string; emoji: string; description?: string }
 export class EmojiPack {
   codes = new Map<string, TEmoji>()
   emojis = new Map<string, TEmoji[]>()
+  emojiVariation = String.fromCodePoint(0xfe0f)
 
   add(def: TEmoji) {
     def.code = this.unwrap(def.code)
@@ -22,7 +23,9 @@ export class EmojiPack {
   }
 
   getCodes(emoji: string) {
-    return this.emojis.get(emoji)
+    let ret = this.emojis.get(emoji)
+    if (!ret) ret = this.emojis.get(emoji + this.emojiVariation)
+    return ret
   }
 
   getCode(emoji: string) {

@@ -22,6 +22,18 @@ export async function update() {
           variations.add(parseInt(match[1], 16))
         }
       } while (match)
+      fs.writeFileSync(
+        "src/data/variations.emoji.ts",
+        "export default " +
+          JSON.stringify({ variations: [...variations] }, null, "  "),
+        "utf8"
+      )
+      console.log(
+        chalk.blue("[variations]"),
+        "Added",
+        variations.size,
+        "variations"
+      )
     })
     .catch(err => {
       console.error(chalk.red("error"), err)

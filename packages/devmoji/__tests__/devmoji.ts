@@ -15,6 +15,20 @@ test("emojify", () => {
   }
 })
 
+test("strip", () => {
+  const devmoji = new Devmoji(new Config())
+
+  const tests: [string, string][] = [
+    ["build: 📦 added", "build:  added"],
+    [":missing:", ""],
+    ["testing 123 :feat:", "testing 123 "],
+  ]
+
+  for (const t of tests) {
+    expect(devmoji.strip(t[0])).toBe(t[1])
+  }
+})
+
 test("demojify", () => {
   const devmoji = new Devmoji(new Config())
 
