@@ -75,7 +75,7 @@ export class ConventionalCommits {
           if (scope) ret += Cli.chalk(`(${scope})`, chalk.bold)
           if (breaking) ret += "!"
           ret += ":"
-          ret = Cli.chalk(ret, chalk.grey)
+          ret = Cli.chalk(ret, chalk.blue)
           ret = ret + ` ${emoji}`
           const ws = match.search(/\s*$/)
           if (ws > 0) ret += match.substring(ws)
