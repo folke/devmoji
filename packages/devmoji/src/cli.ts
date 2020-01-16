@@ -32,12 +32,14 @@ export class Cli {
         return this.devmoji.demojify(text)
       case "devmoji":
         return this.devmoji.devmojify(text)
+      case "strip":
+        return this.devmoji.strip(text)
     }
     throw `Invalid format '${format}'`
   }
 
   list() {
-    console.log(Cli.chalk("Available Devmoji", chalk.grey.dim.underline))
+    console.log(Cli.chalk("Available Devmoji", chalk.blue.dim.underline))
     for (const code of this.devmoji.config.pack.codes.values()) {
       let cc = ""
       if (this.devmoji.config.options.types.includes(code.code)) {

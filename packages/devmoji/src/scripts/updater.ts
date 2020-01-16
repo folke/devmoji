@@ -3,12 +3,35 @@ import * as fs from "fs"
 
 import chalk from "chalk"
 
-export function update() {
-  const regex = /unicode\/(.*)\.png.*/
+export async function update() {
+  const variations = new Set<number>()
+
+  await fetch(
+    "https://unicode.org/Public/emoji/12.1/emoji-variation-sequences.txt",
+    {
+      method: "GET",
+    }
+  )
+    .then(res => res.text())
+    .then(res => {
+      const regex = /^([0-9A-F]+).*emoji/gm
+      let match
+      do {
+        match = regex.exec(res)
+        if (match) {
+          variations.add(parseInt(match[1], 16))
+        }
+      } while (match)
+    })
+    .catch(err => {
+      console.error(chalk.red("error"), err)
+      process.exit(1)
+    })
 
   fetch("https://api.github.com/emojis", { method: "GET" })
     .then(res => res.json())
     .then(json => {
+      const regex = /unicode\/(.*)\.png.*/
       let added = 0
       let skipped = 0
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -21,7 +44,12 @@ export function update() {
             code,
             match[1]
               .split("-")
-              .map(x => String.fromCodePoint(parseInt(x, 16)))
+              .map(x => {
+                const xx = parseInt(x, 16)
+                let ret = String.fromCodePoint(xx)
+                if (variations.has(xx)) ret += String.fromCodePoint(0xfe0f)
+                return ret
+              })
               .join(String.fromCodePoint(0x200d)),
           ])
         } else skipped++

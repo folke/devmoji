@@ -10,11 +10,11 @@ export default {
     ],
     [
       "+1",
-      "👍"
+      "👍️"
     ],
     [
       "-1",
-      "👎"
+      "👎️"
     ],
     [
       "1st_place_medal",
@@ -34,7 +34,7 @@ export default {
     ],
     [
       "a",
-      "🅰"
+      "🅰️"
     ],
     [
       "ab",
@@ -62,7 +62,7 @@ export default {
     ],
     [
       "airplane",
-      "✈"
+      "✈️"
     ],
     [
       "aland_islands",
@@ -78,7 +78,7 @@ export default {
     ],
     [
       "alembic",
-      "⚗"
+      "⚗️"
     ],
     [
       "algeria",
@@ -86,11 +86,11 @@ export default {
     ],
     [
       "alien",
-      "👽"
+      "👽️"
     ],
     [
       "ambulance",
-      "🚑"
+      "🚑️"
     ],
     [
       "american_samoa",
@@ -102,7 +102,7 @@ export default {
     ],
     [
       "anchor",
-      "⚓"
+      "⚓️"
     ],
     [
       "andorra",
@@ -150,7 +150,7 @@ export default {
     ],
     [
       "aquarius",
-      "♒"
+      "♒️"
     ],
     [
       "argentina",
@@ -158,7 +158,7 @@ export default {
     ],
     [
       "aries",
-      "♈"
+      "♈️"
     ],
     [
       "armenia",
@@ -166,7 +166,7 @@ export default {
     ],
     [
       "arrow_backward",
-      "◀"
+      "◀️"
     ],
     [
       "arrow_double_down",
@@ -178,7 +178,7 @@ export default {
     ],
     [
       "arrow_down",
-      "⬇"
+      "⬇️"
     ],
     [
       "arrow_down_small",
@@ -186,43 +186,43 @@ export default {
     ],
     [
       "arrow_forward",
-      "▶"
+      "▶️"
     ],
     [
       "arrow_heading_down",
-      "⤵"
+      "⤵️"
     ],
     [
       "arrow_heading_up",
-      "⤴"
+      "⤴️"
     ],
     [
       "arrow_left",
-      "⬅"
+      "⬅️"
     ],
     [
       "arrow_lower_left",
-      "↙"
+      "↙️"
     ],
     [
       "arrow_lower_right",
-      "↘"
+      "↘️"
     ],
     [
       "arrow_right",
-      "➡"
+      "➡️"
     ],
     [
       "arrow_right_hook",
-      "↪"
+      "↪️"
     ],
     [
       "arrow_up",
-      "⬆"
+      "⬆️"
     ],
     [
       "arrow_up_down",
-      "↕"
+      "↕️"
     ],
     [
       "arrow_up_small",
@@ -230,11 +230,11 @@ export default {
     ],
     [
       "arrow_upper_left",
-      "↖"
+      "↖️"
     ],
     [
       "arrow_upper_right",
-      "↗"
+      "↗️"
     ],
     [
       "arrows_clockwise",
@@ -254,7 +254,7 @@ export default {
     ],
     [
       "artificial_satellite",
-      "🛰"
+      "🛰️"
     ],
     [
       "aruba",
@@ -262,7 +262,7 @@ export default {
     ],
     [
       "asterisk",
-      "*‍⃣"
+      "*️‍⃣"
     ],
     [
       "astonished",
@@ -278,7 +278,7 @@ export default {
     ],
     [
       "atom_symbol",
-      "⚛"
+      "⚛️"
     ],
     [
       "australia",
@@ -298,7 +298,7 @@ export default {
     ],
     [
       "b",
-      "🅱"
+      "🅱️"
     ],
     [
       "baby",
@@ -314,7 +314,7 @@ export default {
     ],
     [
       "baby_symbol",
-      "🚼"
+      "🚼️"
     ],
     [
       "back",
@@ -346,7 +346,7 @@ export default {
     ],
     [
       "balance_scale",
-      "⚖"
+      "⚖️"
     ],
     [
       "balloon",
@@ -354,11 +354,11 @@ export default {
     ],
     [
       "ballot_box",
-      "🗳"
+      "🗳️"
     ],
     [
       "ballot_box_with_check",
-      "☑"
+      "☑️"
     ],
     [
       "bamboo",
@@ -370,7 +370,7 @@ export default {
     ],
     [
       "bangbang",
-      "‼"
+      "‼️"
     ],
     [
       "bangladesh",
@@ -394,7 +394,7 @@ export default {
     ],
     [
       "baseball",
-      "⚾"
+      "⚾️"
     ],
     [
       "basketball",
@@ -402,11 +402,11 @@ export default {
     ],
     [
       "basketball_man",
-      "⛹"
+      "⛹️"
     ],
     [
       "basketball_woman",
-      "⛹‍♀"
+      "⛹️‍♀️"
     ],
     [
       "bat",
@@ -426,7 +426,7 @@ export default {
     ],
     [
       "beach_umbrella",
-      "🏖"
+      "🏖️"
     ],
     [
       "bear",
@@ -434,7 +434,7 @@ export default {
     ],
     [
       "bed",
-      "🛏"
+      "🛏️"
     ],
     [
       "bee",
@@ -474,7 +474,7 @@ export default {
     ],
     [
       "bellhop_bell",
-      "🛎"
+      "🛎️"
     ],
     [
       "benin",
@@ -498,7 +498,7 @@ export default {
     ],
     [
       "bike",
-      "🚲"
+      "🚲️"
     ],
     [
       "biking_man",
@@ -506,7 +506,7 @@ export default {
     ],
     [
       "biking_woman",
-      "🚴‍♀"
+      "🚴‍♀️"
     ],
     [
       "bikini",
@@ -514,11 +514,11 @@ export default {
     ],
     [
       "biohazard",
-      "☣"
+      "☣️"
     ],
     [
       "bird",
-      "🐦"
+      "🐦️"
     ],
     [
       "birthday",
@@ -526,7 +526,7 @@ export default {
     ],
     [
       "black_circle",
-      "⚫"
+      "⚫️"
     ],
     [
       "black_flag",
@@ -542,23 +542,23 @@ export default {
     ],
     [
       "black_large_square",
-      "⬛"
+      "⬛️"
     ],
     [
       "black_medium_small_square",
-      "◾"
+      "◾️"
     ],
     [
       "black_medium_square",
-      "◼"
+      "◼️"
     ],
     [
       "black_nib",
-      "✒"
+      "✒️"
     ],
     [
       "black_small_square",
-      "▪"
+      "▪️"
     ],
     [
       "black_square_button",
@@ -570,7 +570,7 @@ export default {
     ],
     [
       "blonde_woman",
-      "👱‍♀"
+      "👱‍♀️"
     ],
     [
       "blossom",
@@ -602,7 +602,7 @@ export default {
     ],
     [
       "boat",
-      "⛵"
+      "⛵️"
     ],
     [
       "bolivia",
@@ -610,7 +610,7 @@ export default {
     ],
     [
       "bomb",
-      "💣"
+      "💣️"
     ],
     [
       "book",
@@ -626,7 +626,7 @@ export default {
     ],
     [
       "books",
-      "📚"
+      "📚️"
     ],
     [
       "boom",
@@ -662,7 +662,7 @@ export default {
     ],
     [
       "bowing_woman",
-      "🙇‍♀"
+      "🙇‍♀️"
     ],
     [
       "bowling",
@@ -718,7 +718,7 @@ export default {
     ],
     [
       "building_construction",
-      "🏗"
+      "🏗️"
     ],
     [
       "bulb",
@@ -754,7 +754,7 @@ export default {
     ],
     [
       "business_suit_levitating",
-      "🕴"
+      "🕴️"
     ],
     [
       "busstop",
@@ -802,7 +802,7 @@ export default {
     ],
     [
       "camera",
-      "📷"
+      "📷️"
     ],
     [
       "camera_flash",
@@ -814,7 +814,7 @@ export default {
     ],
     [
       "camping",
-      "🏕"
+      "🏕️"
     ],
     [
       "canada",
@@ -826,11 +826,11 @@ export default {
     ],
     [
       "cancer",
-      "♋"
+      "♋️"
     ],
     [
       "candle",
-      "🕯"
+      "🕯️"
     ],
     [
       "candy",
@@ -850,7 +850,7 @@ export default {
     ],
     [
       "capricorn",
-      "♑"
+      "♑️"
     ],
     [
       "car",
@@ -858,7 +858,7 @@ export default {
     ],
     [
       "card_file_box",
-      "🗃"
+      "🗃️"
     ],
     [
       "card_index",
@@ -866,7 +866,7 @@ export default {
     ],
     [
       "card_index_dividers",
-      "🗂"
+      "🗂️"
     ],
     [
       "caribbean_netherlands",
@@ -886,7 +886,7 @@ export default {
     ],
     [
       "cat2",
-      "🐈"
+      "🐈️"
     ],
     [
       "cayman_islands",
@@ -894,7 +894,7 @@ export default {
     ],
     [
       "cd",
-      "💿"
+      "💿️"
     ],
     [
       "central_african_republic",
@@ -906,7 +906,7 @@ export default {
     ],
     [
       "chains",
-      "⛓"
+      "⛓️"
     ],
     [
       "champagne",
@@ -958,7 +958,7 @@ export default {
     ],
     [
       "chipmunk",
-      "🐿"
+      "🐿️"
     ],
     [
       "chocolate_bar",
@@ -974,7 +974,7 @@ export default {
     ],
     [
       "church",
-      "⛪"
+      "⛪️"
     ],
     [
       "cinema",
@@ -994,7 +994,7 @@ export default {
     ],
     [
       "cityscape",
-      "🏙"
+      "🏙️"
     ],
     [
       "cl",
@@ -1002,7 +1002,7 @@ export default {
     ],
     [
       "clamp",
-      "🗜"
+      "🗜️"
     ],
     [
       "clap",
@@ -1010,11 +1010,11 @@ export default {
     ],
     [
       "clapper",
-      "🎬"
+      "🎬️"
     ],
     [
       "classical_building",
-      "🏛"
+      "🏛️"
     ],
     [
       "clinking_glasses",
@@ -1022,103 +1022,103 @@ export default {
     ],
     [
       "clipboard",
-      "📋"
+      "📋️"
     ],
     [
       "clock1",
-      "🕐"
+      "🕐️"
     ],
     [
       "clock10",
-      "🕙"
+      "🕙️"
     ],
     [
       "clock1030",
-      "🕥"
+      "🕥️"
     ],
     [
       "clock11",
-      "🕚"
+      "🕚️"
     ],
     [
       "clock1130",
-      "🕦"
+      "🕦️"
     ],
     [
       "clock12",
-      "🕛"
+      "🕛️"
     ],
     [
       "clock1230",
-      "🕧"
+      "🕧️"
     ],
     [
       "clock130",
-      "🕜"
+      "🕜️"
     ],
     [
       "clock2",
-      "🕑"
+      "🕑️"
     ],
     [
       "clock230",
-      "🕝"
+      "🕝️"
     ],
     [
       "clock3",
-      "🕒"
+      "🕒️"
     ],
     [
       "clock330",
-      "🕞"
+      "🕞️"
     ],
     [
       "clock4",
-      "🕓"
+      "🕓️"
     ],
     [
       "clock430",
-      "🕟"
+      "🕟️"
     ],
     [
       "clock5",
-      "🕔"
+      "🕔️"
     ],
     [
       "clock530",
-      "🕠"
+      "🕠️"
     ],
     [
       "clock6",
-      "🕕"
+      "🕕️"
     ],
     [
       "clock630",
-      "🕡"
+      "🕡️"
     ],
     [
       "clock7",
-      "🕖"
+      "🕖️"
     ],
     [
       "clock730",
-      "🕢"
+      "🕢️"
     ],
     [
       "clock8",
-      "🕗"
+      "🕗️"
     ],
     [
       "clock830",
-      "🕣"
+      "🕣️"
     ],
     [
       "clock9",
-      "🕘"
+      "🕘️"
     ],
     [
       "clock930",
-      "🕤"
+      "🕤️"
     ],
     [
       "closed_book",
@@ -1134,23 +1134,23 @@ export default {
     ],
     [
       "cloud",
-      "☁"
+      "☁️"
     ],
     [
       "cloud_with_lightning",
-      "🌩"
+      "🌩️"
     ],
     [
       "cloud_with_lightning_and_rain",
-      "⛈"
+      "⛈️"
     ],
     [
       "cloud_with_rain",
-      "🌧"
+      "🌧️"
     ],
     [
       "cloud_with_snow",
-      "🌨"
+      "🌨️"
     ],
     [
       "clown_face",
@@ -1158,7 +1158,7 @@ export default {
     ],
     [
       "clubs",
-      "♣"
+      "♣️"
     ],
     [
       "cn",
@@ -1166,7 +1166,7 @@ export default {
     ],
     [
       "cocktail",
-      "🍸"
+      "🍸️"
     ],
     [
       "cocos_islands",
@@ -1174,11 +1174,11 @@ export default {
     ],
     [
       "coffee",
-      "☕"
+      "☕️"
     ],
     [
       "coffin",
-      "⚰"
+      "⚰️"
     ],
     [
       "cold_sweat",
@@ -1194,7 +1194,7 @@ export default {
     ],
     [
       "comet",
-      "☄"
+      "☄️"
     ],
     [
       "comoros",
@@ -1202,11 +1202,11 @@ export default {
     ],
     [
       "computer",
-      "💻"
+      "💻️"
     ],
     [
       "computer_mouse",
-      "🖱"
+      "🖱️"
     ],
     [
       "confetti_ball",
@@ -1230,7 +1230,7 @@ export default {
     ],
     [
       "congratulations",
-      "㊗"
+      "㊗️"
     ],
     [
       "construction",
@@ -1246,11 +1246,11 @@ export default {
     ],
     [
       "construction_worker_woman",
-      "👷‍♀"
+      "👷‍♀️"
     ],
     [
       "control_knobs",
-      "🎛"
+      "🎛️"
     ],
     [
       "convenience_store",
@@ -1274,7 +1274,7 @@ export default {
     ],
     [
       "copyright",
-      "©"
+      "©️"
     ],
     [
       "corn",
@@ -1290,7 +1290,7 @@ export default {
     ],
     [
       "couch_and_lamp",
-      "🛋"
+      "🛋️"
     ],
     [
       "couple",
@@ -1302,7 +1302,7 @@ export default {
     ],
     [
       "couple_with_heart_man_man",
-      "👨‍❤‍👨"
+      "👨‍❤️‍👨"
     ],
     [
       "couple_with_heart_woman_man",
@@ -1310,11 +1310,11 @@ export default {
     ],
     [
       "couple_with_heart_woman_woman",
-      "👩‍❤‍👩"
+      "👩‍❤️‍👩"
     ],
     [
       "couplekiss_man_man",
-      "👨‍❤‍💋‍👨"
+      "👨‍❤️‍💋‍👨"
     ],
     [
       "couplekiss_man_woman",
@@ -1322,7 +1322,7 @@ export default {
     ],
     [
       "couplekiss_woman_woman",
-      "👩‍❤‍💋‍👩"
+      "👩‍❤️‍💋‍👩"
     ],
     [
       "cow",
@@ -1342,11 +1342,11 @@ export default {
     ],
     [
       "crayon",
-      "🖍"
+      "🖍️"
     ],
     [
       "credit_card",
-      "💳"
+      "💳️"
     ],
     [
       "crescent_moon",
@@ -1378,7 +1378,7 @@ export default {
     ],
     [
       "crossed_swords",
-      "⚔"
+      "⚔️"
     ],
     [
       "crown",
@@ -1446,7 +1446,7 @@ export default {
     ],
     [
       "dagger",
-      "🗡"
+      "🗡️"
     ],
     [
       "dancer",
@@ -1458,7 +1458,7 @@ export default {
     ],
     [
       "dancing_men",
-      "👯‍♂"
+      "👯‍♂️"
     ],
     [
       "dancing_women",
@@ -1470,7 +1470,7 @@ export default {
     ],
     [
       "dark_sunglasses",
-      "🕶"
+      "🕶️"
     ],
     [
       "dart",
@@ -1506,23 +1506,23 @@ export default {
     ],
     [
       "derelict_house",
-      "🏚"
+      "🏚️"
     ],
     [
       "desert",
-      "🏜"
+      "🏜️"
     ],
     [
       "desert_island",
-      "🏝"
+      "🏝️"
     ],
     [
       "desktop_computer",
-      "🖥"
+      "🖥️"
     ],
     [
       "detective",
-      "🕵"
+      "🕵️"
     ],
     [
       "diamond_shape_with_a_dot_inside",
@@ -1530,7 +1530,7 @@ export default {
     ],
     [
       "diamonds",
-      "♦"
+      "♦️"
     ],
     [
       "disappointed",
@@ -1562,7 +1562,7 @@ export default {
     ],
     [
       "dog2",
-      "🐕"
+      "🐕️"
     ],
     [
       "dollar",
@@ -1594,7 +1594,7 @@ export default {
     ],
     [
       "dove",
-      "🕊"
+      "🕊️"
     ],
     [
       "dragon",
@@ -1642,7 +1642,7 @@ export default {
     ],
     [
       "ear",
-      "👂"
+      "👂️"
     ],
     [
       "ear_of_rice",
@@ -1650,15 +1650,15 @@ export default {
     ],
     [
       "earth_africa",
-      "🌍"
+      "🌍️"
     ],
     [
       "earth_americas",
-      "🌎"
+      "🌎️"
     ],
     [
       "earth_asia",
-      "🌏"
+      "🌏️"
     ],
     [
       "ecuador",
@@ -1678,15 +1678,15 @@ export default {
     ],
     [
       "eight",
-      "8‍⃣"
+      "8️‍⃣"
     ],
     [
       "eight_pointed_black_star",
-      "✴"
+      "✴️"
     ],
     [
       "eight_spoked_asterisk",
-      "✳"
+      "✳️"
     ],
     [
       "el_salvador",
@@ -1702,7 +1702,7 @@ export default {
     ],
     [
       "email",
-      "✉"
+      "✉️"
     ],
     [
       "end",
@@ -1710,7 +1710,7 @@ export default {
     ],
     [
       "envelope",
-      "✉"
+      "✉️"
     ],
     [
       "envelope_with_arrow",
@@ -1762,7 +1762,7 @@ export default {
     ],
     [
       "exclamation",
-      "❗"
+      "❗️"
     ],
     [
       "expressionless",
@@ -1770,15 +1770,15 @@ export default {
     ],
     [
       "eye",
-      "👁"
+      "👁️"
     ],
     [
       "eye_speech_bubble",
-      "👁‍🗨"
+      "👁️‍🗨️"
     ],
     [
       "eyeglasses",
-      "👓"
+      "👓️"
     ],
     [
       "eyes",
@@ -1798,7 +1798,7 @@ export default {
     ],
     [
       "factory",
-      "🏭"
+      "🏭️"
     ],
     [
       "falkland_islands",
@@ -1810,7 +1810,7 @@ export default {
     ],
     [
       "family",
-      "👪"
+      "👪️"
     ],
     [
       "family_man_boy",
@@ -1854,7 +1854,7 @@ export default {
     ],
     [
       "family_man_woman_boy",
-      "👪"
+      "👪️"
     ],
     [
       "family_man_woman_boy_boy",
@@ -1918,7 +1918,7 @@ export default {
     ],
     [
       "fast_forward",
-      "⏩"
+      "⏩️"
     ],
     [
       "fax",
@@ -1934,7 +1934,7 @@ export default {
     ],
     [
       "female_detective",
-      "🕵‍♀"
+      "🕵️‍♀️"
     ],
     [
       "ferris_wheel",
@@ -1942,7 +1942,7 @@ export default {
     ],
     [
       "ferry",
-      "⛴"
+      "⛴️"
     ],
     [
       "field_hockey",
@@ -1954,7 +1954,7 @@ export default {
     ],
     [
       "file_cabinet",
-      "🗄"
+      "🗄️"
     ],
     [
       "file_folder",
@@ -1962,11 +1962,11 @@ export default {
     ],
     [
       "film_projector",
-      "📽"
+      "📽️"
     ],
     [
       "film_strip",
-      "🎞"
+      "🎞️"
     ],
     [
       "finland",
@@ -1994,7 +1994,7 @@ export default {
     ],
     [
       "fish",
-      "🐟"
+      "🐟️"
     ],
     [
       "fish_cake",
@@ -2026,7 +2026,7 @@ export default {
     ],
     [
       "five",
-      "5‍⃣"
+      "5️‍⃣"
     ],
     [
       "flags",
@@ -2038,7 +2038,7 @@ export default {
     ],
     [
       "fleur_de_lis",
-      "⚜"
+      "⚜️"
     ],
     [
       "flight_arrival",
@@ -2066,7 +2066,7 @@ export default {
     ],
     [
       "fog",
-      "🌫"
+      "🌫️"
     ],
     [
       "foggy",
@@ -2086,15 +2086,15 @@ export default {
     ],
     [
       "fountain",
-      "⛲"
+      "⛲️"
     ],
     [
       "fountain_pen",
-      "🖋"
+      "🖋️"
     ],
     [
       "four",
-      "4‍⃣"
+      "4️‍⃣"
     ],
     [
       "four_leaf_clover",
@@ -2110,7 +2110,7 @@ export default {
     ],
     [
       "framed_picture",
-      "🖼"
+      "🖼️"
     ],
     [
       "free",
@@ -2150,11 +2150,11 @@ export default {
     ],
     [
       "frowning_face",
-      "☹"
+      "☹️"
     ],
     [
       "frowning_man",
-      "🙍‍♂"
+      "🙍‍♂️"
     ],
     [
       "frowning_woman",
@@ -2166,11 +2166,11 @@ export default {
     ],
     [
       "fuelpump",
-      "⛽"
+      "⛽️"
     ],
     [
       "full_moon",
-      "🌕"
+      "🌕️"
     ],
     [
       "full_moon_with_face",
@@ -2178,7 +2178,7 @@ export default {
     ],
     [
       "funeral_urn",
-      "⚱"
+      "⚱️"
     ],
     [
       "gabon",
@@ -2198,7 +2198,7 @@ export default {
     ],
     [
       "gear",
-      "⚙"
+      "⚙️"
     ],
     [
       "gem",
@@ -2206,7 +2206,7 @@ export default {
     ],
     [
       "gemini",
-      "♊"
+      "♊️"
     ],
     [
       "georgia",
@@ -2250,15 +2250,15 @@ export default {
     ],
     [
       "golf",
-      "⛳"
+      "⛳️"
     ],
     [
       "golfing_man",
-      "🏌"
+      "🏌️"
     ],
     [
       "golfing_woman",
-      "🏌‍♀"
+      "🏌️‍♀️"
     ],
     [
       "gorilla",
@@ -2330,7 +2330,7 @@ export default {
     ],
     [
       "guardswoman",
-      "💂‍♀"
+      "💂‍♀️"
     ],
     [
       "guatemala",
@@ -2366,7 +2366,7 @@ export default {
     ],
     [
       "haircut_man",
-      "💇‍♂"
+      "💇‍♂️"
     ],
     [
       "haircut_woman",
@@ -2386,11 +2386,11 @@ export default {
     ],
     [
       "hammer_and_pick",
-      "⚒"
+      "⚒️"
     ],
     [
       "hammer_and_wrench",
-      "🛠"
+      "🛠️"
     ],
     [
       "hamster",
@@ -2414,7 +2414,7 @@ export default {
     ],
     [
       "hash",
-      "#‍⃣"
+      "#️‍⃣"
     ],
     [
       "hatched_chick",
@@ -2426,7 +2426,7 @@ export default {
     ],
     [
       "headphones",
-      "🎧"
+      "🎧️"
     ],
     [
       "hear_no_evil",
@@ -2434,7 +2434,7 @@ export default {
     ],
     [
       "heart",
-      "❤"
+      "❤️"
     ],
     [
       "heart_decoration",
@@ -2458,11 +2458,11 @@ export default {
     ],
     [
       "hearts",
-      "♥"
+      "♥️"
     ],
     [
       "heavy_check_mark",
-      "✔"
+      "✔️"
     ],
     [
       "heavy_division_sign",
@@ -2474,11 +2474,11 @@ export default {
     ],
     [
       "heavy_exclamation_mark",
-      "❗"
+      "❗️"
     ],
     [
       "heavy_heart_exclamation",
-      "❣"
+      "❣️"
     ],
     [
       "heavy_minus_sign",
@@ -2486,7 +2486,7 @@ export default {
     ],
     [
       "heavy_multiplication_x",
-      "✖"
+      "✖️"
     ],
     [
       "heavy_plus_sign",
@@ -2518,7 +2518,7 @@ export default {
     ],
     [
       "hole",
-      "🕳"
+      "🕳️"
     ],
     [
       "honduras",
@@ -2550,7 +2550,7 @@ export default {
     ],
     [
       "hot_pepper",
-      "🌶"
+      "🌶️"
     ],
     [
       "hotdog",
@@ -2562,19 +2562,19 @@ export default {
     ],
     [
       "hotsprings",
-      "♨"
+      "♨️"
     ],
     [
       "hourglass",
-      "⌛"
+      "⌛️"
     ],
     [
       "hourglass_flowing_sand",
-      "⏳"
+      "⏳️"
     ],
     [
       "house",
-      "🏠"
+      "🏠️"
     ],
     [
       "house_with_garden",
@@ -2582,7 +2582,7 @@ export default {
     ],
     [
       "houses",
-      "🏘"
+      "🏘️"
     ],
     [
       "hugs",
@@ -2606,7 +2606,7 @@ export default {
     ],
     [
       "ice_skate",
-      "⛸"
+      "⛸️"
     ],
     [
       "icecream",
@@ -2630,7 +2630,7 @@ export default {
     ],
     [
       "inbox_tray",
-      "📥"
+      "📥️"
     ],
     [
       "incoming_envelope",
@@ -2650,7 +2650,7 @@ export default {
     ],
     [
       "information_source",
-      "ℹ"
+      "ℹ️"
     ],
     [
       "innocent",
@@ -2658,7 +2658,7 @@ export default {
     ],
     [
       "interrobang",
-      "⁉"
+      "⁉️"
     ],
     [
       "iphone",
@@ -2738,7 +2738,7 @@ export default {
     ],
     [
       "joystick",
-      "🕹"
+      "🕹️"
     ],
     [
       "jp",
@@ -2762,7 +2762,7 @@ export default {
     ],
     [
       "keyboard",
-      "⌨"
+      "⌨️"
     ],
     [
       "keycap_ten",
@@ -2838,7 +2838,7 @@ export default {
     ],
     [
       "label",
-      "🏷"
+      "🏷️"
     ],
     [
       "lantern",
@@ -2866,11 +2866,11 @@ export default {
     ],
     [
       "last_quarter_moon_with_face",
-      "🌜"
+      "🌜️"
     ],
     [
       "latin_cross",
-      "✝"
+      "✝️"
     ],
     [
       "latvia",
@@ -2898,11 +2898,11 @@ export default {
     ],
     [
       "left_right_arrow",
-      "↔"
+      "↔️"
     ],
     [
       "leftwards_arrow_with_hook",
-      "↩"
+      "↩️"
     ],
     [
       "lemon",
@@ -2910,7 +2910,7 @@ export default {
     ],
     [
       "leo",
-      "♌"
+      "♌️"
     ],
     [
       "leopard",
@@ -2922,7 +2922,7 @@ export default {
     ],
     [
       "level_slider",
-      "🎚"
+      "🎚️"
     ],
     [
       "liberia",
@@ -2930,7 +2930,7 @@ export default {
     ],
     [
       "libra",
-      "♎"
+      "♎️"
     ],
     [
       "libya",
@@ -2970,7 +2970,7 @@ export default {
     ],
     [
       "lock",
-      "🔒"
+      "🔒️"
     ],
     [
       "lock_with_ink_pen",
@@ -3014,7 +3014,7 @@ export default {
     ],
     [
       "m",
-      "Ⓜ"
+      "Ⓜ️"
     ],
     [
       "macau",
@@ -3030,7 +3030,7 @@ export default {
     ],
     [
       "mag",
-      "🔍"
+      "🔍️"
     ],
     [
       "mag_right",
@@ -3038,23 +3038,23 @@ export default {
     ],
     [
       "mahjong",
-      "🀄"
+      "🀄️"
     ],
     [
       "mailbox",
-      "📫"
+      "📫️"
     ],
     [
       "mailbox_closed",
-      "📪"
+      "📪️"
     ],
     [
       "mailbox_with_mail",
-      "📬"
+      "📬️"
     ],
     [
       "mailbox_with_no_mail",
-      "📭"
+      "📭️"
     ],
     [
       "malawi",
@@ -3070,7 +3070,7 @@ export default {
     ],
     [
       "male_detective",
-      "🕵"
+      "🕵️"
     ],
     [
       "mali",
@@ -3094,7 +3094,7 @@ export default {
     ],
     [
       "man_cartwheeling",
-      "🤸‍♂"
+      "🤸‍♂️"
     ],
     [
       "man_cook",
@@ -3106,11 +3106,11 @@ export default {
     ],
     [
       "man_facepalming",
-      "🤦‍♂"
+      "🤦‍♂️"
     ],
     [
       "man_factory_worker",
-      "👨‍🏭"
+      "👨‍🏭️"
     ],
     [
       "man_farmer",
@@ -3122,7 +3122,7 @@ export default {
     ],
     [
       "man_health_worker",
-      "👨‍⚕"
+      "👨‍⚕️"
     ],
     [
       "man_in_tuxedo",
@@ -3130,11 +3130,11 @@ export default {
     ],
     [
       "man_judge",
-      "👨‍⚖"
+      "👨‍⚖️"
     ],
     [
       "man_juggling",
-      "🤹‍♂"
+      "🤹‍♂️"
     ],
     [
       "man_mechanic",
@@ -3146,15 +3146,15 @@ export default {
     ],
     [
       "man_pilot",
-      "👨‍✈"
+      "👨‍✈️"
     ],
     [
       "man_playing_handball",
-      "🤾‍♂"
+      "🤾‍♂️"
     ],
     [
       "man_playing_water_polo",
-      "🤽‍♂"
+      "🤽‍♂️"
     ],
     [
       "man_scientist",
@@ -3162,7 +3162,7 @@ export default {
     ],
     [
       "man_shrugging",
-      "🤷‍♂"
+      "🤷‍♂️"
     ],
     [
       "man_singer",
@@ -3170,7 +3170,7 @@ export default {
     ],
     [
       "man_student",
-      "👨‍🎓"
+      "👨‍🎓️"
     ],
     [
       "man_teacher",
@@ -3178,7 +3178,7 @@ export default {
     ],
     [
       "man_technologist",
-      "👨‍💻"
+      "👨‍💻️"
     ],
     [
       "man_with_gua_pi_mao",
@@ -3198,7 +3198,7 @@ export default {
     ],
     [
       "mantelpiece_clock",
-      "🕰"
+      "🕰️"
     ],
     [
       "maple_leaf",
@@ -3226,7 +3226,7 @@ export default {
     ],
     [
       "massage_man",
-      "💆‍♂"
+      "💆‍♂️"
     ],
     [
       "massage_woman",
@@ -3250,7 +3250,7 @@ export default {
     ],
     [
       "medal_military",
-      "🎖"
+      "🎖️"
     ],
     [
       "medal_sports",
@@ -3270,7 +3270,7 @@ export default {
     ],
     [
       "men_wrestling",
-      "🤼‍♂"
+      "🤼‍♂️"
     ],
     [
       "menorah",
@@ -3278,7 +3278,7 @@ export default {
     ],
     [
       "mens",
-      "🚹"
+      "🚹️"
     ],
     [
       "metal",
@@ -3286,7 +3286,7 @@ export default {
     ],
     [
       "metro",
-      "🚇"
+      "🚇️"
     ],
     [
       "mexico",
@@ -3346,7 +3346,7 @@ export default {
     ],
     [
       "moneybag",
-      "💰"
+      "💰️"
     ],
     [
       "mongolia",
@@ -3382,7 +3382,7 @@ export default {
     ],
     [
       "mortar_board",
-      "🎓"
+      "🎓️"
     ],
     [
       "mosque",
@@ -3390,7 +3390,7 @@ export default {
     ],
     [
       "motor_boat",
-      "🛥"
+      "🛥️"
     ],
     [
       "motor_scooter",
@@ -3398,11 +3398,11 @@ export default {
     ],
     [
       "motorcycle",
-      "🏍"
+      "🏍️"
     ],
     [
       "motorway",
-      "🛣"
+      "🛣️"
     ],
     [
       "mount_fuji",
@@ -3410,7 +3410,7 @@ export default {
     ],
     [
       "mountain",
-      "⛰"
+      "⛰️"
     ],
     [
       "mountain_bicyclist",
@@ -3422,7 +3422,7 @@ export default {
     ],
     [
       "mountain_biking_woman",
-      "🚵‍♀"
+      "🚵‍♀️"
     ],
     [
       "mountain_cableway",
@@ -3434,7 +3434,7 @@ export default {
     ],
     [
       "mountain_snow",
-      "🏔"
+      "🏔️"
     ],
     [
       "mouse",
@@ -3502,7 +3502,7 @@ export default {
     ],
     [
       "national_park",
-      "🏞"
+      "🏞️"
     ],
     [
       "nauru",
@@ -3534,7 +3534,7 @@ export default {
     ],
     [
       "neutral_face",
-      "😐"
+      "😐️"
     ],
     [
       "new",
@@ -3562,11 +3562,11 @@ export default {
     ],
     [
       "newspaper_roll",
-      "🗞"
+      "🗞️"
     ],
     [
       "next_track_button",
-      "⏭"
+      "⏭️"
     ],
     [
       "ng",
@@ -3574,7 +3574,7 @@ export default {
     ],
     [
       "ng_man",
-      "🙅‍♂"
+      "🙅‍♂️"
     ],
     [
       "ng_woman",
@@ -3598,7 +3598,7 @@ export default {
     ],
     [
       "nine",
-      "9‍⃣"
+      "9️‍⃣"
     ],
     [
       "niue",
@@ -3614,7 +3614,7 @@ export default {
     ],
     [
       "no_entry",
-      "⛔"
+      "⛔️"
     ],
     [
       "no_entry_sign",
@@ -3626,7 +3626,7 @@ export default {
     ],
     [
       "no_good_man",
-      "🙅‍♂"
+      "🙅‍♂️"
     ],
     [
       "no_good_woman",
@@ -3646,7 +3646,7 @@ export default {
     ],
     [
       "no_smoking",
-      "🚭"
+      "🚭️"
     ],
     [
       "non-potable_water",
@@ -3690,11 +3690,11 @@ export default {
     ],
     [
       "o",
-      "⭕"
+      "⭕️"
     ],
     [
       "o2",
-      "🅾"
+      "🅾️"
     ],
     [
       "ocean",
@@ -3714,7 +3714,7 @@ export default {
     ],
     [
       "oil_drum",
-      "🛢"
+      "🛢️"
     ],
     [
       "ok",
@@ -3726,7 +3726,7 @@ export default {
     ],
     [
       "ok_man",
-      "🙆‍♂"
+      "🙆‍♂️"
     ],
     [
       "ok_woman",
@@ -3734,7 +3734,7 @@ export default {
     ],
     [
       "old_key",
-      "🗝"
+      "🗝️"
     ],
     [
       "older_man",
@@ -3746,7 +3746,7 @@ export default {
     ],
     [
       "om",
-      "🕉"
+      "🕉️"
     ],
     [
       "oman",
@@ -3758,15 +3758,15 @@ export default {
     ],
     [
       "oncoming_automobile",
-      "🚘"
+      "🚘️"
     ],
     [
       "oncoming_bus",
-      "🚍"
+      "🚍️"
     ],
     [
       "oncoming_police_car",
-      "🚔"
+      "🚔️"
     ],
     [
       "oncoming_taxi",
@@ -3774,7 +3774,7 @@ export default {
     ],
     [
       "one",
-      "1‍⃣"
+      "1️‍⃣"
     ],
     [
       "open_book",
@@ -3794,7 +3794,7 @@ export default {
     ],
     [
       "open_umbrella",
-      "☂"
+      "☂️"
     ],
     [
       "ophiuchus",
@@ -3810,11 +3810,11 @@ export default {
     ],
     [
       "orthodox_cross",
-      "☦"
+      "☦️"
     ],
     [
       "outbox_tray",
-      "📤"
+      "📤️"
     ],
     [
       "owl",
@@ -3826,7 +3826,7 @@ export default {
     ],
     [
       "package",
-      "📦"
+      "📦️"
     ],
     [
       "page_facing_up",
@@ -3838,11 +3838,11 @@ export default {
     ],
     [
       "pager",
-      "📟"
+      "📟️"
     ],
     [
       "paintbrush",
-      "🖌"
+      "🖌️"
     ],
     [
       "pakistan",
@@ -3878,7 +3878,7 @@ export default {
     ],
     [
       "paperclips",
-      "🖇"
+      "🖇️"
     ],
     [
       "papua_new_guinea",
@@ -3890,23 +3890,23 @@ export default {
     ],
     [
       "parasol_on_ground",
-      "⛱"
+      "⛱️"
     ],
     [
       "parking",
-      "🅿"
+      "🅿️"
     ],
     [
       "part_alternation_mark",
-      "〽"
+      "〽️"
     ],
     [
       "partly_sunny",
-      "⛅"
+      "⛅️"
     ],
     [
       "passenger_ship",
-      "🛳"
+      "🛳️"
     ],
     [
       "passport_control",
@@ -3914,7 +3914,7 @@ export default {
     ],
     [
       "pause_button",
-      "⏸"
+      "⏸️"
     ],
     [
       "paw_prints",
@@ -3922,7 +3922,7 @@ export default {
     ],
     [
       "peace_symbol",
-      "☮"
+      "☮️"
     ],
     [
       "peach",
@@ -3938,7 +3938,7 @@ export default {
     ],
     [
       "pen",
-      "🖊"
+      "🖊️"
     ],
     [
       "pencil",
@@ -3946,7 +3946,7 @@ export default {
     ],
     [
       "pencil2",
-      "✏"
+      "✏️"
     ],
     [
       "penguin",
@@ -3958,7 +3958,7 @@ export default {
     ],
     [
       "performing_arts",
-      "🎭"
+      "🎭️"
     ],
     [
       "persevere",
@@ -3990,11 +3990,11 @@ export default {
     ],
     [
       "phone",
-      "☎"
+      "☎️"
     ],
     [
       "pick",
-      "⛏"
+      "⛏️"
     ],
     [
       "pig",
@@ -4022,7 +4022,7 @@ export default {
     ],
     [
       "pisces",
-      "♓"
+      "♓️"
     ],
     [
       "pitcairn_islands",
@@ -4038,31 +4038,31 @@ export default {
     ],
     [
       "plate_with_cutlery",
-      "🍽"
+      "🍽️"
     ],
     [
       "play_or_pause_button",
-      "⏯"
+      "⏯️"
     ],
     [
       "point_down",
-      "👇"
+      "👇️"
     ],
     [
       "point_left",
-      "👈"
+      "👈️"
     ],
     [
       "point_right",
-      "👉"
+      "👉️"
     ],
     [
       "point_up",
-      "☝"
+      "☝️"
     ],
     [
       "point_up_2",
-      "👆"
+      "👆️"
     ],
     [
       "poland",
@@ -4078,7 +4078,7 @@ export default {
     ],
     [
       "policewoman",
-      "👮‍♀"
+      "👮‍♀️"
     ],
     [
       "poodle",
@@ -4138,7 +4138,7 @@ export default {
     ],
     [
       "pouting_man",
-      "🙎‍♂"
+      "🙎‍♂️"
     ],
     [
       "pouting_woman",
@@ -4158,7 +4158,7 @@ export default {
     ],
     [
       "previous_track_button",
-      "⏮"
+      "⏮️"
     ],
     [
       "prince",
@@ -4170,7 +4170,7 @@ export default {
     ],
     [
       "printer",
-      "🖨"
+      "🖨️"
     ],
     [
       "puerto_rico",
@@ -4202,7 +4202,7 @@ export default {
     ],
     [
       "question",
-      "❓"
+      "❓️"
     ],
     [
       "rabbit",
@@ -4218,11 +4218,11 @@ export default {
     ],
     [
       "racing_car",
-      "🏎"
+      "🏎️"
     ],
     [
       "radio",
-      "📻"
+      "📻️"
     ],
     [
       "radio_button",
@@ -4230,7 +4230,7 @@ export default {
     ],
     [
       "radioactive",
-      "☢"
+      "☢️"
     ],
     [
       "rage",
@@ -4242,7 +4242,7 @@ export default {
     ],
     [
       "railway_track",
-      "🛤"
+      "🛤️"
     ],
     [
       "rainbow",
@@ -4250,7 +4250,7 @@ export default {
     ],
     [
       "rainbow_flag",
-      "🏳‍🌈"
+      "🏳️‍🌈"
     ],
     [
       "raised_back_of_hand",
@@ -4262,7 +4262,7 @@ export default {
     ],
     [
       "raised_hand_with_fingers_splayed",
-      "🖐"
+      "🖐️"
     ],
     [
       "raised_hands",
@@ -4274,7 +4274,7 @@ export default {
     ],
     [
       "raising_hand_man",
-      "🙋‍♂"
+      "🙋‍♂️"
     ],
     [
       "raising_hand_woman",
@@ -4294,11 +4294,11 @@ export default {
     ],
     [
       "record_button",
-      "⏺"
+      "⏺️"
     ],
     [
       "recycle",
-      "♻"
+      "♻️"
     ],
     [
       "red_car",
@@ -4310,11 +4310,11 @@ export default {
     ],
     [
       "registered",
-      "®"
+      "®️"
     ],
     [
       "relaxed",
-      "☺"
+      "☺️"
     ],
     [
       "relieved",
@@ -4322,7 +4322,7 @@ export default {
     ],
     [
       "reminder_ribbon",
-      "🎗"
+      "🎗️"
     ],
     [
       "repeat",
@@ -4334,7 +4334,7 @@ export default {
     ],
     [
       "rescue_worker_helmet",
-      "⛑"
+      "⛑️"
     ],
     [
       "restroom",
@@ -4350,7 +4350,7 @@ export default {
     ],
     [
       "rewind",
-      "⏪"
+      "⏪️"
     ],
     [
       "rhinoceros",
@@ -4378,7 +4378,7 @@ export default {
     ],
     [
       "right_anger_bubble",
-      "🗯"
+      "🗯️"
     ],
     [
       "ring",
@@ -4418,7 +4418,7 @@ export default {
     ],
     [
       "rosette",
-      "🏵"
+      "🏵️"
     ],
     [
       "rotating_light",
@@ -4438,7 +4438,7 @@ export default {
     ],
     [
       "rowing_woman",
-      "🚣‍♀"
+      "🚣‍♀️"
     ],
     [
       "ru",
@@ -4466,7 +4466,7 @@ export default {
     ],
     [
       "running_woman",
-      "🏃‍♀"
+      "🏃‍♀️"
     ],
     [
       "rwanda",
@@ -4474,15 +4474,15 @@ export default {
     ],
     [
       "sa",
-      "🈂"
+      "🈂️"
     ],
     [
       "sagittarius",
-      "♐"
+      "♐️"
     ],
     [
       "sailboat",
-      "⛵"
+      "⛵️"
     ],
     [
       "sake",
@@ -4510,7 +4510,7 @@ export default {
     ],
     [
       "sassy_man",
-      "💁‍♂"
+      "💁‍♂️"
     ],
     [
       "sassy_woman",
@@ -4542,7 +4542,7 @@ export default {
     ],
     [
       "scissors",
-      "✂"
+      "✂️"
     ],
     [
       "scorpion",
@@ -4550,7 +4550,7 @@ export default {
     ],
     [
       "scorpius",
-      "♏"
+      "♏️"
     ],
     [
       "scream",
@@ -4570,7 +4570,7 @@ export default {
     ],
     [
       "secret",
-      "㊙"
+      "㊙️"
     ],
     [
       "see_no_evil",
@@ -4594,7 +4594,7 @@ export default {
     ],
     [
       "seven",
-      "7‍⃣"
+      "7️‍⃣"
     ],
     [
       "seychelles",
@@ -4606,7 +4606,7 @@ export default {
     ],
     [
       "shamrock",
-      "☘"
+      "☘️"
     ],
     [
       "shark",
@@ -4626,11 +4626,11 @@ export default {
     ],
     [
       "shield",
-      "🛡"
+      "🛡️"
     ],
     [
       "shinto_shrine",
-      "⛩"
+      "⛩️"
     ],
     [
       "ship",
@@ -4650,7 +4650,7 @@ export default {
     ],
     [
       "shopping",
-      "🛍"
+      "🛍️"
     ],
     [
       "shopping_cart",
@@ -4682,7 +4682,7 @@ export default {
     ],
     [
       "six",
-      "6‍⃣"
+      "6️‍⃣"
     ],
     [
       "six_pointed_star",
@@ -4694,7 +4694,7 @@ export default {
     ],
     [
       "skier",
-      "⛷"
+      "⛷️"
     ],
     [
       "skull",
@@ -4702,7 +4702,7 @@ export default {
     ],
     [
       "skull_and_crossbones",
-      "☠"
+      "☠️"
     ],
     [
       "sleeping",
@@ -4738,7 +4738,7 @@ export default {
     ],
     [
       "small_airplane",
-      "🛩"
+      "🛩️"
     ],
     [
       "small_blue_diamond",
@@ -4802,19 +4802,19 @@ export default {
     ],
     [
       "snowboarder",
-      "🏂"
+      "🏂️"
     ],
     [
       "snowflake",
-      "❄"
+      "❄️"
     ],
     [
       "snowman",
-      "⛄"
+      "⛄️"
     ],
     [
       "snowman_with_snow",
-      "☃"
+      "☃️"
     ],
     [
       "sob",
@@ -4822,7 +4822,7 @@ export default {
     ],
     [
       "soccer",
-      "⚽"
+      "⚽️"
     ],
     [
       "solomon_islands",
@@ -4862,7 +4862,7 @@ export default {
     ],
     [
       "spades",
-      "♠"
+      "♠️"
     ],
     [
       "spaghetti",
@@ -4870,7 +4870,7 @@ export default {
     ],
     [
       "sparkle",
-      "❇"
+      "❇️"
     ],
     [
       "sparkler",
@@ -4890,11 +4890,11 @@ export default {
     ],
     [
       "speaker",
-      "🔈"
+      "🔈️"
     ],
     [
       "speaking_head",
-      "🗣"
+      "🗣️"
     ],
     [
       "speech_balloon",
@@ -4906,19 +4906,19 @@ export default {
     ],
     [
       "spider",
-      "🕷"
+      "🕷️"
     ],
     [
       "spider_web",
-      "🕸"
+      "🕸️"
     ],
     [
       "spiral_calendar",
-      "🗓"
+      "🗓️"
     ],
     [
       "spiral_notepad",
-      "🗒"
+      "🗒️"
     ],
     [
       "spoon",
@@ -4958,11 +4958,11 @@ export default {
     ],
     [
       "stadium",
-      "🏟"
+      "🏟️"
     ],
     [
       "star",
-      "⭐"
+      "⭐️"
     ],
     [
       "star2",
@@ -4970,11 +4970,11 @@ export default {
     ],
     [
       "star_and_crescent",
-      "☪"
+      "☪️"
     ],
     [
       "star_of_david",
-      "✡"
+      "✡️"
     ],
     [
       "stars",
@@ -4998,7 +4998,7 @@ export default {
     ],
     [
       "stop_button",
-      "⏹"
+      "⏹️"
     ],
     [
       "stop_sign",
@@ -5006,7 +5006,7 @@ export default {
     ],
     [
       "stopwatch",
-      "⏱"
+      "⏱️"
     ],
     [
       "straight_ruler",
@@ -5030,7 +5030,7 @@ export default {
     ],
     [
       "studio_microphone",
-      "🎙"
+      "🎙️"
     ],
     [
       "stuffed_flatbread",
@@ -5042,15 +5042,15 @@ export default {
     ],
     [
       "sun_behind_large_cloud",
-      "🌥"
+      "🌥️"
     ],
     [
       "sun_behind_rain_cloud",
-      "🌦"
+      "🌦️"
     ],
     [
       "sun_behind_small_cloud",
-      "🌤"
+      "🌤️"
     ],
     [
       "sun_with_face",
@@ -5066,7 +5066,7 @@ export default {
     ],
     [
       "sunny",
-      "☀"
+      "☀️"
     ],
     [
       "sunrise",
@@ -5078,15 +5078,15 @@ export default {
     ],
     [
       "surfer",
-      "🏄"
+      "🏄️"
     ],
     [
       "surfing_man",
-      "🏄"
+      "🏄️"
     ],
     [
       "surfing_woman",
-      "🏄‍♀"
+      "🏄️‍♀️"
     ],
     [
       "suriname",
@@ -5126,15 +5126,15 @@ export default {
     ],
     [
       "swimmer",
-      "🏊"
+      "🏊️"
     ],
     [
       "swimming_man",
-      "🏊"
+      "🏊️"
     ],
     [
       "swimming_woman",
-      "🏊‍♀"
+      "🏊️‍♀️"
     ],
     [
       "switzerland",
@@ -5186,7 +5186,7 @@ export default {
     ],
     [
       "taurus",
-      "♉"
+      "♉️"
     ],
     [
       "taxi",
@@ -5198,7 +5198,7 @@ export default {
     ],
     [
       "telephone",
-      "☎"
+      "☎️"
     ],
     [
       "telephone_receiver",
@@ -5214,7 +5214,7 @@ export default {
     ],
     [
       "tent",
-      "⛺"
+      "⛺️"
     ],
     [
       "thailand",
@@ -5222,7 +5222,7 @@ export default {
     ],
     [
       "thermometer",
-      "🌡"
+      "🌡️"
     ],
     [
       "thinking",
@@ -5234,15 +5234,15 @@ export default {
     ],
     [
       "three",
-      "3‍⃣"
+      "3️‍⃣"
     ],
     [
       "thumbsdown",
-      "👎"
+      "👎️"
     ],
     [
       "thumbsup",
-      "👍"
+      "👍️"
     ],
     [
       "ticket",
@@ -5250,7 +5250,7 @@ export default {
     ],
     [
       "tickets",
-      "🎟"
+      "🎟️"
     ],
     [
       "tiger",
@@ -5262,7 +5262,7 @@ export default {
     ],
     [
       "timer_clock",
-      "⏲"
+      "⏲️"
     ],
     [
       "timor_leste",
@@ -5270,7 +5270,7 @@ export default {
     ],
     [
       "tipping_hand_man",
-      "💁‍♂"
+      "💁‍♂️"
     ],
     [
       "tipping_hand_woman",
@@ -5282,7 +5282,7 @@ export default {
     ],
     [
       "tm",
-      "™"
+      "™️"
     ],
     [
       "togo",
@@ -5322,7 +5322,7 @@ export default {
     ],
     [
       "tornado",
-      "🌪"
+      "🌪️"
     ],
     [
       "tr",
@@ -5330,7 +5330,7 @@ export default {
     ],
     [
       "trackball",
-      "🖲"
+      "🖲️"
     ],
     [
       "tractor",
@@ -5378,7 +5378,7 @@ export default {
     ],
     [
       "trophy",
-      "🏆"
+      "🏆️"
     ],
     [
       "tropical_drink",
@@ -5434,7 +5434,7 @@ export default {
     ],
     [
       "tv",
-      "📺"
+      "📺️"
     ],
     [
       "twisted_rightwards_arrows",
@@ -5442,7 +5442,7 @@ export default {
     ],
     [
       "two",
-      "2‍⃣"
+      "2️‍⃣"
     ],
     [
       "two_hearts",
@@ -5470,11 +5470,11 @@ export default {
     ],
     [
       "u6307",
-      "🈯"
+      "🈯️"
     ],
     [
       "u6708",
-      "🈷"
+      "🈷️"
     ],
     [
       "u6709",
@@ -5486,7 +5486,7 @@ export default {
     ],
     [
       "u7121",
-      "🈚"
+      "🈚️"
     ],
     [
       "u7533",
@@ -5514,7 +5514,7 @@ export default {
     ],
     [
       "umbrella",
-      "☔"
+      "☔️"
     ],
     [
       "unamused",
@@ -5534,7 +5534,7 @@ export default {
     ],
     [
       "unlock",
-      "🔓"
+      "🔓️"
     ],
     [
       "up",
@@ -5562,7 +5562,7 @@ export default {
     ],
     [
       "v",
-      "✌"
+      "✌️"
     ],
     [
       "vanuatu",
@@ -5590,11 +5590,11 @@ export default {
     ],
     [
       "video_camera",
-      "📹"
+      "📹️"
     ],
     [
       "video_game",
-      "🎮"
+      "🎮️"
     ],
     [
       "vietnam",
@@ -5606,7 +5606,7 @@ export default {
     ],
     [
       "virgo",
-      "♍"
+      "♍️"
     ],
     [
       "volcano",
@@ -5634,7 +5634,7 @@ export default {
     ],
     [
       "walking_woman",
-      "🚶‍♀"
+      "🚶‍♀️"
     ],
     [
       "wallis_futuna",
@@ -5650,15 +5650,15 @@ export default {
     ],
     [
       "warning",
-      "⚠"
+      "⚠️"
     ],
     [
       "wastebasket",
-      "🗑"
+      "🗑️"
     ],
     [
       "watch",
-      "⌚"
+      "⌚️"
     ],
     [
       "water_buffalo",
@@ -5674,7 +5674,7 @@ export default {
     ],
     [
       "wavy_dash",
-      "〰"
+      "〰️"
     ],
     [
       "waxing_crescent_moon",
@@ -5698,11 +5698,11 @@ export default {
     ],
     [
       "weight_lifting_man",
-      "🏋"
+      "🏋️"
     ],
     [
       "weight_lifting_woman",
-      "🏋‍♀"
+      "🏋️‍♀️"
     ],
     [
       "western_sahara",
@@ -5718,11 +5718,11 @@ export default {
     ],
     [
       "wheel_of_dharma",
-      "☸"
+      "☸️"
     ],
     [
       "wheelchair",
-      "♿"
+      "♿️"
     ],
     [
       "white_check_mark",
@@ -5730,11 +5730,11 @@ export default {
     ],
     [
       "white_circle",
-      "⚪"
+      "⚪️"
     ],
     [
       "white_flag",
-      "🏳"
+      "🏳️"
     ],
     [
       "white_flower",
@@ -5742,19 +5742,19 @@ export default {
     ],
     [
       "white_large_square",
-      "⬜"
+      "⬜️"
     ],
     [
       "white_medium_small_square",
-      "◽"
+      "◽️"
     ],
     [
       "white_medium_square",
-      "◻"
+      "◻️"
     ],
     [
       "white_small_square",
-      "▫"
+      "▫️"
     ],
     [
       "white_square_button",
@@ -5770,7 +5770,7 @@ export default {
     ],
     [
       "wind_face",
-      "🌬"
+      "🌬️"
     ],
     [
       "wine_glass",
@@ -5798,7 +5798,7 @@ export default {
     ],
     [
       "woman_cartwheeling",
-      "🤸‍♀"
+      "🤸‍♀️"
     ],
     [
       "woman_cook",
@@ -5806,11 +5806,11 @@ export default {
     ],
     [
       "woman_facepalming",
-      "🤦‍♀"
+      "🤦‍♀️"
     ],
     [
       "woman_factory_worker",
-      "👩‍🏭"
+      "👩‍🏭️"
     ],
     [
       "woman_farmer",
@@ -5822,15 +5822,15 @@ export default {
     ],
     [
       "woman_health_worker",
-      "👩‍⚕"
+      "👩‍⚕️"
     ],
     [
       "woman_judge",
-      "👩‍⚖"
+      "👩‍⚖️"
     ],
     [
       "woman_juggling",
-      "🤹‍♀"
+      "🤹‍♀️"
     ],
     [
       "woman_mechanic",
@@ -5842,15 +5842,15 @@ export default {
     ],
     [
       "woman_pilot",
-      "👩‍✈"
+      "👩‍✈️"
     ],
     [
       "woman_playing_handball",
-      "🤾‍♀"
+      "🤾‍♀️"
     ],
     [
       "woman_playing_water_polo",
-      "🤽‍♀"
+      "🤽‍♀️"
     ],
     [
       "woman_scientist",
@@ -5858,7 +5858,7 @@ export default {
     ],
     [
       "woman_shrugging",
-      "🤷‍♀"
+      "🤷‍♀️"
     ],
     [
       "woman_singer",
@@ -5866,7 +5866,7 @@ export default {
     ],
     [
       "woman_student",
-      "👩‍🎓"
+      "👩‍🎓️"
     ],
     [
       "woman_teacher",
@@ -5874,11 +5874,11 @@ export default {
     ],
     [
       "woman_technologist",
-      "👩‍💻"
+      "👩‍💻️"
     ],
     [
       "woman_with_turban",
-      "👳‍♀"
+      "👳‍♀️"
     ],
     [
       "womans_clothes",
@@ -5890,15 +5890,15 @@ export default {
     ],
     [
       "women_wrestling",
-      "🤼‍♀"
+      "🤼‍♀️"
     ],
     [
       "womens",
-      "🚺"
+      "🚺️"
     ],
     [
       "world_map",
-      "🗺"
+      "🗺️"
     ],
     [
       "worried",
@@ -5910,7 +5910,7 @@ export default {
     ],
     [
       "writing_hand",
-      "✍"
+      "✍️"
     ],
     [
       "x",
@@ -5930,7 +5930,7 @@ export default {
     ],
     [
       "yin_yang",
-      "☯"
+      "☯️"
     ],
     [
       "yum",
@@ -5942,11 +5942,11 @@ export default {
     ],
     [
       "zap",
-      "⚡"
+      "⚡️"
     ],
     [
       "zero",
-      "0‍⃣"
+      "0️‍⃣"
     ],
     [
       "zimbabwe",

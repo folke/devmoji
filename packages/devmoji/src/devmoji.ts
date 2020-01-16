@@ -19,6 +19,13 @@ export class Devmoji {
     })
   }
 
+  strip(text: string): string {
+    text = this.demojify(text)
+    return text.replace(this.shortcodeRegex, () => {
+      return ""
+    })
+  }
+
   demojify(text: string): string {
     return text.replace(this.unicodeRegex, s => {
       const ret = github.getCode(s)
