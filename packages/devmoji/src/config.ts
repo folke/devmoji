@@ -5,6 +5,7 @@ import fooTI from "./config-options-ti"
 import { createCheckers } from "ts-interface-checker"
 import { EmojiPack, gitmoji, TEmoji } from "./emoji-pack"
 import { ConfigOptions } from "./config-options"
+import { homedir } from "os"
 
 export class Config {
   options: ConfigOptions = { types: [], devmoji: [] }
@@ -44,13 +45,38 @@ export class Config {
     checker.ConfigOptions.check(options)
   }
 
+  /**
+   * Looks for a root directory, containing the given pattern
+   * @param pattern
+   * @param cwd
+   */
+  static findRoot(pattern: string, cwd = process.cwd()): string | undefined {
+    if (cwd == "/") return undefined
+    const p = path.posix.resolve(cwd, pattern)
+    if (fs.existsSync(p)) return cwd
+    return Config.findRoot(pattern, path.resolve(cwd, "../"))
+  }
+
   static async load(configFile?: string, cwd = process.cwd()) {
     if (configFile && !fs.existsSync(configFile))
       throw `Config file not found ${configFile}`
 
     if (!configFile) {
-      const defaultFile = path.resolve(cwd, "./devmoji.config.js")
-      if (fs.existsSync(defaultFile)) configFile = defaultFile
+      const searchPaths = [
+        cwd,
+        Config.findRoot("./package.json"),
+        Config.findRoot("./.git"),
+        homedir(),
+      ]
+      for (const p of searchPaths) {
+        if (p) {
+          const file = path.posix.resolve(p, "./devmoji.config.js")
+          if (fs.existsSync(file)) {
+            configFile = file
+            break
+          }
+        }
+      }
     }
 
     if (configFile) {
