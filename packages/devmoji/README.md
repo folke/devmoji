@@ -15,14 +15,14 @@ commits, using emojis inspired by
 
 Some of the things **Devmoji** can do:
 
-- **emojify:** convert input between diferent emoji formats `unicode`,
-  `shortcode` (like `:smile:`), `devmoji`
-- use **devmoji aliases** that are easy to remember like: `:test:`,
-  `:refactor:`, `:docs:`, `:security` instead of hard to remember emoji codes
-- install a **`prepare-commit-msg` commit hook** to :sparkles: automagically
-  emojify your commit message
-- emojify and colorify the output of `git log` even for projects not using
-  emojis
+- [**emojify:**](###devmoji-emojify) convert input between diferent emoji
+  formats `unicode`, `shortcode` and `devmoji`. **devmoji** are easy to remember
+  aliases like: `:test:`, `:refactor:`, `:docs:`, `:security` instead of hard to
+  remember emoji codes
+- [**git commit:**](###devmoji---edit) install a **`prepare-commit-msg` commit
+  hook** to :sparkles: automagically emojify your commit message
+- [**git log:**](###devmoji---log) emojify and colorify the output of `git log`
+  even for projects not using emojis
 
 How does it look like?
 
@@ -48,6 +48,9 @@ yarn global install devmoji
 npm install --dev devmoji
 yarn add --dev devmoji
 ```
+
+See [`--edit`](###devmoji---edit) for information on how to setup a git commit
+hook.
 
 ## :boom: Usage
 
@@ -173,76 +176,63 @@ but my favorite alias is:
 $ git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --decorate --date=short
 ```
 
-> I'll use `git log` below, instead of the above, for clarity
+> I'll use my alias `git l`, instead of the above, for clarity. The
+> `devmoji --format strip` is only for demonstration purposes, since all devmoji
+> commits already have emoji
+> ![devmoji --list](https://github.com/folke/devmoji/raw/master/assets/git--log.png)
 
-```console
-$ git log
-* 8dce6f0 - (HEAD -> master, tag: v1.2.2) chore(release):  1.2.2 [skip ci] (10 hours ago) <semantic-release-bot>
-* ce8ca0e - docs:  updated documentation (10 hours ago) <Folke Lemaitre>
-* c4f3632 - (tag: v1.2.1) chore(release):  1.2.1 [skip ci] (10 hours ago) <semantic-release-bot>
-* 6366bd3 - (origin/master, origin/HEAD) fix(docs):   updated README.md (10 hours ago) <Folke Lemaitre>
-* ad79999 - docs:  updated README.md (11 hours ago) <Folke Lemaitre>
-* cffee3c - build:  push changes in root CHANGELOG.md to git on release (11 hours ago) <Folke Lemaitre>
-* de836ac - (tag: v1.2.0) chore(release):  1.2.0 [skip ci] (11 hours ago) <semantic-release-bot>
-* 55ee2c4 - chore(deps):   dependency on old lodash which has a  advisory (11 hours ago) <Folke Lemaitre>
-* 3a892f9 - test:  never use color when running inside jest (12 hours ago) <Folke Lemaitre>
-* faa3aac - feat(config):    devmojis for config, add, remove (12 hours ago) <Folke Lemaitre>
-```
-
-> using `devmoji --log`
-
-```shell
-$ git log --color | devmoji --log
-* 8dce6f0 - (HEAD -> master, tag: v1.2.2) chore(release): 🚀 1.2.2 [skip ci] (10 hours ago) <semantic-release-bot>
-* ce8ca0e - docs: 📚 updated documentation (10 hours ago) <Folke Lemaitre>
-* c4f3632 - (tag: v1.2.1) chore(release): 🚀 1.2.1 [skip ci] (10 hours ago) <semantic-release-bot>
-* 6366bd3 - (origin/master, origin/HEAD) fix(docs): 🐛 📚 updated README.md (10 hours ago) <Folke Lemaitre>
-* ad79999 - docs: 📚 updated README.md (11 hours ago) <Folke Lemaitre>
-* cffee3c - build: 📦 push changes in root CHANGELOG.md to git on release (11 hours ago) <Folke Lemaitre>
-* de836ac - (tag: v1.2.0) chore(release): 🚀 1.2.0 [skip ci] (11 hours ago) <semantic-release-bot>
-* 55ee2c4 - chore(deps): 🔗 ➖ dependency on old lodash which has a 🔒 advisory (12 hours ago) <Folke Lemaitre>
-* 3a892f9 - test: 🚨 never use color when running inside jest (12 hours ago) <Folke Lemaitre>
-* faa3aac - feat(config): ✨ ⚙ ➕ devmojis for config, add, remove (12 hours ago) <Folke Lemaitre>
-```
+> using `devmoji --log` >
+> ![devmoji --list](https://github.com/folke/devmoji/raw/master/assets/devmoji--log.png)
 
 ### `devmoji --list`
 
 To get a list of all available **Devmiji**, run with `--list`. (see also
-[Default Devmoji](###Default-Devmoji)) Note that the actual output will be
-colorized (unless used with `--no-color`), but markdown does not support colors
-yet.
+[Default Devmoji](###Default-Devmoji))
 
-```shell
-$ devmoji --list
-Available Devmoji
-✨   :feat:          feat: a new feature
-🐛   :fix:           fix: a bug fix
-📚   :docs:          docs: documentation only changes
-🎨   :style:         style: changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
-♻   :refactor:      refactor: a code change that neither fixes a bug nor adds a feature
-⚡   :perf:          perf: a code change that improves performance
-🚨   :test:          test: adding missing or correcting existing tests
-🔧   :chore:         chore: changes to the build process or auxiliary tools and libraries such as documentation generation
-🚀   :chore-release: chore(release): code deployment or publishing to external repositories
-🔗   :chore-deps:    chore(deps): add or delete dependencies
-📦   :build:         build: changes related to build processes
-👷   :ci:            ci: updates to the continuous integration system
-🚀   :release:       code deployment or publishing to external repositories
-🔒   :security:      Fixing security issues.
-🌐   :i18n:          Internationalization and localization.
-💥   :breaking:      Introducing breaking changes.
-⚙   :config:        Changing configuration files.
-➕   :add:           add something
-➖   :remove:        remove something
-💩   :fuckup:        something got messed up pretty bad
-```
+![devmoji --list](https://github.com/folke/devmoji/raw/master/assets/devmoji--list.png)
 
 ## :gear: Configuration
 
 `devmoji` uses the config file as specified with the `--config` option, or looks
-for `devmoji.config.js` in the current directory.
+for `devmoji.config.js` in the following paths:
 
-### Default Devmoji
+- current directory
+- parent directory that contains a `package.json` file
+- parent directory that is a `git` repository
+- home directory
+
+### Example Config File
+
+```js
+export const defaults = {
+  // extra types used in commit messages
+  types: ["lint"],
+  // custom devmoji
+  devmoji: [
+    // use :boom: instead of :sparkles: for the type 'feat'
+    { code: "feat", emoji: "boom" },
+    // add a custom devmoji
+    {
+      code: "fail",
+      emoji: "poop",
+      description: "something bad happened",
+    },
+    // add a new devmoji based on an existing gitmoji. description will be taken from the gitmoji
+    {
+      code: "css",
+      gitmoji: "art",
+    },
+    // the emoji from the gitmoji can be overriden as well
+    {
+      code: "config",
+      gitmoji: "wrench",
+      emoji: "gear",
+    },
+  ],
+}
+```
+
+### Default Devmoji Reference
 
 | Emoji                  | Devmoji Code      | Description                                                                                                       |
 | ---------------------- | ----------------- | ----------------------------------------------------------------------------------------------------------------- |
@@ -265,10 +255,3 @@ for `devmoji.config.js` in the current directory.
 | :gear:                 | `:config:`        | Changing configuration files.                                                                                     |
 | :heavy_plus_sign:      | `:add:`           | add something                                                                                                     |
 | :heavy_minus_sign:     | `:remove:`        | remove something                                                                                                  |
-
-## Todo
-
-- [ ] write documentation
-- [ ] create commitlint-plugin
-- [ ] create commitlint-config
-- [ ] integrate with commitzen
