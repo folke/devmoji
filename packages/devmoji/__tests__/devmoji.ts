@@ -19,9 +19,9 @@ test("strip", () => {
   const devmoji = new Devmoji(new Config())
 
   const tests: [string, string][] = [
-    ["build: 📦 added", "build:  added"],
+    ["build: 📦 added", "build: added"],
     [":missing:", ""],
-    ["testing 123 :feat:", "testing 123 "],
+    ["testing 123 :feat:", "testing 123"],
   ]
 
   for (const t of tests) {

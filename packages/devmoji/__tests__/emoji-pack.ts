@@ -8,7 +8,7 @@ test("all gitmoji should be valid", () => {
     expect(github.wrap(shortcode)).toBe(shortcode)
     expect(github.unwrap(name)).toBe(name)
     expect(github.wrap(github.unwrap(shortcode))).toBe(shortcode)
-    expect(github.get(shortcode)).toBeDefined()
+    expect(github.get(shortcode)?.emoji).toBeDefined()
     const em = github.get(shortcode)
     expect(em).toBeDefined()
     if (em) {

@@ -80,8 +80,20 @@ test("multi log & commit ", () => {
       "feat(test): :art: testing",
       "feat(test): :sparkles: :test: :art: testing",
     ],
+    [
+      "feat(test)!: :art: testing",
+      "feat(test)!: :boom: :sparkles: :test: :art: testing",
+    ],
+    [
+      "feat(foo): :sparkles: :art: testing",
+      "feat(foo): :sparkles: :art: testing",
+    ],
     ["feat(foo): :art: testing", "feat(foo): :sparkles: :art: testing"],
     ["fix(security): testing", "fix(security): :bug: :security: testing"],
+    [
+      "fix(docs): 🐛 📚 updated README.md",
+      "fix(docs): 🐛 📚 updated README.md",
+    ],
 
     ["feat(test): testing", "feat(test): :sparkles: :test: testing"],
     ["chore(deps): testing", "chore(deps): :chore-deps: testing"],
@@ -91,10 +103,13 @@ test("multi log & commit ", () => {
   for (let [input, output] of tests) {
     input += ""
     output = cc.devmoji.emojify(output)
+    expect(cc.devmoji.emojify(cc.devmoji.demojify(output))).toBe(output)
     expect(cc.formatLog(input)).toBe(output)
     expect(cc.formatCommit(input)).toBe(output)
     expect(cc.formatCommit("not a header " + input)).toBe(
       cc.devmoji.emojify("not a header " + input)
     )
+    expect(cc.formatLog(cc.formatLog(input))).toStrictEqual(output)
+    expect(cc.formatLog(cc.formatLog(cc.formatLog(input)))).toBe(output)
   }
 })
