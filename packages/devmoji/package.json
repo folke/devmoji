@@ -47,7 +47,7 @@
     "lint:eslint": "npx eslint bin/*.js src/*.ts --fix",
     "lint:ts": "npx tsc -p tsconfig.build.json --noEmit",
     "prepublishOnly": "yarn build",
-    "semantic-release": "semantic-release"
+    "release": "source .env && CI=true npx semantic-release"
   },
   "dependencies": {
     "chalk": "^3.0.0",
