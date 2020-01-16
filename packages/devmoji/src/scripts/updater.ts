@@ -4,7 +4,7 @@ import * as fs from "fs"
 import chalk from "chalk"
 
 export async function update() {
-  const variations = new Set<number>()
+  const variations = new Set<string>()
 
   await fetch(
     "https://unicode.org/Public/emoji/12.1/emoji-variation-sequences.txt",
@@ -19,7 +19,7 @@ export async function update() {
       do {
         match = regex.exec(res)
         if (match) {
-          variations.add(parseInt(match[1], 16))
+          variations.add(match[1].toLowerCase())
         }
       } while (match)
       fs.writeFileSync(
@@ -59,7 +59,8 @@ export async function update() {
               .map(x => {
                 const xx = parseInt(x, 16)
                 let ret = String.fromCodePoint(xx)
-                if (variations.has(xx)) ret += String.fromCodePoint(0xfe0f)
+                if (variations.has(x) && xx !== 0xfe0f)
+                  ret += String.fromCodePoint(0xfe0f)
                 return ret
               })
               .join(String.fromCodePoint(0x200d)),
