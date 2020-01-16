@@ -1,3 +1,21 @@
+# [2.0.0](https://github.com/folke/devmoji/compare/v1.2.2...v2.0.0) (2020-01-16)
+
+
+### Bug Fixes
+
+* **config:** 🐛 ⚙️ added correct search paths for config file ([63d2488](https://github.com/folke/devmoji/commit/63d248832a53163ee54e3f41542d8a59326aa6ce))
+* **emoji:** 🐛 added support for colorful emoji variations ([dff0ede](https://github.com/folke/devmoji/commit/dff0ede10c186cf8c3abcd8112c01ce0a506ae24))
+* **emoji:** 🐛 fixed emoji variations ([2d60115](https://github.com/folke/devmoji/commit/2d6011536c0b6e54980296dc4315553dfa812e63))
+* **emoji:** 🐛 use unicode emoji variations when available ([c0ff022](https://github.com/folke/devmoji/commit/c0ff022bb9a53f8f0187164441926a9a2ac76eba))
+
+
+* feat(commit)!: 💥 ✨ added support for ! in a breaking change header ([23ec3c9](https://github.com/folke/devmoji/commit/23ec3c9dc6cc260b9147cb88e748a0c3aa7d58f4))
+
+
+### BREAKING CHANGES
+
+* added breaking change support 😄
+
 ## [1.2.2](https://github.com/folke/devmoji/compare/v1.2.1...v1.2.2) (2020-01-15)
 
 ## [1.2.1](https://github.com/folke/devmoji/compare/v1.2.0...v1.2.1) (2020-01-15)
