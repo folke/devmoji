@@ -1,6 +1,6 @@
 {
   "name": "devmoji",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Enhance your conventional commits with gitmoji",
   "keywords": [
     "cli",
@@ -51,7 +51,11 @@
     "release": "source .env && CI=true npx semantic-release"
   },
   "ultra": {
-    "concurrent": ["generate", "prebuild", "lint"]
+    "concurrent": [
+      "generate",
+      "prebuild",
+      "lint"
+    ]
   },
   "dependencies": {
     "chalk": "^3.0.0",

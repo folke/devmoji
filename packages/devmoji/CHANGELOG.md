@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/folke/devmoji/compare/v2.0.1...v2.0.2) (2020-01-22)
+
+
+### Bug Fixes
+
+* 🐛 colors are now properly disabled when not on a TTY ([36406c5](https://github.com/folke/devmoji/commit/36406c5382483b650cc2141d8e05b575eed5bd94))
+
 ## [2.0.1](https://github.com/folke/devmoji/compare/v2.0.0...v2.0.1) (2020-01-16)
 
 
