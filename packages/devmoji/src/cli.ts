@@ -107,7 +107,7 @@ export class Cli {
         ((chalk.supportsColor as ColorSupport)?.level ?? 0) > 0
       )
       .option("--no-color", "don't use colors")
-      .version(require("../../../package.json").version, "--version")
+      .version(require("../package.json").version, "--version")
       .parse(argv)
     // console.log(program.opts())
     const config = await Config.load(program.config)
