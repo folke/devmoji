@@ -1,4 +1,4 @@
-import chalk from "chalk"
+import chalk, { ColorSupport } from "chalk"
 import { Command } from "commander"
 import * as fs from "fs"
 import * as path from "path"
@@ -10,11 +10,14 @@ import { Devmoji } from "./devmoji"
 export class Cli {
   commits: ConventionalCommits
   opts: { [key: string]: string | boolean | undefined }
-  static color = true
 
   constructor(public program: Command, public devmoji: Devmoji) {
     this.commits = new ConventionalCommits(devmoji)
     this.opts = program.opts()
+    if (this.opts.edit) {
+      this.opts.color = false
+      chalk.level = 0
+    }
   }
 
   format(
@@ -39,7 +42,7 @@ export class Cli {
   }
 
   list() {
-    console.log(Cli.chalk("Available Devmoji", chalk.blue.dim.underline))
+    console.log(chalk.blue.dim.underline("Available Devmoji"))
     for (const code of this.devmoji.config.pack.codes.values()) {
       let cc = ""
       if (this.devmoji.config.options.types.includes(code.code)) {
@@ -54,20 +57,14 @@ export class Cli {
       console.log(
         this.devmoji.get(code.emoji),
         " ",
-        Cli.chalk(`:${code.code}:`.padEnd(15), chalk.blue),
-        Cli.chalk(cc, chalk.green) + code.description
+        chalk.blue(`:${code.code}:`.padEnd(15)),
+        chalk.green(cc) + code.description
       )
     }
   }
 
-  static chalk(text: string, chalk: chalk.Chalk) {
-    if (process.env.NODE_ENV == "test" || process.env.JEST_WORKER_ID)
-      return text
-    return Cli.color ? chalk.call(chalk, text) : text
-  }
-
   error(msg: string) {
-    console.error(Cli.chalk("[error] ", chalk.red) + msg)
+    console.error(chalk.red("[error] ") + msg)
     process.exit(1)
   }
 
@@ -107,7 +104,7 @@ export class Cli {
       .option(
         "--color",
         "use colors for formatting. Colors are enabled by default, unless output is piped to another command",
-        process.stdout.isTTY
+        ((chalk.supportsColor as ColorSupport)?.level ?? 0) > 0
       )
       .option("--no-color", "don't use colors")
       .version(require("../../../package.json").version, "--version")

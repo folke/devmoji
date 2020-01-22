@@ -24,7 +24,7 @@ Some of the things **Devmoji** can do:
 - [**git log:**](###devmoji---log) emojify and colorify the output of `git log`
   even for projects not using emojis
 
-How does it look like?
+What does it look like?
 
 - see the commit messages of the Devmoji
   [github repository](https://github.com/folke/devmoji)

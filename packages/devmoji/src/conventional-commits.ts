@@ -1,6 +1,5 @@
 import { Devmoji } from "./devmoji"
 import chalk from "chalk"
-import { Cli } from "./cli"
 
 export class ConventionalCommits {
   regex = /(?<type>:?[a-z-]+)(?:\((?<scope>[a-z-]+)\))?(!?):\s*(?:(?<other>(?::[a-z-]+:\s*)+)\s*)?/gm
@@ -72,10 +71,10 @@ export class ConventionalCommits {
           )
           if (!emoji.length) return match
           let ret = type
-          if (scope) ret += Cli.chalk(`(${scope})`, chalk.bold)
+          if (scope) ret += chalk.bold(`(${scope})`)
           if (breaking) ret += "!"
           ret += ":"
-          ret = Cli.chalk(ret, chalk.blue)
+          ret = chalk.blue(ret)
           ret = ret + ` ${emoji}`
           const ws = match.search(/\s*$/)
           if (ws > 0) ret += match.substring(ws)

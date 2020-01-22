@@ -460,6 +460,13 @@ export default {
       "code": ":dizzy:",
       "description": "Adding or updating animations and transitions",
       "name": "animation"
+    },
+    {
+      "emoji": "🗑",
+      "entity": "&#x1F5D1;",
+      "code": ":wastebasket:",
+      "description": "Deprecating code that needs to be cleaned up.",
+      "name": "wastebasket"
     }
   ]
 }

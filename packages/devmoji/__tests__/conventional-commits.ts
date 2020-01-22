@@ -2,6 +2,10 @@ import { ConventionalCommits } from "../src/conventional-commits"
 import { Config } from "../src/config"
 import { Devmoji } from "../src/devmoji"
 
+import chalk from "chalk"
+
+chalk.level = 0
+
 test("no scope commit msg", () => {
   const cc = new ConventionalCommits(new Devmoji(new Config()))
   expect(cc.formatCommit("feat: testing")).toBe("feat: ✨ testing")
