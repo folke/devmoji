@@ -1,22 +1,105 @@
 {
-  "name": "@devmoji/monorepo",
-  "version": "1.0.1",
-  "repository": "git@github.com:folke/devmoji.git",
+  "name": "devmoji",
+  "version": "2.0.3",
+  "description": "Enhance your conventional commits with gitmoji",
+  "keywords": [
+    "cli",
+    "command-line",
+    "commit",
+    "commitlint",
+    "commitzen",
+    "conventional-commits",
+    "emoji",
+    "emojify",
+    "gitmoji",
+    "pre-commit",
+    "precommit",
+    "terminal"
+  ],
   "author": "Folke Lemaitre <folke.lemaitre@gmail.com>",
+  "homepage": "https://github.com/folke/devmoji#readme",
   "license": "MIT",
-  "private": true,
+  "main": "lib/cli.js",
+  "files": [
+    "lib"
+  ],
+  "bin": {
+    "devmoji": "bin/devmoji.js"
+  },
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/folke/devmoji.git"
+  },
+  "scripts": {
+    "generate:emoji": "npx ts-node --transpile-only src/scripts/updater.ts",
+    "generate:config": "npx ts-interface-builder src/config-options.ts",
+    "generate": "yarn generate:emoji && yarn generate:config",
+    "prebuild": "yarn generate && yarn lint && npx jest",
+    "build:rollup": "npx rollup -c",
+    "build": "yarn build:rollup",
+    "clean": "npx rimraf lib coverage *.log",
+    "test": "npx jest",
+    "test:cov": "npx jest --coverage",
+    "lint": "yarn lint:eslint && yarn lint:ts",
+    "lint:eslint": "npx eslint bin/*.js src/*.ts --fix",
+    "lint:ts": "npx tsc -p tsconfig.build.json --noEmit",
+    "prepublishOnly": "yarn build",
+    "release": "source .env && CI=true npx semantic-release --color"
+  },
   "gitHooks": {
     "prepare-commit-msg": "npx --no-install devmoji -e",
     "commit-msg": "npx --no-install commitlint -e -V"
   },
-  "scripts": {},
+  "ultra": {
+    "concurrent": [
+      "generate",
+      "prebuild",
+      "lint"
+    ]
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "commander": "^4.1.0",
+    "ts-interface-checker": "^0.1.10"
+  },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.1",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "@rollup/plugin-typescript": "^2.1.0",
+    "@semantic-release/changelog": "^3.0.6",
+    "@semantic-release/git": "^8.0.0",
+    "@types/jest": "^24.0.25",
+    "@types/node": "^13.1.6",
+    "@types/node-fetch": "^2.5.4",
+    "@typescript-eslint/eslint-plugin": "^2.13.0",
+    "@typescript-eslint/parser": "^2.13.0",
+    "concurrently": "^5.0.2",
+    "conventional-changelog-conventionalcommits": "^4.2.3",
+    "copyfiles": "^2.1.1",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jest": "^23.4.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^24.9.0",
+    "node-fetch": "^2.6.0",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.0",
+    "rollup": "^1.29.0",
+    "rollup-plugin-progress": "^1.1.1",
+    "rollup-plugin-sizes": "^1.0.1",
+    "rollup-plugin-terser": "^5.2.0",
+    "semantic-release": "^16.0.1",
+    "ts-interface-builder": "^0.2.1",
+    "ts-jest": "^24.3.0",
+    "ts-node": "^8.6.1",
+    "typescript": "^3.7.4",
     "@commitlint/config-conventional": "^8.3.4",
     "commitlint": "^8.3.5",
     "devmoji": "^1.0.0",
     "yorkie": "^2.0.0"
-  },
-  "workspaces": [
-    "packages/*"
-  ]
+  }
 }

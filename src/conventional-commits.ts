@@ -5,6 +5,13 @@ export class ConventionalCommits {
   regex = /(?<type>:?[a-z-]+)(?:\((?<scope>[a-z-]+)\))?(!?):\s*(?:(?<other>(?::[a-z-]+:\s*)+)\s*)?/gm
   constructor(public devmoji: Devmoji) {}
 
+  lint(text: string) {
+    //     ⧗   input: featf: test
+    // ✖   type must be one of [build, chore, ci, docs, feat, fix, improvement, perf, refactor, revert, style, test] [type-enum]
+    // ✖   found 1 problems, 0 warnings
+    // ⓘ   Get help: https://github.com/conventional-changelog/commitlint/#what-is-commitlint
+  }
+
   formatCommit(text: string) {
     return this.format(text, true)
   }

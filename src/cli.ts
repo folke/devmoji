@@ -85,6 +85,7 @@ export class Cli {
         "-t|--text <text>",
         "text to format. reads from stdin when omitted"
       )
+      .option("--lint", "lint the conventional commits")
       .option(
         "-f|--format <format>",
         "format should be one of: unicode, shortcode, devmoji",
