@@ -1,5 +1,10 @@
 # :sparkles: Devmoji
 
+[![Node CI](https://github.com/folke/devmoji/workflows/Node%20CI/badge.svg)](https://github.com/folke/devmoji/actions)
+[![npm](https://img.shields.io/npm/v/devmoji)](https://www.npmjs.com/package/devmoji)
+[![GitHub](https://img.shields.io/github/license/folke/devmoji)](https://github.com/folke/devmoji/blob/master/LICENSE)
+[![GitHub top language](https://img.shields.io/github/languages/top/folke/devmoji)](https://github.com/folke/devmoji/)
+
 Using [Conventional Commits :star:](https://www.conventionalcommits.org/) as a
 standard for your commit messages, makes
 [Semantic Versioning :bookmark:](https://semver.org/) as easy as can be, with
