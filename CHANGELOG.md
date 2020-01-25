@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/folke/devmoji/compare/v2.0.3...v2.1.0) (2020-01-25)
+
+
+### Features
+
+* ✨ added commit linting! ([2d52f2c](https://github.com/folke/devmoji/commit/2d52f2c8fe1e8c49000293e1cb9b3b13f47277d0))
+
 ## [2.0.3](https://github.com/folke/devmoji/compare/v2.0.2...v2.0.3) (2020-01-22)
 
 
