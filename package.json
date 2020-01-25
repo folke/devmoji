@@ -67,7 +67,6 @@
     "ts-interface-checker": "^0.1.10"
   },
   "devDependencies": {
-    "@commitlint/config-conventional": "^8.3.4",
     "@rollup/plugin-commonjs": "^11.0.1",
     "@rollup/plugin-node-resolve": "^7.0.0",
     "@rollup/plugin-typescript": "^2.1.0",
@@ -78,11 +77,9 @@
     "@types/node-fetch": "^2.5.4",
     "@typescript-eslint/eslint-plugin": "^2.13.0",
     "@typescript-eslint/parser": "^2.13.0",
-    "commitlint": "^8.3.5",
     "concurrently": "^5.0.2",
     "conventional-changelog-conventionalcommits": "^4.2.3",
     "copyfiles": "^2.1.1",
-    "devmoji": "^1.0.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-import": "^2.20.0",
