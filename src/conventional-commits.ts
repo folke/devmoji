@@ -2,22 +2,15 @@ import { Devmoji } from "./devmoji"
 import chalk from "chalk"
 
 export class ConventionalCommits {
-  regex = /(?<type>:?[a-z-]+)(?:\((?<scope>[a-z-]+)\))?(!?):\s*(?:(?<other>(?::[a-z-]+:\s*)+)\s*)?/gm
+  regex = /(?<type>:?[a-z-]+)(?:\((?<scope>[a-z-]+)\))?(!?):\s*(?:(?<other>(?::[a-z-]+:\s*)+)\s*)?/gmu
   constructor(public devmoji: Devmoji) {}
 
-  lint(text: string) {
-    //     ⧗   input: featf: test
-    // ✖   type must be one of [build, chore, ci, docs, feat, fix, improvement, perf, refactor, revert, style, test] [type-enum]
-    // ✖   found 1 problems, 0 warnings
-    // ⓘ   Get help: https://github.com/conventional-changelog/commitlint/#what-is-commitlint
+  formatCommit(text: string, color = false) {
+    return this.format(text, true, color)
   }
 
-  formatCommit(text: string) {
-    return this.format(text, true)
-  }
-
-  formatLog(text: string) {
-    return this.format(text, false)
+  formatLog(text: string, color = false) {
+    return this.format(text, false, color)
   }
 
   formatEmoji(type: string, scope?: string, other?: string, breaking = false) {
@@ -55,7 +48,7 @@ export class ConventionalCommits {
     return ret.join(" ")
   }
 
-  format(text: string, firstOnly = false) {
+  format(text: string, firstOnly = false, color = false) {
     text = this.devmoji.devmojify(text)
     return this.devmoji.emojify(
       text.replace(
@@ -78,10 +71,10 @@ export class ConventionalCommits {
           )
           if (!emoji.length) return match
           let ret = type
-          if (scope) ret += chalk.bold(`(${scope})`)
+          if (scope) ret += color ? chalk.bold(`(${scope})`) : `(${scope})`
           if (breaking) ret += "!"
           ret += ":"
-          ret = chalk.blue(ret)
+          ret = color ? chalk.blue(ret) : ret
           ret = ret + ` ${emoji}`
           const ws = match.search(/\s*$/)
           if (ws > 0) ret += match.substring(ws)

@@ -1,4 +1,4 @@
-import chalk, { ColorSupport } from "chalk"
+import chalk from "chalk"
 import { Command } from "commander"
 import * as fs from "fs"
 import * as path from "path"
@@ -14,20 +14,62 @@ export class Cli {
   constructor(public program: Command, public devmoji: Devmoji) {
     this.commits = new ConventionalCommits(devmoji)
     this.opts = program.opts()
-    if (this.opts.edit) {
-      this.opts.color = false
-      chalk.level = 0
+  }
+
+  lint(text: string) {
+    text = text.split("\n")[0]
+    const errors = []
+    const match = /^(?<type>:?[a-z-]+)(?:\((?<scope>[a-z-]+)\))?(!?):\s+(?<description>.*)/iu.exec(
+      text
+    )
+    if (match) {
+      const type = match.groups?.type ?? ""
+      const scope = match.groups?.scope
+      const description = match.groups?.description
+
+      if (type.toLocaleLowerCase() != type) {
+        errors.push(`Type '${type}' should be lower case`)
+      }
+      if (!this.devmoji.config.options.types.includes(type)) {
+        errors.push(
+          `Type should be one of: ${chalk.grey(
+            this.devmoji.config.options.types.join(", ")
+          )}`
+        )
+      }
+      if (scope && scope.toLocaleLowerCase() != scope) {
+        errors.push(`Scope '${scope}' should be lower case`)
+      }
+      if (!description || description.trim().length == 0)
+        errors.push("Missing description")
+    } else {
+      errors.push(`Expecting a commit message like:`)
+      errors.push(
+        `  ${chalk.blue("type" + chalk.bold("(scope):")) +
+          chalk.dim(" description")}`
+      )
     }
+    if (errors.length) {
+      errors.push("Get help at https://www.conventionalcommits.org/")
+    }
+
+    errors.forEach(e => console.error(chalk.red("✖"), e))
+    if (errors.length) process.exit(1)
   }
 
   format(
     text: string,
     format = "unicode",
     processCommit = false,
-    processLog = false
+    processLog = false,
+    color = this.opts.color
   ) {
-    if (processCommit && !processLog) text = this.commits.formatCommit(text)
+    if (processCommit && this.opts.lint && !processLog) {
+      this.lint(text)
+    }
     if (processLog) text = this.commits.formatLog(text)
+    else if (processCommit)
+      text = this.commits.formatCommit(text, color ? true : false)
     switch (format) {
       case "unicode":
         return this.devmoji.emojify(text)
@@ -64,7 +106,7 @@ export class Cli {
   }
 
   error(msg: string) {
-    console.error(chalk.red("[error] ") + msg)
+    console.error(chalk.red("error ") + msg)
     process.exit(1)
   }
 
@@ -85,7 +127,7 @@ export class Cli {
         "-t|--text <text>",
         "text to format. reads from stdin when omitted"
       )
-      .option("--lint", "lint the conventional commits")
+      .option("--lint", "lint the conventional commit. disabled for --log")
       .option(
         "-f|--format <format>",
         "format should be one of: unicode, shortcode, devmoji",
@@ -105,7 +147,7 @@ export class Cli {
       .option(
         "--color",
         "use colors for formatting. Colors are enabled by default, unless output is piped to another command",
-        ((chalk.supportsColor as ColorSupport)?.level ?? 0) > 0
+        chalk.level > 0
       )
       .option("--no-color", "don't use colors")
       .version(require("../package.json").version, "--version")
@@ -131,9 +173,10 @@ export class Cli {
       }
       if (commitMsgFile && fs.existsSync(commitMsgFile)) {
         let text = fs.readFileSync(commitMsgFile, "utf-8")
-        text = this.format(text, opts.format, opts.commit)
+        text = this.format(text, opts.format, opts.commit, false, false)
+        const out = this.format(text, opts.format, opts.commit, false, true)
         fs.writeFileSync(commitMsgFile, text, "utf-8")
-        return console.log(text)
+        return console.log(chalk.green("✔"), out)
       } else {
         this.error("Couldn't find .git/COMMIT_EDITMSG")
       }
