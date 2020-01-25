@@ -1,3 +1,17 @@
+### [2.1.3](https://github.com/folke/devmoji/compare/v2.1.2...v2.1.3) (2020-01-25)
+
+
+### Other
+
+* **github:** 👷 run semantic-release only on master ([8fb91ca](https://github.com/folke/devmoji/commit/8fb91cabf927cbd38ac3f7bed94d2bcf9aee89ef))
+* **github:** 👷 run semantic-release only on master ([57b0611](https://github.com/folke/devmoji/commit/57b061136456f05f55dd887c484be1ceac6437c7))
+* **github:** 👷 run semantic-release only on master ([fa7d061](https://github.com/folke/devmoji/commit/fa7d061fc5e9101ab608984424a5b720f5391035))
+
+
+### Documentation
+
+* 📚️ testing gihub releases ([3c74ce8](https://github.com/folke/devmoji/commit/3c74ce8876f89618d71d3a4d90b49c1827a426da))
+
 ### [2.1.2](https://github.com/folke/devmoji/compare/v2.1.1...v2.1.2) (2020-01-25)
 
 
