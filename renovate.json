@@ -2,6 +2,14 @@
   "extends": ["config:base", ":semanticCommits"],
   "packageRules": [
     {
+      "packagePatterns": ["eslint"],
+      "groupName": "eslint"
+    },
+    {
+      "packagePatterns": ["jest"],
+      "groupName": "jest"
+    },
+    {
       "updateTypes": ["patch", "pin", "digest"],
       "automerge": true
     },
@@ -11,14 +19,6 @@
         "groupName": "all non-major dependencies",
         "groupSlug": "all-minor-patch"
       }
-    },
-    {
-      "packagePatterns": ["eslint"],
-      "groupName": "eslint"
-    },
-    {
-      "packagePatterns": ["jest"],
-      "groupName": "jest"
     }
   ]
 }
