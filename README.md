@@ -4,6 +4,7 @@
 [![npm](https://img.shields.io/npm/v/devmoji)](https://www.npmjs.com/package/devmoji)
 [![GitHub](https://img.shields.io/github/license/folke/devmoji)](https://github.com/folke/devmoji/blob/master/LICENSE)
 [![GitHub top language](https://img.shields.io/github/languages/top/folke/devmoji)](https://github.com/folke/devmoji/)
+[![Renovate](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com)
 
 Using [Conventional Commits :star:](https://www.conventionalcommits.org/) as a
 standard for your commit messages, makes
