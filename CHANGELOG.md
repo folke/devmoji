@@ -1,3 +1,28 @@
+### [2.1.2](https://github.com/folke/devmoji/compare/v2.1.1...v2.1.2) (2020-01-25)
+
+
+### Documentation
+
+* 📚️ added badges ([4b4b22e](https://github.com/folke/devmoji/commit/4b4b22e96e9311a27990fd6ed59db1cf79182c94))
+* added license [skip ci] ([d58175e](https://github.com/folke/devmoji/commit/d58175ed16715d92ef1f05d7e532d904639fb77a))
+* added renovate badge ([5e5cda9](https://github.com/folke/devmoji/commit/5e5cda940b5ddd2c8e433b641370e9694e42823e))
+
+
+### Other
+
+* **deps:** 👷 automerge minor, patch, pin and digest ([578258b](https://github.com/folke/devmoji/commit/578258bdc6151c36b62eee31529fe82dc898e1c8))
+* **deps:** 👷 group all non-major updates ([abe0982](https://github.com/folke/devmoji/commit/abe0982a44705c145a6803f465399a8f21ac92ed))
+* **deps:** update all non-major dependencies ([#12](https://github.com/folke/devmoji/issues/12)) ([2f7236f](https://github.com/folke/devmoji/commit/2f7236ff70936fdf20d7b721c8f168f41692d757))
+* **deps:** update dependency rollup to v1.29.1 ([#6](https://github.com/folke/devmoji/issues/6)) ([49285e3](https://github.com/folke/devmoji/commit/49285e324af6a219c6df888a51d3ee9d8b73b7a4))
+* **deps:** update jest ([#13](https://github.com/folke/devmoji/issues/13)) ([51ac0a8](https://github.com/folke/devmoji/commit/51ac0a8cc72ae29e9b9affb3c271d841f1b1f472))
+* **github:** 👷 added semantic-release ([486e1a6](https://github.com/folke/devmoji/commit/486e1a6eaeeacbbc33df018af55bea4dd85b6719))
+* **github:** 👷 use node 12.x LTS version ([22b627f](https://github.com/folke/devmoji/commit/22b627f01f44e6c54c6d1093c374eaacc41ca79b))
+* **renovate:** 👷 group eslint and jest deps ([248a8db](https://github.com/folke/devmoji/commit/248a8db9116aa7c14d9a2efb2438290ccab9a1ff))
+* **renovate:** 👷 rules order ([1c1dc10](https://github.com/folke/devmoji/commit/1c1dc10fd7cb9bdce6da0992b8a4bfc384aa8ddd))
+* 👷 added support for [skip ci] ([7b6d374](https://github.com/folke/devmoji/commit/7b6d3747a38a99ca7343318f1bec45bcdbbe368a))
+* 👷 added support for [skip ci] ([5f428db](https://github.com/folke/devmoji/commit/5f428db0a74cbee2503ab4400a52dd9875417d27))
+* 🔧 updated release.config.js ([7e365ce](https://github.com/folke/devmoji/commit/7e365ce57e61dae7c58f59d5b73bc6b59cc2303c))
+
 ## [2.1.1](https://github.com/folke/devmoji/compare/v2.1.0...v2.1.1) (2020-01-25)
 
 
