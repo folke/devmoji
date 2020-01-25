@@ -1,3 +1,10 @@
+## [2.1.1](https://github.com/folke/devmoji/compare/v2.1.0...v2.1.1) (2020-01-25)
+
+
+### Bug Fixes
+
+* 🐛 fixed callstack error for Windows ([9f411d2](https://github.com/folke/devmoji/commit/9f411d28c8d71dca331c96e8b8436e5368d809fa))
+
 # [2.1.0](https://github.com/folke/devmoji/compare/v2.0.3...v2.1.0) (2020-01-25)
 
 
