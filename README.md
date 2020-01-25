@@ -20,7 +20,7 @@ Some of the things **Devmoji** can do:
   aliases like: `:test:`, `:refactor:`, `:docs:`, `:security` instead of hard to
   remember emoji codes
 - [**git commit:**](###devmoji---edit) install a **`prepare-commit-msg` commit
-  hook** to :sparkles: automagically emojify your commit message
+  hook** to :sparkles: automagically emojify and lints your commit message
 - [**git log:**](###devmoji---log) emojify and colorify the output of `git log`
   even for projects not using emojis
 
@@ -64,6 +64,7 @@ Options:
   -c|--config <file>    location of the devmoji.config.js file
   -l|--list             list all known devmojis
   -t|--text <text>      text to format. reads from stdin when omitted
+  --lint                lint the conventional commit. disabled for --log
   -f|--format <format>  format should be one of: unicode, shortcode, devmoji (default: "unicode")
   --commit              automatically add a devmoji to the conventional commit header (default: true)
   --no-commit           do not process conventional commit headers
@@ -131,6 +132,10 @@ $ echo "fix(security): upgraded lodash" | devmoji --commit
 fix(security): 🐛 🔒 upgraded lodash
 ```
 
+### `devmoji --lint`
+
+Lints your commit message to see if they are valid conventional commits
+
 ### `devmoji --edit`
 
 Formats and saves your current commit message `.git/COMMIT_EDITMSG`. This is
@@ -143,7 +148,7 @@ Configuration using [Husky](https://www.npmjs.com/package/husky)
 {
   "husky": {
     "hooks": {
-      "prepare-commit-msg": "devmoji -e"
+      "prepare-commit-msg": "devmoji -e --lint"
     }
   }
 }
@@ -155,7 +160,7 @@ Configuration using [Yorkie](https://www.npmjs.com/package/yorkie)
 // package.json
 {
   "gitHooks": {
-    "prepare-commit-msg": "devmoji -e"
+    "prepare-commit-msg": "devmoji -e --lint"
   }
 }
 ```
