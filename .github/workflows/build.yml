@@ -7,6 +7,7 @@ jobs:
     env:
       CI: true
     runs-on: ${{ matrix.os }}
+    if: "!contains(github.event.head_commit.message, 'ci skip')"
 
     strategy:
       matrix:
@@ -39,4 +40,3 @@ jobs:
         run: yarn test
       - name: Build
         run: yarn build:rollup
-      
