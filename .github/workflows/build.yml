@@ -42,7 +42,7 @@ jobs:
         run: yarn build:rollup
 
   release:
-    if: github.ref == 'master'
+    if: github.ref == 'refs/heads/master'
     needs: build
     name: Release
     runs-on: ubuntu-latest
