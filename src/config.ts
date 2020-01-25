@@ -54,7 +54,9 @@ export class Config {
     if (cwd == "/") return undefined
     const p = path.posix.resolve(cwd, pattern)
     if (fs.existsSync(p)) return cwd
-    return Config.findRoot(pattern, path.resolve(cwd, "../"))
+    const up = path.posix.resolve(cwd, "../")
+    if (up == cwd) return undefined
+    return Config.findRoot(pattern, up)
   }
 
   static async load(configFile?: string, cwd = process.cwd()) {
