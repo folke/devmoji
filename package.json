@@ -46,7 +46,7 @@
     "lint": "yarn lint:eslint && yarn lint:ts",
     "lint:eslint": "npx eslint bin/*.js src/*.ts --cache --fix",
     "lint:ts": "npx tsc -p tsconfig.build.json --noEmit",
-    "prepublishOnly": "yarn build",
+    "prepack": "yarn build",
     "release": "source .env && npx semantic-release --color --no-ci"
   },
   "husky": {

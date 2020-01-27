@@ -111,10 +111,11 @@ export class Cli {
   }
 
   gitRoot(cwd = process.cwd()): string | undefined {
-    if (cwd == "/") return undefined
-    const p = path.posix.resolve(cwd, "./.git")
+    const p = path.resolve(cwd, "./.git")
     if (fs.existsSync(p) && fs.lstatSync(p).isDirectory()) return p
-    return this.gitRoot(path.resolve(cwd, "../"))
+    const up = path.resolve(cwd, "../")
+    if (up == cwd) return
+    return this.gitRoot(up)
   }
 
   static async create(argv = process.argv, exitOverride = false) {

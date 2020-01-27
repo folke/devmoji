@@ -51,10 +51,9 @@ export class Config {
    * @param cwd
    */
   static findRoot(pattern: string, cwd = process.cwd()): string | undefined {
-    if (cwd == "/") return undefined
-    const p = path.posix.resolve(cwd, pattern)
+    const p = path.resolve(cwd, pattern)
     if (fs.existsSync(p)) return cwd
-    const up = path.posix.resolve(cwd, "../")
+    const up = path.resolve(cwd, "../")
     if (up == cwd) return undefined
     return Config.findRoot(pattern, up)
   }
@@ -72,7 +71,7 @@ export class Config {
       ]
       for (const p of searchPaths) {
         if (p) {
-          const file = path.posix.resolve(p, "./devmoji.config.js")
+          const file = path.resolve(p, "./devmoji.config.js")
           if (fs.existsSync(file)) {
             configFile = file
             break
