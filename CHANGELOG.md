@@ -1,3 +1,15 @@
+### [2.1.4](https://github.com/folke/devmoji/compare/v2.1.3...v2.1.4) (2020-01-27)
+
+
+### Bug Fixes
+
+* 🐛 fixed endless loop on win32 ([a3026e1](https://github.com/folke/devmoji/commit/a3026e1a7742fa5ff3ccaa11fbf51cdd6f310810))
+
+
+### Other
+
+* **deps:** update all non-major dependencies ([#14](https://github.com/folke/devmoji/issues/14)) ([e2e724b](https://github.com/folke/devmoji/commit/e2e724b4a5b9a3fc30ef4dcb2288c754b8c0409c))
+
 ### [2.1.3](https://github.com/folke/devmoji/compare/v2.1.2...v2.1.3) (2020-01-25)
 
 
