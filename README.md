@@ -215,7 +215,7 @@ for `devmoji.config.js` in the following paths:
 ### Example Config File
 
 ```js
-export const defaults = {
+module.exports = {
   // extra types used in commit messages
   types: ["lint"],
   // custom devmoji
