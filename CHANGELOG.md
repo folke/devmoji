@@ -1,3 +1,33 @@
+### [2.1.5](https://github.com/folke/devmoji/compare/v2.1.4...v2.1.5) (2020-03-10)
+
+
+### Other
+
+* **deps:** update all non-major dependencies ([#15](https://github.com/folke/devmoji/issues/15)) ([3df8504](https://github.com/folke/devmoji/commit/3df85041b1e9bbe5faf06572cb9f5c5043b48657))
+* **deps:** update all non-major dependencies ([#22](https://github.com/folke/devmoji/issues/22)) ([e2b9050](https://github.com/folke/devmoji/commit/e2b90501127b60b0073f0c16bf8b66c664f93b79))
+* **deps:** update all non-major dependencies ([#24](https://github.com/folke/devmoji/issues/24)) ([32bebd2](https://github.com/folke/devmoji/commit/32bebd2bd6b997b8a0f86ccaa933dc12ff0aa964))
+* **deps:** update all non-major dependencies ([#27](https://github.com/folke/devmoji/issues/27)) ([570ef92](https://github.com/folke/devmoji/commit/570ef928462d2eedf5554e1de14db1c3c81bf42e))
+* **deps:** update all non-major dependencies ([#29](https://github.com/folke/devmoji/issues/29)) ([02fd806](https://github.com/folke/devmoji/commit/02fd8062fabe841067515582640279387651a59d))
+* **deps:** update all non-major dependencies ([#30](https://github.com/folke/devmoji/issues/30)) ([b5491a5](https://github.com/folke/devmoji/commit/b5491a54eeb4f8e6a3773736aff8f2cb16921759))
+* **deps:** update all non-major dependencies ([#33](https://github.com/folke/devmoji/issues/33)) ([1ae0e03](https://github.com/folke/devmoji/commit/1ae0e03fec7fffde8ed4f2c17ae397d96b0a5426))
+* **deps:** update dependency @rollup/plugin-typescript to v3 ([#18](https://github.com/folke/devmoji/issues/18)) ([c9a7a16](https://github.com/folke/devmoji/commit/c9a7a1638e69bf809bf4f20683587bdcc2a25e0d))
+* **deps:** update dependency @types/jest to v25 ([#16](https://github.com/folke/devmoji/issues/16)) ([555f6fe](https://github.com/folke/devmoji/commit/555f6fefb6d02706426043436a39b27890daf30c))
+* **deps:** update dependency @types/jest to v25.1.2 ([#28](https://github.com/folke/devmoji/issues/28)) ([818cfbb](https://github.com/folke/devmoji/commit/818cfbbc398e911888765c88e837b2a96ff1cc29))
+* **deps:** update dependency @types/node to v13.7.0 ([#26](https://github.com/folke/devmoji/issues/26)) ([7e6f547](https://github.com/folke/devmoji/commit/7e6f54708c2b23afaf714caa1ecbd6262d229773))
+* **deps:** update dependency eslint-config-prettier to v6.10.0 ([#21](https://github.com/folke/devmoji/issues/21)) ([364a982](https://github.com/folke/devmoji/commit/364a98240d1ba631284b166b7c0a119047a98a66))
+* **deps:** update dependency rimraf to v3.0.1 ([#20](https://github.com/folke/devmoji/issues/20)) ([7e208a9](https://github.com/folke/devmoji/commit/7e208a9c72ca68f2346f48542f51ebaae2316d45))
+* **deps:** update dependency rollup to v1.31.1 ([#31](https://github.com/folke/devmoji/issues/31)) ([21fc914](https://github.com/folke/devmoji/commit/21fc91463dc38e2e865ca3f39a3995936afb26e0))
+* **deps:** update dependency rollup to v2 ([#35](https://github.com/folke/devmoji/issues/35)) ([7ab9605](https://github.com/folke/devmoji/commit/7ab9605f035dd66c01670cdcb7deef4ef5c46461))
+* **deps:** update dependency semantic-release to v17 ([#17](https://github.com/folke/devmoji/issues/17)) ([7b497af](https://github.com/folke/devmoji/commit/7b497affef959b7a4929e7340bafb1a3a57356ac))
+* **deps:** update dependency semantic-release to v17.0.2 ([#25](https://github.com/folke/devmoji/issues/25)) ([4b0b17a](https://github.com/folke/devmoji/commit/4b0b17a45fd1daec5ef6b05947ed1e82a1e98118))
+* **deps:** update dependency ts-jest to v25.1.0 ([#23](https://github.com/folke/devmoji/issues/23)) ([8c3214b](https://github.com/folke/devmoji/commit/8c3214bb1e69110d07f98520145b0c18ee81253e))
+* **deps:** update semantic-release monorepo ([#19](https://github.com/folke/devmoji/issues/19)) ([18c2f33](https://github.com/folke/devmoji/commit/18c2f33e11919ae9c0b90f88d7192b54090e75ae))
+
+
+### Documentation
+
+* fixed config example ([9860364](https://github.com/folke/devmoji/commit/9860364b8ed2311685a1a024f8998390b0717280))
+
 ### [2.1.4](https://github.com/folke/devmoji/compare/v2.1.3...v2.1.4) (2020-01-27)
 
 
