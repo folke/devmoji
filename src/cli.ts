@@ -1,5 +1,5 @@
 import chalk from "chalk"
-import { Command } from "commander"
+import commander from "commander"
 import * as fs from "fs"
 import * as path from "path"
 import * as readline from "readline"
@@ -11,7 +11,7 @@ export class Cli {
   commits: ConventionalCommits
   opts: { [key: string]: string | boolean | undefined }
 
-  constructor(public program: Command, public devmoji: Devmoji) {
+  constructor(public program: commander.Command, public devmoji: Devmoji) {
     this.commits = new ConventionalCommits(devmoji)
     this.opts = program.opts()
   }
@@ -119,7 +119,7 @@ export class Cli {
   }
 
   static async create(argv = process.argv, exitOverride = false) {
-    const program = new Command()
+    const program: commander.Command = new commander.Command()
     if (exitOverride) program.exitOverride()
     program
       .option("-c|--config <file>", "location of the devmoji.config.js file")
@@ -151,7 +151,7 @@ export class Cli {
         chalk.level > 0
       )
       .option("--no-color", "don't use colors")
-      .version(require("../package.json").version, "--version")
+      .version(require("../package.json").version as string, "--version")
       .parse(argv)
     // console.log(program.opts())
     const config = await Config.load(program.config)

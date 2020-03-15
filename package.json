@@ -36,7 +36,7 @@
   "scripts": {
     "generate:emoji": "npx ts-node --transpile-only src/scripts/updater.ts",
     "generate:config": "npx ts-interface-builder src/config-options.ts",
-    "generate": "yarn generate:emoji && yarn generate:config",
+    "generate": "yarn generate:config",
     "prebuild": "yarn generate && yarn lint && npx jest",
     "build:rollup": "npx rollup -c",
     "build": "yarn build:rollup",
@@ -63,13 +63,13 @@
   },
   "dependencies": {
     "chalk": "^3.0.0",
-    "commander": "^4.1.0",
-    "ts-interface-checker": "^0.1.10"
+    "commander": "5.0.0",
+    "ts-interface-checker": "0.1.10"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "11.0.2",
     "@rollup/plugin-node-resolve": "7.1.1",
-    "@rollup/plugin-typescript": "3.1.1",
+    "@rollup/plugin-typescript": "4.0.0",
     "@semantic-release/changelog": "5.0.0",
     "@semantic-release/git": "9.0.0",
     "@types/jest": "25.1.4",

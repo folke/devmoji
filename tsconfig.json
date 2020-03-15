@@ -9,6 +9,7 @@
     "strict": true,
     "target": "ES2015",
     "moduleResolution": "node",
+    "resolveJsonModule": true,
     "esModuleInterop": true,
     "plugins": []
   },
