@@ -1,3 +1,16 @@
+### [2.1.6](https://github.com/folke/devmoji/compare/v2.1.5...v2.1.6) (2020-03-15)
+
+
+### Bug Fixes
+
+* 🐛 new rollup version and commanderjs ([41ae638](https://github.com/folke/devmoji/commit/41ae638a22c7aae04dc699711b6c56693547169d))
+
+
+### Other
+
+* **deps:** update all non-major dependencies ([#34](https://github.com/folke/devmoji/issues/34)) ([f3fe5ab](https://github.com/folke/devmoji/commit/f3fe5ab3f9cf9f2b2c00a4eb8bcb2cdf9eae67c7))
+* **deps:** update all non-major dependencies ([#37](https://github.com/folke/devmoji/issues/37)) ([acc0753](https://github.com/folke/devmoji/commit/acc07530c7775ec3e3a958ce09df57e2d12ddb24))
+
 ### [2.1.5](https://github.com/folke/devmoji/compare/v2.1.4...v2.1.5) (2020-03-10)
 
 
