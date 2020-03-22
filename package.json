@@ -88,7 +88,7 @@
     "husky": "4.2.3",
     "jest": "25.1.0",
     "node-fetch": "2.6.0",
-    "prettier": "1.19.1",
+    "prettier": "2.0.1",
     "rimraf": "3.0.2",
     "rollup": "2.1.0",
     "rollup-plugin-progress": "1.1.1",
