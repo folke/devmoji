@@ -1,3 +1,19 @@
+### [2.1.7](https://github.com/folke/devmoji/compare/v2.1.6...v2.1.7) (2020-03-24)
+
+
+### Bug Fixes
+
+* 🐛 🔒️ upgrade minimist which had a security vulnerability ([fc12464](https://github.com/folke/devmoji/commit/fc124643a64967896bab3a5f2edf04e685a9f0c1))
+
+
+### Other
+
+* **deps:** update all non-major dependencies ([#45](https://github.com/folke/devmoji/issues/45)) ([777695a](https://github.com/folke/devmoji/commit/777695ad92d76a2a9455d1895e7b5af711b5d5cf))
+* **deps:** update all non-major dependencies ([#47](https://github.com/folke/devmoji/issues/47)) ([1eb8c52](https://github.com/folke/devmoji/commit/1eb8c52db68ea51c58d11b25195197022b12b3e1))
+* **deps:** update all non-major dependencies to v2.24.0 ([#43](https://github.com/folke/devmoji/issues/43)) ([205fbc3](https://github.com/folke/devmoji/commit/205fbc334b83be45fc130c4dc6062ed99966fe33))
+* **deps:** update dependency prettier to v2 ([#46](https://github.com/folke/devmoji/issues/46)) ([975c593](https://github.com/folke/devmoji/commit/975c593b265449f27a097da3f7782083ee8e6029))
+* **deps:** update dependency rollup to v2.1.0 ([#44](https://github.com/folke/devmoji/issues/44)) ([7928c85](https://github.com/folke/devmoji/commit/7928c856c7f81320e218860d97cbf61fd2da7922))
+
 ### [2.1.6](https://github.com/folke/devmoji/compare/v2.1.5...v2.1.6) (2020-03-15)
 
 
