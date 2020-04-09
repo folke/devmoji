@@ -1,3 +1,16 @@
+### [2.1.9](https://github.com/folke/devmoji/compare/v2.1.8...v2.1.9) (2020-04-09)
+
+
+### Bug Fixes
+
+* 🐛 --lint shouldn't fail on merge commit message (fixes [#50](https://github.com/folke/devmoji/issues/50)) ([8ba3987](https://github.com/folke/devmoji/commit/8ba3987e180ffd6902162a14ef2f831192e61b62))
+
+
+### Other
+
+* 🎨 prettier 2.0 ([1cd11ed](https://github.com/folke/devmoji/commit/1cd11ed4cb9cf99e4e8db3e1bc8e3d4ab3d7e977))
+* 🎨 Prettier 2.0 ([3228033](https://github.com/folke/devmoji/commit/32280336699adb9af9bc29641b093cb1faf4fec1))
+
 ### [2.1.8](https://github.com/folke/devmoji/compare/v2.1.7...v2.1.8) (2020-04-09)
 
 
