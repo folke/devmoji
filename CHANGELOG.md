@@ -1,3 +1,15 @@
+### [2.1.8](https://github.com/folke/devmoji/compare/v2.1.7...v2.1.8) (2020-04-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency chalk to v4 ([#49](https://github.com/folke/devmoji/issues/49)) ([aefa669](https://github.com/folke/devmoji/commit/aefa6691a23e43b34d78bd98aa694b07bebe3dee))
+
+
+### Other
+
+* **deps:** update all non-major dependencies ([#48](https://github.com/folke/devmoji/issues/48)) ([42431e0](https://github.com/folke/devmoji/commit/42431e0829c37ab7d4e6bb326fc83984e3bd8260))
+
 ### [2.1.7](https://github.com/folke/devmoji/compare/v2.1.6...v2.1.7) (2020-03-24)
 
 
