@@ -18,6 +18,8 @@ export class Cli {
 
   lint(text: string) {
     text = text.split("\n")[0]
+    if (text.startsWith("Merge branch")) return []
+
     const errors = []
     const match = /^(?<type>:?[a-z-]+)(?:\((?<scope>[a-z-]+)\))?(!?):\s+(?<description>.*)/iu.exec(
       text
@@ -55,8 +57,7 @@ export class Cli {
       errors.push("Get help at https://www.conventionalcommits.org/")
     }
 
-    errors.forEach((e) => console.error(chalk.red("✖"), e))
-    if (errors.length) process.exit(1)
+    return errors
   }
 
   format(
@@ -67,7 +68,11 @@ export class Cli {
     color = this.opts.color
   ) {
     if (processCommit && this.opts.lint && !processLog) {
-      this.lint(text)
+      const errors = this.lint(text)
+      if (errors.length) {
+        errors.forEach((e) => console.error(chalk.red("✖"), e))
+        process.exit(1)
+      }
     }
     if (processLog) text = this.commits.formatLog(text)
     else if (processCommit)
