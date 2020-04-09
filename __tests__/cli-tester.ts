@@ -27,7 +27,7 @@ test("sync2", () => {
 test("async1", () => {
   const mockCli = new MockCli()
   mockCli.testAsync(async () => {
-    await new Promise(done => {
+    await new Promise((done) => {
       process.stdout.write("test")
       done()
     })
@@ -39,7 +39,7 @@ test("async2", () => {
   const mockCli = new MockCli()
   mockCli.testAsync(async () => {
     console.log("foo")
-    await new Promise(done => {
+    await new Promise((done) => {
       console.log("test")
       done()
     })

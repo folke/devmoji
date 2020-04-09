@@ -10,21 +10,6 @@ test("--help", async () => {
   expect(mockCli.stdout?.data).toMatch(/Usage:/)
 })
 
-// test("no options", async () => {
-//   const mockCli = new MockCli()
-//   // jest.spyOn(process, "exit").mockImplementation(() => {
-//   //   throw "exit"
-//   // })
-
-//   await mockCli.testAsync(async () => {
-//     const cli = await Cli.create(["", ""], true)
-//     cli.run()
-//   })
-//   // expect(mockCli.exitCode).toBe(1)
-//   console.log(mockCli.stdout?.data)
-//   expect(mockCli.stdout?.data).toMatch(/Usage:/)
-// })
-
 test("--list", async () => {
   const mockCli = new MockCli()
   // mockCli.setup()
