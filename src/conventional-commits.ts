@@ -39,7 +39,7 @@ export class ConventionalCommits {
     }
 
     const ret: string[] = []
-    input.map(code => {
+    input.map((code) => {
       if (code) {
         const emoji = this.devmoji.get(code)
         if (!ret.includes(emoji)) ret.push(emoji)

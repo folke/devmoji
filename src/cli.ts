@@ -45,15 +45,17 @@ export class Cli {
     } else {
       errors.push(`Expecting a commit message like:`)
       errors.push(
-        `  ${chalk.blue("type" + chalk.bold("(scope):")) +
-          chalk.dim(" description")}`
+        `  ${
+          chalk.blue("type" + chalk.bold("(scope):")) +
+          chalk.dim(" description")
+        }`
       )
     }
     if (errors.length) {
       errors.push("Get help at https://www.conventionalcommits.org/")
     }
 
-    errors.forEach(e => console.error(chalk.red("✖"), e))
+    errors.forEach((e) => console.error(chalk.red("✖"), e))
     if (errors.length) process.exit(1)
   }
 
@@ -191,7 +193,7 @@ export class Cli {
       })
 
       let firstLine = true
-      rl.on("line", line => {
+      rl.on("line", (line) => {
         try {
           console.log(
             this.format(line, opts.format, opts.commit && firstLine, opts.log)
@@ -209,7 +211,7 @@ export class Cli {
 }
 
 export function run(argv = process.argv) {
-  Cli.create(argv).then(cli => cli.run())
+  Cli.create(argv).then((cli) => cli.run())
 }
 
 if (module === require.main) {

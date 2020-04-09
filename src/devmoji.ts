@@ -29,7 +29,7 @@ export class Devmoji {
   }
 
   demojify(text: string): string {
-    return text.replace(this.unicodeRegex, s => {
+    return text.replace(this.unicodeRegex, (s) => {
       const ret = github.getCode(s)
       if (ret) return github.wrap(ret)
       return s
