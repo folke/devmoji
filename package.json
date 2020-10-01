@@ -67,7 +67,7 @@
     "ts-interface-checker": "0.1.10"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "11.0.2",
+    "@rollup/plugin-commonjs": "15.1.0",
     "@rollup/plugin-node-resolve": "7.1.1",
     "@rollup/plugin-typescript": "4.0.0",
     "@semantic-release/changelog": "5.0.1",
