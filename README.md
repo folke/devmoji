@@ -45,7 +45,7 @@ Install with `npm` or `yarn`
 
 ```sh
 npm install -g devmoji
-yarn global install devmoji
+yarn global add devmoji
 ```
 
 > locally inside your project. use with `npx devmoji`
