@@ -1,3 +1,10 @@
+### [2.1.10](https://github.com/folke/devmoji/compare/v2.1.9...v2.1.10) (2020-10-01)
+
+
+### Documentation
+
+* replace yarn install w/ yarn add ([#65](https://github.com/folke/devmoji/issues/65)) ([f9acf3e](https://github.com/folke/devmoji/commit/f9acf3eef951d638fb0d9538aa9a702122071712))
+
 ### [2.1.9](https://github.com/folke/devmoji/compare/v2.1.8...v2.1.9) (2020-04-09)
 
 
