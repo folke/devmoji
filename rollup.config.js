@@ -1,9 +1,9 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import typescript from "@rollup/plugin-typescript"
 import pkg from "./package.json"
 import resolve from "@rollup/plugin-node-resolve"
 import { terser } from "rollup-plugin-terser"
 import commonjs from "@rollup/plugin-commonjs"
-// eslint-disable-next-line @typescript-eslint/ban-ts-ignore
 // @ts-ignore
 import progress from "rollup-plugin-progress"
 
@@ -14,12 +14,14 @@ export default {
   input: "src/cli.ts", // our source file
   output: [
     {
+      freeze: false,
       dir: "lib",
       format: "cjs",
     },
   ],
   external: [...Object.keys(pkg.dependencies || {}), ...builtins],
   plugins: [
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
     progress(),
     resolve({
       preferBuiltins: true,

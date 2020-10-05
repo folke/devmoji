@@ -107,7 +107,7 @@ export class Cli {
         this.devmoji.get(code.emoji),
         " ",
         chalk.blue(`:${code.code}:`.padEnd(15)),
-        chalk.green(cc) + code.description
+        chalk.green(cc) + (code.description ?? "")
       )
     }
   }
@@ -158,6 +158,7 @@ export class Cli {
         chalk.level > 0
       )
       .option("--no-color", "don't use colors")
+      // eslint-disable-next-line @typescript-eslint/no-var-requires, @typescript-eslint/no-unsafe-member-access
       .version(require("../package.json").version as string, "--version")
       .parse(argv)
     // console.log(program.opts())
@@ -215,10 +216,10 @@ export class Cli {
   }
 }
 
-export function run(argv = process.argv) {
-  Cli.create(argv).then((cli) => cli.run())
+export async function run(argv = process.argv) {
+  return Cli.create(argv).then((cli) => cli.run())
 }
 
 if (module === require.main) {
-  run()
+  void run()
 }

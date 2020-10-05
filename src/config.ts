@@ -82,6 +82,7 @@ export class Config {
 
     if (configFile) {
       configFile = path.resolve(cwd, configFile)
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       const options = await import(configFile)
       return new Config(options)
     }
