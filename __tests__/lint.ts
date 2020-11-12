@@ -21,6 +21,7 @@ test("should ", async () => {
   chore(deps): update all non-major dependencies (#34)
   chore(release): 2.1.5 [skip ci]
   docs: fixed config example
+  feat(TextInput): add new variant
   chore(deps): update dependency rollup to v2 (#35)`
     .split("\n")
     .map((s) => s.trim())
@@ -33,7 +34,7 @@ test("should ", async () => {
   style 🎨 Prettier 2.0
   chorerelease): 2.1.8 [skip ci]
   fix(deps) update dependency chalk to v4 (#49)
-  chore(depS): update all non-major dependencies (#48)
+  chore(depS: update all non-major dependencies (#48)
   2.1.7 [skip ci]
    🔒️ upgrade minimist which had a security vulnerability
   update all non-major dependencies (#47)`

@@ -26,12 +26,8 @@ export class Cli {
     )
     if (match) {
       const type = match.groups?.type ?? ""
-      const scope = match.groups?.scope
       const description = match.groups?.description
 
-      if (type.toLocaleLowerCase() != type) {
-        errors.push(`Type '${type}' should be lower case`)
-      }
       if (!this.devmoji.config.options.types.includes(type)) {
         errors.push(
           `Type should be one of: ${chalk.grey(
@@ -39,17 +35,13 @@ export class Cli {
           )}`
         )
       }
-      if (scope && scope.toLocaleLowerCase() != scope) {
-        errors.push(`Scope '${scope}' should be lower case`)
-      }
       if (!description || description.trim().length == 0)
         errors.push("Missing description")
     } else {
       errors.push(`Expecting a commit message like:`)
       errors.push(
-        `  ${
-          chalk.blue("type" + chalk.bold("(scope):")) +
-          chalk.dim(" description")
+        `  ${chalk.blue("type" + chalk.bold("(scope):")) +
+        chalk.dim(" description")
         }`
       )
     }
