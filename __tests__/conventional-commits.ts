@@ -21,6 +21,20 @@ test("type with scope commit msg", () => {
   expect(cc.formatCommit("feat(cli): testing")).toBe("feat(cli): ✨ testing")
 })
 
+test("breaking changes", () => {
+  const cc = new ConventionalCommits(new Devmoji(new Config()))
+  expect(cc.formatCommit("feat(cli)!: important")).toBe(
+    "feat(cli)!: 💥 ✨ important"
+  )
+})
+
+test("breaking changes multiline", () => {
+  const cc = new ConventionalCommits(new Devmoji(new Config()))
+  expect(
+    cc.formatCommit("feat(cli): important\nBREAKING CHANGE: foo bar")
+  ).toBe("feat(cli): 💥 ✨ important\nBREAKING CHANGE: foo bar")
+})
+
 test("type with scope release commit msg", () => {
   const cc = new ConventionalCommits(new Devmoji(new Config()))
   expect(cc.formatCommit("chore(release): testing")).toBe(
@@ -36,7 +50,7 @@ test("type with scope release commit msg and devmoji", () => {
   )
 })
 
-test("invalid commit msg ", () => {
+test("invalid commit msg", () => {
   const cc = new ConventionalCommits(new Devmoji(new Config()))
   expect(cc.formatCommit("invalid commit")).toBe("invalid commit")
 })
@@ -66,7 +80,7 @@ chore(release): 🚀 deploy
 eat(cli): 🚨 testing`)
 })
 
-test("should ", () => {
+test("should", () => {
   const text =
     "* 8f16492 - feat(cli): ✨ added cli for working with devmoji 🚀 (19 hours ago) <Folke Lemaitre>"
   const cc = new ConventionalCommits(new Devmoji(new Config()))
@@ -76,7 +90,7 @@ test("should ", () => {
   )
 })
 
-test("multi log & commit ", () => {
+test("multi log & commit", () => {
   const tests: [string, string][] = [
     ["feat(foo): testing", "feat(foo): :sparkles: testing"],
     ["foo(security): testing", "foo(security): :security: testing"],

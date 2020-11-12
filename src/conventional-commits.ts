@@ -50,6 +50,7 @@ export class ConventionalCommits {
 
   format(text: string, firstOnly = false, color = false) {
     text = this.devmoji.devmojify(text)
+    const breakingDesc = /^\s*BREAKING CHANGE/mu.test(text)
     return this.devmoji.emojify(
       text.replace(
         this.regex,
@@ -67,7 +68,7 @@ export class ConventionalCommits {
             type,
             scope,
             other,
-            breaking ? true : false
+            breaking || breakingDesc ? true : false
           )
           if (!emoji.length) return match
           let ret = type
