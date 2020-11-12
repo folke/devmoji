@@ -1,3 +1,22 @@
+### [2.1.11](https://github.com/folke/devmoji/compare/v2.1.10...v2.1.11) (2020-11-12)
+
+
+### Bug Fixes
+
+* **lint:** 🐛 detect BREAKING CHANGE in description. Fixes [#76](https://github.com/folke/devmoji/issues/76) ([a3d5ab0](https://github.com/folke/devmoji/commit/a3d5ab0cafd3366538ca0098669b83712d36a13d))
+* **lint:** 🐛 scope and type can by any case. Fixes [#75](https://github.com/folke/devmoji/issues/75) ([8138c84](https://github.com/folke/devmoji/commit/8138c840cb35c8d3513e5ea3eed339337696dc75))
+
+
+### Other
+
+* **deps:** bump npm-user-validate from 1.0.0 to 1.0.1 ([#69](https://github.com/folke/devmoji/issues/69)) ([19ea27c](https://github.com/folke/devmoji/commit/19ea27c6f03ad6e12305310df45d7ec144191457))
+* **deps:** update actions/cache action to v2 ([#71](https://github.com/folke/devmoji/issues/71)) ([a91dbc4](https://github.com/folke/devmoji/commit/a91dbc4523cea6625085452755cc1a4a7df94b03))
+* **deps:** update actions/checkout action to v2 ([#72](https://github.com/folke/devmoji/issues/72)) ([717ad15](https://github.com/folke/devmoji/commit/717ad15695555e5876f8acdd8bded57af09cf1dd))
+* **deps:** update all non-major dependencies ([#70](https://github.com/folke/devmoji/issues/70)) ([7b8b05a](https://github.com/folke/devmoji/commit/7b8b05a37c017ad183293194794a97fd608e0380))
+* **deps:** update dependency @rollup/plugin-commonjs to v16 ([#73](https://github.com/folke/devmoji/issues/73)) ([d5be625](https://github.com/folke/devmoji/commit/d5be6256e07e6ace240b75ad60cf7774d6a3ac63))
+* **deps:** update dependency @rollup/plugin-node-resolve to v10 ([#74](https://github.com/folke/devmoji/issues/74)) ([5202cc6](https://github.com/folke/devmoji/commit/5202cc6c1c342965d32ac6fae4a2948fc8821ef4))
+* **maintenance:** 🔧 updated deps and fixed some linting errors ([169198f](https://github.com/folke/devmoji/commit/169198f3d95375f4f83672156a3bdc5b004b6141))
+
 ### [2.1.10](https://github.com/folke/devmoji/compare/v2.1.9...v2.1.10) (2020-10-01)
 
 
