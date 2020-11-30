@@ -1,3 +1,17 @@
+### [2.1.12](https://github.com/folke/devmoji/compare/v2.1.11...v2.1.12) (2020-11-30)
+
+
+### Bug Fixes
+
+* 🐛 use the color option for --log (fixes [#81](https://github.com/folke/devmoji/issues/81)) ([c7370de](https://github.com/folke/devmoji/commit/c7370de7e260156e8c2f97870e6564201658c49c))
+
+
+### Other
+
+* 🎨 fixed linting errors for all src and __tests__ source files ([2a93269](https://github.com/folke/devmoji/commit/2a9326954366068885105c80607f2a6f434940a8))
+* **deps:** update all non-major dependencies ([#77](https://github.com/folke/devmoji/issues/77)) ([fe86d3c](https://github.com/folke/devmoji/commit/fe86d3c5d25c46b4ae5c0d353c6fc7b26ba3fd62))
+* **deps:** update all non-major dependencies ([#80](https://github.com/folke/devmoji/issues/80)) ([48596c4](https://github.com/folke/devmoji/commit/48596c4c69bb5e51b8d5dc1c8ff2d96ad967d418))
+
 ### [2.1.11](https://github.com/folke/devmoji/compare/v2.1.10...v2.1.11) (2020-11-12)
 
 
