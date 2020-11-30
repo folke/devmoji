@@ -67,7 +67,7 @@ export class Cli {
         process.exit(1)
       }
     }
-    if (processLog) text = this.commits.formatLog(text)
+    if (processLog) text = this.commits.formatLog(text, color ? true : false)
     else if (processCommit)
       text = this.commits.formatCommit(text, color ? true : false)
     switch (format) {
