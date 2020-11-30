@@ -40,8 +40,9 @@ export class Cli {
     } else {
       errors.push(`Expecting a commit message like:`)
       errors.push(
-        `  ${chalk.blue("type" + chalk.bold("(scope):")) +
-        chalk.dim(" description")
+        `  ${
+          chalk.blue("type" + chalk.bold("(scope):")) +
+          chalk.dim(" description")
         }`
       )
     }

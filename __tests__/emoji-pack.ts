@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import gitmojis from "../src/data/gitmoji.emoji"
 import { github, gitmoji } from "../src/emoji-pack"
 
@@ -11,10 +12,8 @@ test("all gitmoji should be valid", () => {
     expect(github.get(shortcode)?.emoji).toBeDefined()
     const em = github.get(shortcode)
     expect(em).toBeDefined()
-    if (em) {
-      expect(em.emoji).toBeDefined()
-      expect(github.getCode(em.emoji)).toBeDefined()
-    }
+    expect(em!.emoji).toBeDefined()
+    expect(github.getCode(em!.emoji)).toBeDefined()
   }
 })
 

@@ -24,10 +24,10 @@ test("sync2", () => {
   expect(mockCli.stdout?.data).toMatch(/test/)
 })
 
-test("async1", () => {
+test("async1", async () => {
   const mockCli = new MockCli()
-  mockCli.testAsync(async () => {
-    await new Promise((done) => {
+  await mockCli.testAsync(async () => {
+    await new Promise<void>((done) => {
       process.stdout.write("test")
       done()
     })
@@ -35,11 +35,11 @@ test("async1", () => {
   expect(mockCli.stdout?.data).toMatch(/test/)
 })
 
-test("async2", () => {
+test("async2", async () => {
   const mockCli = new MockCli()
-  mockCli.testAsync(async () => {
+  await mockCli.testAsync(async () => {
     console.log("foo")
-    await new Promise((done) => {
+    await new Promise<void>((done) => {
       console.log("test")
       done()
     })

@@ -1,5 +1,5 @@
 export default {
-  "variations": [
+  variations: [
     "0023",
     "002a",
     "0030",
@@ -352,6 +352,6 @@ export default {
     "1f6e5",
     "1f6e9",
     "1f6f0",
-    "1f6f3"
-  ]
+    "1f6f3",
+  ],
 }

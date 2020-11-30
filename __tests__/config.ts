@@ -9,46 +9,38 @@ test("load config", async () => {
 
 test("missing prop code", () => {
   expect(() => {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const config: ConfigOptions = { devmoji: [{ foo: 1 }] } as any
+    const config = ({ devmoji: [{ foo: 1 }] } as unknown) as ConfigOptions
     new Config(config)
   }).toThrow(/code is missing/)
 })
 
 test("missing prop emoji", () => {
   expect(() => {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const config: ConfigOptions = {
+    const config = ({
       devmoji: [{ code: "foo" }],
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    } as any
+    } as unknown) as ConfigOptions
     new Config(config)
   }).toThrow(/Missing.*emoji.*/)
 })
 
-test("missing config file", async () => {
-  try {
-    await Config.load("missing-config-file")
-  } catch (error) {
-    // eslint-disable-next-line jest/no-try-expect
+test("missing config file", () => {
+  expect.assertions(1)
+  return Config.load("missing-config-file").catch((error) =>
     expect(error).toMatch(/missing.*/)
-  }
+  )
 })
 
 test("config without devmoji", () => {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const config: ConfigOptions = { types: [] } as any
+  const config = ({ types: [] } as unknown) as ConfigOptions
   expect(() => {
     new Config(config)
   }).not.toThrow()
 })
 
 test("invalid gitmoji", () => {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const config: ConfigOptions = {
+  const config = ({
     devmoji: [{ code: "test", gitmoji: "foobar" }],
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  } as any
+  } as unknown) as ConfigOptions
   expect(() => {
     new Config(config)
   }).toThrow(/Gitmoji .* not found/)
@@ -58,7 +50,7 @@ test("default config file", async () => {
   try {
     await Config.load()
   } catch (error) {
-    // eslint-disable-next-line jest/no-try-expect
+    // eslint-disable-next-line jest/no-try-expect, jest/no-conditional-expect
     expect(error).toMatch(/missing.*/)
   }
 })
@@ -67,7 +59,7 @@ test("no default config file", async () => {
   try {
     await Config.load(undefined, "/")
   } catch (error) {
-    // eslint-disable-next-line jest/no-try-expect
+    // eslint-disable-next-line jest/no-try-expect, jest/no-conditional-expect
     expect(error).toMatch(/missing.*/)
   }
 })

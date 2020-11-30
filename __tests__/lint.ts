@@ -1,6 +1,6 @@
 import { Cli } from "../src/cli"
 
-test("should ", async () => {
+test("should", async () => {
   const cli = await Cli.create(["", ""], true)
   const valid = `style: 🎨 prettier 2.0
   Merge branch 'master' of github.com:folke/devmoji

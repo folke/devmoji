@@ -13,6 +13,7 @@ module.exports = {
     "prettier",
     "prettier/@typescript-eslint",
   ],
+  reportUnusedDisableDirectives: true,
   env: {
     node: true,
     browser: false,

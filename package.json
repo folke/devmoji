@@ -44,7 +44,7 @@
     "test": "npx jest",
     "test:cov": "npx jest --coverage",
     "lint": "yarn lint:eslint && yarn lint:ts",
-    "lint:eslint": "npx eslint src/*.ts --cache --fix",
+    "lint:eslint": "npx eslint src/**/*.ts __tests__/**/*.ts --cache --fix",
     "lint:ts": "npx tsc -p tsconfig.build.json --noEmit",
     "prepack": "yarn build",
     "release": "source .env && npx semantic-release --color --no-ci"

@@ -27,13 +27,11 @@ export class MockCli {
   stdout?: StringWritable
   stderr?: StringWritable
   console = global.console
-  // eslint-disable-next-line @typescript-eslint/unbound-method
 
   mock(stream: Writable) {
     const mock = new StringWritable()
     // eslint-disable-next-line @typescript-eslint/unbound-method
     this.mocks.push([mock, stream, stream.write])
-    // eslint-disable-next-line @typescript-eslint/unbound-method
     stream.write = mock.write.bind(mock)
     return mock
   }
@@ -41,7 +39,6 @@ export class MockCli {
   restore() {
     for (const [mock, stream, write] of this.mocks) {
       mock.destroy()
-      // eslint-disable-next-line @typescript-eslint/unbound-method
       stream.write = write.bind(stream)
     }
     global.console = this.console

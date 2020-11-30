@@ -12,8 +12,8 @@ export async function update() {
       method: "GET",
     }
   )
-    .then(res => res.text())
-    .then(res => {
+    .then((res) => res.text())
+    .then((res) => {
       const regex = /^([0-9A-F]+).*emoji/gm
       let match
       do {
@@ -35,19 +35,18 @@ export async function update() {
         "variations"
       )
     })
-    .catch(err => {
+    .catch((err) => {
       console.error(chalk.red("error"), err)
       process.exit(1)
     })
 
   fetch("https://api.github.com/emojis", { method: "GET" })
-    .then(res => res.json())
-    .then(json => {
+    .then((res) => (res.json() as unknown) as Record<string, string>)
+    .then((json) => {
       const regex = /unicode\/(.*)\.png.*/
       let added = 0
       let skipped = 0
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      const emoji: any = []
+      const emoji: [string, string][] = []
       for (const code in json) {
         const match = regex.exec(json[code])
         if (match) {
@@ -56,7 +55,7 @@ export async function update() {
             code,
             match[1]
               .split("-")
-              .map(x => {
+              .map((x) => {
                 const xx = parseInt(x, 16)
                 let ret = String.fromCodePoint(xx)
                 if (variations.has(x) && xx !== 0xfe0f)
@@ -81,7 +80,7 @@ export async function update() {
         "emojis"
       )
     })
-    .catch(err => {
+    .catch((err) => {
       console.error(chalk.red("error"), err)
       process.exit(1)
     })
@@ -90,8 +89,10 @@ export async function update() {
     "https://raw.githubusercontent.com/carloscuesta/gitmoji/master/src/data/gitmojis.json",
     { method: "GET" }
   )
-    .then(res => res.json())
-    .then(json => {
+    .then(
+      (res) => (res.json() as unknown) as { gitmojis: Record<string, unknown> }
+    )
+    .then((json) => {
       fs.writeFileSync(
         "src/data/gitmoji.emoji.ts",
         "export default " + JSON.stringify(json, null, "  "),
@@ -104,12 +105,12 @@ export async function update() {
         "emojis"
       )
     })
-    .catch(err => {
+    .catch((err) => {
       console.error(chalk.red("error"), err)
       process.exit(1)
     })
 }
 
 if (module === require.main) {
-  update()
+  void update()
 }
