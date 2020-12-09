@@ -1,3 +1,19 @@
+### [2.1.13](https://github.com/folke/devmoji/compare/v2.1.12...v2.1.13) (2020-12-09)
+
+
+### Other
+
+* **deps:** update all non-major dependencies ([#82](https://github.com/folke/devmoji/issues/82)) ([f61c156](https://github.com/folke/devmoji/commit/f61c15634256b8fc0613468ca3164a77af007294))
+* **deps:** update dependency @rollup/plugin-commonjs to v17 ([#83](https://github.com/folke/devmoji/issues/83)) ([c82d733](https://github.com/folke/devmoji/commit/c82d733e5f1072d6fc80f149484a60d72152e814))
+* **deps:** update dependency @rollup/plugin-node-resolve to v11 ([#84](https://github.com/folke/devmoji/issues/84)) ([76f15ad](https://github.com/folke/devmoji/commit/76f15ad485631e6b0ae6d57bf8324493bdb5bc47))
+* **deps:** update dependency @rollup/plugin-typescript to v8 ([#85](https://github.com/folke/devmoji/issues/85)) ([5a10ee9](https://github.com/folke/devmoji/commit/5a10ee924cc4d807a2bcccdbc2a7e390fb5e0ea4))
+* **deps:** update dependency eslint-config-prettier to v7 ([#88](https://github.com/folke/devmoji/issues/88)) ([0e36770](https://github.com/folke/devmoji/commit/0e367707b351f55005d5a6280e8335bf2d85b749))
+
+
+### Documentation
+
+* 📚️ better docs about git commit hooks ([8f7b36a](https://github.com/folke/devmoji/commit/8f7b36ab0ec7e0623f0e0a597d166749d250912e))
+
 ### [2.1.12](https://github.com/folke/devmoji/compare/v2.1.11...v2.1.12) (2020-11-30)
 
 
