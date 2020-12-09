@@ -145,7 +145,12 @@ Lints your commit message to see if they are valid conventional commits
 ### `devmoji --edit`
 
 Formats and saves your current commit message `.git/COMMIT_EDITMSG`. This is
-only really useful as a `prepare-commit-msg` hook.
+only really useful as a `prepare-commit-msg` or `commit-msg` hook.
+
+When to use what hook?
+
+* `prepare-commit-msg`: use this if you do not use **Devmnojis** `--lint` option and want to use it with something like [commitlint](https://commitlint.js.org/) instead.
+* `commit-msg`: use this hook if you also want to use **Devmoji** for linting 
 
 Configuration using [Husky](https://www.npmjs.com/package/husky)
 
@@ -174,6 +179,8 @@ Configuration using [Yorkie](https://www.npmjs.com/package/yorkie)
 > If you installed **Devmoji** locally in your project as a dev dependency, then
 > use something like `npx --no-install devmoji -e` instead of the commands
 > above.
+
+> Alternatively, if you don't want to use **Husky** or **Yorkie**, you can [manually](https://github.com/folke/devmoji/issues/87) create the git hooks.
 
 ### `devmoji --log`
 
