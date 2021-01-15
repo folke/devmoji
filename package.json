@@ -63,7 +63,7 @@
   },
   "dependencies": {
     "chalk": "^4.1.0",
-    "commander": "6.2.1",
+    "commander": "7.0.0",
     "ts-interface-checker": "0.1.13"
   },
   "devDependencies": {
