@@ -3,6 +3,9 @@ import { Cli } from "../src/cli"
 test("should", async () => {
   const cli = await Cli.create(["", ""], true)
   const valid = `style: 🎨 prettier 2.0
+  fixup! foo
+  squash!
+  revert something
   Merge branch 'master' of github.com:folke/devmoji
   style: 🎨 Prettier 2.0
   chore(release): 2.1.8 [skip ci]
