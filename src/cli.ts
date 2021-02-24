@@ -156,8 +156,7 @@ export class Cli {
       // eslint-disable-next-line @typescript-eslint/no-var-requires, @typescript-eslint/no-unsafe-member-access
       .version(require("../package.json").version as string, "--version")
       .parse(argv)
-    // console.log(program.opts())
-    const config = await Config.load(program.config)
+    const config = await Config.load(program.opts().config)
     return new Cli(program, new Devmoji(config))
   }
 
