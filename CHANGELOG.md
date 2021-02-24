@@ -1,3 +1,23 @@
+## [2.2.0](https://github.com/folke/devmoji/compare/v2.1.13...v2.2.0) (2021-02-24)
+
+
+### Features
+
+* ✨ added support for fixup! & match! comments ([155dee2](https://github.com/folke/devmoji/commit/155dee208a4651234283884f570075aaf3eaa90e))
+
+
+### Bug Fixes
+
+* 🐛 get --config value from Commander.opts() ([a461c2b](https://github.com/folke/devmoji/commit/a461c2bb78340e3d58de3fcedbae3b84afa6b39c))
+
+
+### Other
+
+* **deps:** 🔗 update ([979279e](https://github.com/folke/devmoji/commit/979279ebf8bc052c397ff009d1e84e54d4d339f6))
+* 📦️ updates for Husky 5 ([bbc5f60](https://github.com/folke/devmoji/commit/bbc5f60320c650c6a733ea138851efe8408b529e))
+* **deps:** bump ini from 1.3.5 to 1.3.8 ([#91](https://github.com/folke/devmoji/issues/91)) ([79cb9cf](https://github.com/folke/devmoji/commit/79cb9cf84fde05f7bb6fe124aa9d02c5f5f24acd))
+* **deps:** update all non-major dependencies ([#90](https://github.com/folke/devmoji/issues/90)) ([a779c80](https://github.com/folke/devmoji/commit/a779c80cb7955d06e5941aaf8a0e2d99cc2b3199))
+
 ### [2.1.13](https://github.com/folke/devmoji/compare/v2.1.12...v2.1.13) (2020-12-09)
 
 
