@@ -152,17 +152,14 @@ When to use what hook?
 * `prepare-commit-msg`: use this if you do not use **Devmnojis** `--lint` option and want to use it with something like [commitlint](https://commitlint.js.org/) instead.
 * `commit-msg`: use this hook if you also want to use **Devmoji** for linting 
 
-Configuration using [Husky](https://www.npmjs.com/package/husky)
+Configuration using [Husky](https://typicode.github.io/husky/)
 
-```js
-// package.json
-{
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": "devmoji -e --lint"
-    }
-  }
-}
+```shell
+# make sure husky hooks are installed
+$ npx husky install
+
+# add a hook for devmoji
+$ npx husky add .husky/prepare-commit-msg "npx devmoji -e --lint"
 ```
 
 Configuration using [Yorkie](https://www.npmjs.com/package/yorkie)
