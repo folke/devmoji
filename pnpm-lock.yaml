@@ -3,7 +3,7 @@ dependencies:
   commander: 7.1.0
   ts-interface-checker: 0.2.0
 devDependencies:
-  '@rollup/plugin-commonjs': 17.1.0_rollup@2.39.1
+  '@rollup/plugin-commonjs': 18.0.0_rollup@2.39.1
   '@rollup/plugin-node-resolve': 11.2.0_rollup@2.39.1
   '@rollup/plugin-typescript': 8.2.0_rollup@2.39.1+typescript@4.2.2
   '@semantic-release/changelog': 5.0.1_semantic-release@17.3.9
@@ -697,7 +697,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-hgNC5jxKG8/RlqxU/6GThkGrvFpz25+cPzjQjyiXTNBvhyltn2Z4GhFY25+kbtXwZ4Co4zM0goW5jak1KLp1ug==
-  /@rollup/plugin-commonjs/17.1.0_rollup@2.39.1:
+  /@rollup/plugin-commonjs/18.0.0_rollup@2.39.1:
     dependencies:
       '@rollup/pluginutils': 3.1.0_rollup@2.39.1
       commondir: 1.0.1
@@ -713,7 +713,7 @@ packages:
     peerDependencies:
       rollup: ^2.30.0
     resolution:
-      integrity: sha512-PoMdXCw0ZyvjpCMT5aV4nkL0QywxP29sODQsSGeDpr/oI49Qq9tRtAsb/LbYbDzFlOydVEqHmmZWFtXJEAX9ew==
+      integrity: sha512-fj92shhg8luw7XbA0HowAqz90oo7qtLGwqTKbyZ8pmOyH8ui5e+u0wPEgeHLH3djcVma6gUCUrjY6w5R2o1u6g==
   /@rollup/plugin-node-resolve/11.2.0_rollup@2.39.1:
     dependencies:
       '@rollup/pluginutils': 3.1.0_rollup@2.39.1
@@ -6780,7 +6780,7 @@ packages:
     resolution:
       integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
 specifiers:
-  '@rollup/plugin-commonjs': 17.1.0
+  '@rollup/plugin-commonjs': 18.0.0
   '@rollup/plugin-node-resolve': 11.2.0
   '@rollup/plugin-typescript': 8.2.0
   '@semantic-release/changelog': 5.0.1
