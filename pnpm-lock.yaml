@@ -5,7 +5,7 @@ overrides:
 
 specifiers:
   '@rollup/plugin-commonjs': 17.1.0
-  '@rollup/plugin-node-resolve': 11.2.1
+  '@rollup/plugin-node-resolve': 13.0.0
   '@rollup/plugin-typescript': 8.2.1
   '@semantic-release/changelog': 5.0.1
   '@semantic-release/git': 9.0.0
@@ -47,7 +47,7 @@ dependencies:
 
 devDependencies:
   '@rollup/plugin-commonjs': 17.1.0_rollup@2.39.1
-  '@rollup/plugin-node-resolve': 11.2.1_rollup@2.39.1
+  '@rollup/plugin-node-resolve': 13.0.0_rollup@2.39.1
   '@rollup/plugin-typescript': 8.2.1_rollup@2.39.1+typescript@4.2.4
   '@semantic-release/changelog': 5.0.1_semantic-release@17.3.9
   '@semantic-release/git': 9.0.0_semantic-release@17.3.9
@@ -759,11 +759,11 @@ packages:
       rollup: 2.39.1
     dev: true
 
-  /@rollup/plugin-node-resolve/11.2.1_rollup@2.39.1:
-    resolution: {integrity: sha512-yc2n43jcqVyGE2sqV5/YCmocy9ArjVAP/BeXyTtADTBBX6V0e5UMqwO8CdQ0kzjb6zu5P1qMzsScCMRvE9OlVg==}
+  /@rollup/plugin-node-resolve/13.0.0_rollup@2.39.1:
+    resolution: {integrity: sha512-41X411HJ3oikIDivT5OKe9EZ6ud6DXudtfNrGbC4nniaxx2esiWjkLOzgnZsWq1IM8YIeL2rzRGLZLBjlhnZtQ==}
     engines: {node: '>= 10.0.0'}
     peerDependencies:
-      rollup: ^1.20.0||^2.0.0
+      rollup: ^2.42.0
     dependencies:
       '@rollup/pluginutils': 3.1.0_rollup@2.39.1
       '@types/resolve': 1.17.1
@@ -1049,7 +1049,7 @@ packages:
   /@types/resolve/1.17.1:
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
     dependencies:
-      '@types/node': 14.14.31
+      '@types/node': 14.14.44
     dev: true
 
   /@types/retry/0.12.0:
