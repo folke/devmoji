@@ -1,3 +1,25 @@
+### [2.2.1](https://github.com/folke/devmoji/compare/v2.2.0...v2.2.1) (2021-05-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency ts-interface-checker to v0.2.1 ([2262197](https://github.com/folke/devmoji/commit/2262197a33d261930a5b51fba8d73b4bad4e35fc))
+
+
+### Other
+
+* **deps:** bump marked from 1.2.0 to 2.0.0 ([#99](https://github.com/folke/devmoji/issues/99)) ([f6c382b](https://github.com/folke/devmoji/commit/f6c382bc59d914bb87d9c2ce63493d2647cbe335))
+* **deps:** bump node-notifier from 8.0.0 to 8.0.1 ([#94](https://github.com/folke/devmoji/issues/94)) ([cf87590](https://github.com/folke/devmoji/commit/cf875905f4f4af7b6329e7ed94caa656c184dce8))
+* **deps:** bump ssri from 6.0.1 to 6.0.2 ([#104](https://github.com/folke/devmoji/issues/104)) ([27d1d3f](https://github.com/folke/devmoji/commit/27d1d3f8a8c2a9aa729c676820858479138c16b5))
+* **deps:** update actions/setup-node action to v2 ([#93](https://github.com/folke/devmoji/issues/93)) ([7cf6c17](https://github.com/folke/devmoji/commit/7cf6c1732628eba9ca3698800532075b337f8222))
+* **deps:** update dependency @rollup/plugin-node-resolve to v11.2.1 ([03defe1](https://github.com/folke/devmoji/commit/03defe1c32a2348043cbee4470478c2fd131b3fa))
+* **deps:** update dependency @rollup/plugin-typescript to v8.2.1 ([3639584](https://github.com/folke/devmoji/commit/36395847b7f897ad54468ed571660ff88bf09431))
+* **deps:** update dependency @types/node to v14.14.44 ([ea2306f](https://github.com/folke/devmoji/commit/ea2306f64e0042089f8212c448dbd64ba7087144))
+* **deps:** update dependency @types/node-fetch to v2.5.10 ([8015efd](https://github.com/folke/devmoji/commit/8015efd8268f042499f745288cde55ec19c4e9a5))
+* **deps:** update dependency rollup-plugin-sizes to v1.0.4 ([235dac2](https://github.com/folke/devmoji/commit/235dac2f9648be491dfd41107a551ff814630104))
+* **deps:** update dependency typescript to v4.2.4 ([33b64ce](https://github.com/folke/devmoji/commit/33b64ce72c8752c7886c1a50f5a0fde87920e8da))
+* **deps:** update jest ([1fe0cf2](https://github.com/folke/devmoji/commit/1fe0cf246461ec8e0d43406ca932fab59c295b2f))
+
 ## [2.2.0](https://github.com/folke/devmoji/compare/v2.1.13...v2.2.0) (2021-02-24)
 
 
