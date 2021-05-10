@@ -9,7 +9,7 @@ specifiers:
   '@rollup/plugin-typescript': 8.2.1
   '@semantic-release/changelog': 5.0.1
   '@semantic-release/git': 9.0.0
-  '@types/jest': 26.0.20
+  '@types/jest': 26.0.23
   '@types/node': 14.14.44
   '@types/node-fetch': 2.5.10
   '@typescript-eslint/eslint-plugin': 4.15.2
@@ -36,7 +36,7 @@ specifiers:
   semantic-release: 17.3.9
   ts-interface-builder: 0.3.0
   ts-interface-checker: 0.2.0
-  ts-jest: 26.5.2
+  ts-jest: 26.5.6
   ts-node: 9.1.1
   typescript: 4.2.4
 
@@ -51,7 +51,7 @@ devDependencies:
   '@rollup/plugin-typescript': 8.2.1_rollup@2.39.1+typescript@4.2.4
   '@semantic-release/changelog': 5.0.1_semantic-release@17.3.9
   '@semantic-release/git': 9.0.0_semantic-release@17.3.9
-  '@types/jest': 26.0.20
+  '@types/jest': 26.0.23
   '@types/node': 14.14.44
   '@types/node-fetch': 2.5.10
   '@typescript-eslint/eslint-plugin': 4.15.2_27c0358729fde45d4ff2ef959ff692c1
@@ -75,7 +75,7 @@ devDependencies:
   rollup-plugin-terser: 7.0.2_rollup@2.39.1
   semantic-release: 17.3.9
   ts-interface-builder: 0.3.0
-  ts-jest: 26.5.2_jest@26.6.3+typescript@4.2.4
+  ts-jest: 26.5.6_jest@26.6.3+typescript@4.2.4
   ts-node: 9.1.1_typescript@4.2.4
   typescript: 4.2.4
 
@@ -617,7 +617,7 @@ packages:
     dependencies:
       '@types/istanbul-lib-coverage': 2.0.3
       '@types/istanbul-reports': 3.0.0
-      '@types/node': 14.14.31
+      '@types/node': 14.14.44
       '@types/yargs': 15.0.13
       chalk: 4.1.0
     dev: true
@@ -1000,8 +1000,8 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     dev: true
 
-  /@types/jest/26.0.20:
-    resolution: {integrity: sha512-9zi2Y+5USJRxd0FsahERhBwlcvFh6D2GLQnY2FH2BzK8J9s9omvNHIbvABwIluXa0fD8XVKMLTO0aOEuUfACAA==}
+  /@types/jest/26.0.23:
+    resolution: {integrity: sha512-ZHLmWMJ9jJ9PTiT58juykZpL7KjwJywFN3Rr2pTSkyQfydf/rk22yS7W8p5DaVUMQ2BQC7oYiU3FjbTM/mYrOA==}
     dependencies:
       jest-diff: 26.6.2
       pretty-format: 26.6.2
@@ -3805,7 +3805,7 @@ packages:
     engines: {node: '>= 10.14.2'}
     dependencies:
       '@jest/types': 26.6.2
-      '@types/node': 14.14.31
+      '@types/node': 14.14.44
       chalk: 4.1.0
       graceful-fs: 4.2.6
       is-ci: 2.0.0
@@ -5954,15 +5954,14 @@ packages:
     resolution: {integrity: sha512-wkqy1TC9FxALfAl10ov0joZK5aXjIhnOYBe26XSPiRD0UemFuQOF7D/LowiCFu5gbjYJc+ao0H+I50YYU9oKVA==}
     dev: false
 
-  /ts-jest/26.5.2_jest@26.6.3+typescript@4.2.4:
-    resolution: {integrity: sha512-bwyJ2zJieSugf7RB+o8fgkMeoMVMM2KPDE0UklRLuACxjwJsOrZNo6chrcScmK33YavPSwhARffy8dZx5LJdUQ==}
+  /ts-jest/26.5.6_jest@26.6.3+typescript@4.2.4:
+    resolution: {integrity: sha512-rua+rCP8DxpA8b4DQD/6X2HQS8Zy/xzViVYfEs2OQu68tkCuKLV0Md8pmX55+W24uRIyAsf/BajRfxOs+R2MKA==}
     engines: {node: '>= 10'}
     hasBin: true
     peerDependencies:
       jest: '>=26 <27'
       typescript: '>=3.8 <5.0'
     dependencies:
-      '@types/jest': 26.0.20
       bs-logger: 0.2.6
       buffer-from: 1.1.1
       fast-json-stable-stringify: 2.1.0
