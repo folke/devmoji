@@ -11,7 +11,7 @@ specifiers:
   '@semantic-release/git': 9.0.0
   '@types/jest': 26.0.20
   '@types/node': 14.14.44
-  '@types/node-fetch': 2.5.8
+  '@types/node-fetch': 2.5.10
   '@typescript-eslint/eslint-plugin': 4.15.2
   '@typescript-eslint/parser': 4.15.2
   chalk: ^4.1.0
@@ -53,7 +53,7 @@ devDependencies:
   '@semantic-release/git': 9.0.0_semantic-release@17.3.9
   '@types/jest': 26.0.20
   '@types/node': 14.14.44
-  '@types/node-fetch': 2.5.8
+  '@types/node-fetch': 2.5.10
   '@typescript-eslint/eslint-plugin': 4.15.2_f59adae6c23e25423ba8722b4851fe62
   '@typescript-eslint/parser': 4.15.2_eslint@7.20.0+typescript@4.2.2
   concurrently: 6.0.0
@@ -1019,10 +1019,10 @@ packages:
     resolution: {integrity: sha512-fZQQafSREFyuZcdWFAExYjBiCL7AUCdgsk80iO0q4yihYYdcIiH28CcuPTGFgLOCC8RlW49GSQxdHwZP+I7CNg==}
     dev: true
 
-  /@types/node-fetch/2.5.8:
-    resolution: {integrity: sha512-fbjI6ja0N5ZA8TV53RUqzsKNkl9fv8Oj3T7zxW7FGv1GSH7gwJaNF8dzCjrqKaxKeUpTz4yT1DaJFq/omNpGfw==}
+  /@types/node-fetch/2.5.10:
+    resolution: {integrity: sha512-IpkX0AasN44hgEad0gEF/V6EgR5n69VEqPEgnmoM8GsIGro3PowbWs4tR6IhxUTyPLpOn+fiGG6nrQhcmoCuIQ==}
     dependencies:
-      '@types/node': 14.14.31
+      '@types/node': 14.14.44
       form-data: 3.0.1
     dev: true
 
