@@ -31,7 +31,7 @@ specifiers:
   rimraf: 3.0.2
   rollup: 2.39.1
   rollup-plugin-progress: 1.1.2
-  rollup-plugin-sizes: 1.0.3
+  rollup-plugin-sizes: 1.0.4
   rollup-plugin-terser: 7.0.2
   semantic-release: 17.3.9
   ts-interface-builder: 0.3.0
@@ -71,7 +71,7 @@ devDependencies:
   rimraf: 3.0.2
   rollup: 2.39.1
   rollup-plugin-progress: 1.1.2
-  rollup-plugin-sizes: 1.0.3_rollup@2.39.1
+  rollup-plugin-sizes: 1.0.4_rollup@2.39.1
   rollup-plugin-terser: 7.0.2_rollup@2.39.1
   semantic-release: 17.3.9
   ts-interface-builder: 0.3.0
@@ -5237,8 +5237,8 @@ packages:
       chalk: 2.4.2
     dev: true
 
-  /rollup-plugin-sizes/1.0.3_rollup@2.39.1:
-    resolution: {integrity: sha512-4s/uOW3CykN4kMZrrvYngA309qTd4Hb18kplErDAtOUXUK7PrFAa3g7s2H5nW9hWZy7sNUkPMkH85klwacq19A==}
+  /rollup-plugin-sizes/1.0.4_rollup@2.39.1:
+    resolution: {integrity: sha512-sZtFW+X/d4qytqFG6aKxhUj5aJadxOpMZbDrB9j9GpMKrXy2jt4RD/xbfnagbSbH+0q1kBcNd8L9tuoETjOu6g==}
     peerDependencies:
       rollup: ^2.0.0
     dependencies:
