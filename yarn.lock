@@ -7536,10 +7536,10 @@ ts-interface-builder@0.3.0:
     glob "^7.1.6"
     typescript "^3.0.0"
 
-ts-interface-checker@0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/ts-interface-checker/-/ts-interface-checker-0.2.0.tgz#4a87c0daac4eceaece401b37c86fa98486caf699"
-  integrity sha512-wkqy1TC9FxALfAl10ov0joZK5aXjIhnOYBe26XSPiRD0UemFuQOF7D/LowiCFu5gbjYJc+ao0H+I50YYU9oKVA==
+ts-interface-checker@0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/ts-interface-checker/-/ts-interface-checker-0.2.1.tgz#f89437412519dd0f7817abb5739a263ed5850a63"
+  integrity sha512-BTNtU9j5yohY3XkwiwLocTrDMDYqEeqtJeULAUFcTDw1GMl1XqD6IksIDX6mt9ACI7DVm+b1gqvYcPuXsi49OA==
 
 ts-jest@26.5.6:
   version "26.5.6"
