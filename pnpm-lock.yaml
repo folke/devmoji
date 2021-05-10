@@ -24,7 +24,7 @@ specifiers:
   eslint-plugin-import: 2.22.1
   eslint-plugin-jest: 24.1.5
   eslint-plugin-prettier: 3.3.1
-  husky: 5.1.1
+  husky: 6.0.0
   jest: 26.6.3
   node-fetch: 2.6.1
   prettier: 2.2.1
@@ -64,7 +64,7 @@ devDependencies:
   eslint-plugin-import: 2.22.1_eslint@7.20.0
   eslint-plugin-jest: 24.1.5_eslint@7.20.0+typescript@4.2.4
   eslint-plugin-prettier: 3.3.1_426e1051eb87c5f049018903480d7fd9
-  husky: 5.1.1
+  husky: 6.0.0
   jest: 26.6.3_ts-node@9.1.1
   node-fetch: 2.6.1
   prettier: 2.2.1
@@ -3025,9 +3025,8 @@ packages:
     engines: {node: '>=10.17.0'}
     dev: true
 
-  /husky/5.1.1:
-    resolution: {integrity: sha512-80LZ736V0Nr4/st0c2COYaMbEQhHNmAbLMN8J/kLk7/mo0QdUkUGNDjv/7jVkhug377Wh8wfbWyaVXEJ/h2B/Q==}
-    engines: {node: '>= 10'}
+  /husky/6.0.0:
+    resolution: {integrity: sha512-SQS2gDTB7tBN486QSoKPKQItZw97BMOd+Kdb6ghfpBc0yXyzrddI0oDV5MkDAbuB4X2mO3/nj60TRMcYxwzZeQ==}
     hasBin: true
     dev: true
 
