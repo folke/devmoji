@@ -1,3 +1,22 @@
+## [2.3.0](https://github.com/folke/devmoji/compare/v2.2.1...v2.3.0) (2021-06-18)
+
+
+### Features
+
+* ✨ scope to allow digit ([#126](https://github.com/folke/devmoji/issues/126)) ([cb31dda](https://github.com/folke/devmoji/commit/cb31ddae5899442e368f7fe8223a289371f8495a))
+
+
+### Bug Fixes
+
+* **test:** 🐛 🚨 fixup for syntax error ([404dce4](https://github.com/folke/devmoji/commit/404dce4dfb6ffe3dbb7846e649772cbd84176ec2))
+
+
+### Other
+
+* 🚨 fixed linting errors ([b357026](https://github.com/folke/devmoji/commit/b35702639e415be038f72110f69243c588dcb2a6))
+* **deps:** update dependency @types/node to v14.14.45 ([d748c98](https://github.com/folke/devmoji/commit/d748c98b1e9f12f443cdd5b0745c5d4b9f6cde82))
+* **update:** 🔧 updated deps ([fc8b67c](https://github.com/folke/devmoji/commit/fc8b67cf918fc5bc2b948821c90c65a24cf06c86))
+
 ### [2.2.1](https://github.com/folke/devmoji/compare/v2.2.0...v2.2.1) (2021-05-10)
 
 
