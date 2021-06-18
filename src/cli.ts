@@ -23,9 +23,10 @@ export class Cli {
     if (/^([rR]evert)/.test(text)) return []
 
     const errors = []
-    const match = /^(?<type>:?[a-z-]+)(?:\((?<scope>[a-z-0-9]+)\))?(!?):\s+(?<description>.*)/iu.exec(
-      text
-    )
+    const match =
+      /^(?<type>:?[a-z-]+)(?:\((?<scope>[a-z-0-9]+)\))?(!?):\s+(?<description>.*)/iu.exec(
+        text
+      )
     if (match) {
       const type = match.groups?.type ?? ""
       const description = match.groups?.description

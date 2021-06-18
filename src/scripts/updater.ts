@@ -41,7 +41,7 @@ export async function update() {
     })
 
   fetch("https://api.github.com/emojis", { method: "GET" })
-    .then((res) => (res.json() as unknown) as Record<string, string>)
+    .then((res) => res.json() as unknown as Record<string, string>)
     .then((json) => {
       const regex = /unicode\/(.*)\.png.*/
       let added = 0
@@ -90,7 +90,7 @@ export async function update() {
     { method: "GET" }
   )
     .then(
-      (res) => (res.json() as unknown) as { gitmojis: Record<string, unknown> }
+      (res) => res.json() as unknown as { gitmojis: Record<string, unknown> }
     )
     .then((json) => {
       fs.writeFileSync(

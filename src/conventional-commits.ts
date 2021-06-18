@@ -2,7 +2,9 @@ import { Devmoji } from "./devmoji"
 import chalk from "chalk"
 
 export class ConventionalCommits {
-  regex = /(?<type>:?[a-z-]+)(?:\((?<scope>[a-z-0-9]+)\))?(!?):\s*(?:(?<other>(?::[a-z-]+:\s*)+)\s*)?/gimu
+  regex =
+    /(?<type>:?[a-z-]+)(?:\((?<scope>[a-z-0-9]+)\))?(!?):\s*(?:(?<other>(?::[a-z-]+:\s*)+)\s*)?/gimu
+
   constructor(public devmoji: Devmoji) {}
 
   formatCommit(text: string, color = false) {

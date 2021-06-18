@@ -4,7 +4,8 @@ import { github, gitmoji } from "./emoji-pack"
 export class Devmoji {
   shortcodeRegex = /:([a-zA-Z0-9_\-+]+):/g
   shortcodeSpaceRegex = /\s?:([a-zA-Z0-9_\-+]+):/g
-  unicodeRegex = /((?:\u00a9|\u00ae|[\u2000-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])\ufe0f?)/g
+  unicodeRegex =
+    /((?:\u00a9|\u00ae|[\u2000-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])\ufe0f?)/g
 
   constructor(public config: Config) {}
 
