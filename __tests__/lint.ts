@@ -25,7 +25,9 @@ test("should", async () => {
   chore(release): 2.1.5 [skip ci]
   docs: fixed config example
   feat(TextInput): add new variant
-  chore(deps): update dependency rollup to v2 (#35)`
+  chore(deps): update dependency rollup to v2 (#35)
+  feat(JIRA-123): add new variant
+  feat(jira-123): add new variant
     .split("\n")
     .map((s) => s.trim())
   for (const msg of valid) {
