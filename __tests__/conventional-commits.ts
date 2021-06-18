@@ -132,7 +132,6 @@ test("multi log & commit", () => {
   }
 })
 
-
 test("lowercase scope that include numbers", () => {
   const cc = new ConventionalCommits(new Devmoji(new Config()))
   expect(cc.formatCommit("feat(jira-123): testing")).toBe(
