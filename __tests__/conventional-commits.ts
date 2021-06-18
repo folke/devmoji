@@ -131,3 +131,18 @@ test("multi log & commit", () => {
     expect(cc.formatLog(cc.formatLog(cc.formatLog(input)))).toBe(output)
   }
 })
+
+
+test("lowercase scope that include numbers", () => {
+  const cc = new ConventionalCommits(new Devmoji(new Config()))
+  expect(cc.formatCommit("feat(jira-123): testing")).toBe(
+    "feat(jira-123): ✨ testing"
+  )
+})
+
+test("uppercase scope that include numbers", () => {
+  const cc = new ConventionalCommits(new Devmoji(new Config()))
+  expect(cc.formatCommit("feat(JIRA-123): testing")).toBe(
+    "feat(JIRA-123): ✨ testing"
+  )
+})
