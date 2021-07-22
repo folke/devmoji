@@ -74,7 +74,7 @@
     "@semantic-release/git": "9.0.0",
     "@types/jest": "26.0.24",
     "@types/node": "15.12.2",
-    "@types/node-fetch": "2.5.11",
+    "@types/node-fetch": "2.5.12",
     "@typescript-eslint/eslint-plugin": "4.27.0",
     "@typescript-eslint/parser": "4.27.0",
     "concurrently": "6.2.0",
