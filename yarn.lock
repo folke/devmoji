@@ -6229,10 +6229,10 @@ trim-off-newlines@^1.0.0:
   resolved "https://registry.yarnpkg.com/trim-off-newlines/-/trim-off-newlines-1.0.1.tgz#9f9ba9d9efa8764c387698bcbfeb2c848f11adb3"
   integrity sha1-n5up2e+odkw4dpi8v+sshI8RrbM=
 
-ts-interface-builder@0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/ts-interface-builder/-/ts-interface-builder-0.3.0.tgz#34373095ae4465643d582aca12ce964a92254711"
-  integrity sha512-gQFsyKBGA2uknJUzWCYSgBRN5yYrrcpjfU9nNShtWp0gCsaw83aHz/F9TbXvRaoQxX1OtR1eRo3GysU9/iV0wA==
+ts-interface-builder@0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/ts-interface-builder/-/ts-interface-builder-0.3.2.tgz#664f7f4d2bd0079950ba6bb7cd2780262009a68f"
+  integrity sha512-8LcB+qSwnDzBeP47Nug2+4NUjdRNJ94MfzLNXQ4mmAM8UidDDQS0YoD7Ng6XONa8rX6nJenlgph1X459VYqypQ==
   dependencies:
     commander "^2.12.2"
     fs-extra "^4.0.3"
