@@ -1,3 +1,53 @@
+### [2.3.1](https://github.com/folke/devmoji/compare/v2.3.0...v2.3.1) (2021-10-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency ts-interface-checker to v1.0.2 ([29300b6](https://github.com/folke/devmoji/commit/29300b66ab4c2bb36d9decf84f7dd2bb49d692f2))
+
+
+### Other
+
+* **deps:** update dependency @rollup/plugin-commonjs to v19.0.1 ([86d9acc](https://github.com/folke/devmoji/commit/86d9accccaa541c47587cb7f0c77f01b0c6618b2))
+* **deps:** update dependency @rollup/plugin-commonjs to v19.0.2 ([a391b29](https://github.com/folke/devmoji/commit/a391b299d92f915ec7da9b9d0cff3ebe8c48247c))
+* **deps:** update dependency @rollup/plugin-node-resolve to v13.0.1 ([dfde36f](https://github.com/folke/devmoji/commit/dfde36f6bdd038c2675f093b883f54763b820c8f))
+* **deps:** update dependency @rollup/plugin-node-resolve to v13.0.2 ([49134e1](https://github.com/folke/devmoji/commit/49134e129d5d182d54cff4ec7eaf1f1aa8dd4fc3))
+* **deps:** update dependency @rollup/plugin-node-resolve to v13.0.3 ([a016fd4](https://github.com/folke/devmoji/commit/a016fd4ab5bb73265c93075c1b91a13eab048941))
+* **deps:** update dependency @rollup/plugin-node-resolve to v13.0.4 ([916adf8](https://github.com/folke/devmoji/commit/916adf8b1c5009d86f74cd2aa24029f1fe8ccc0b))
+* **deps:** update dependency @rollup/plugin-node-resolve to v13.0.5 ([b5aa706](https://github.com/folke/devmoji/commit/b5aa706a8d8de42aec9b878b91fc492a77171845))
+* **deps:** update dependency @rollup/plugin-typescript to v8.2.3 ([6ea0511](https://github.com/folke/devmoji/commit/6ea051119c5d3f8ea13a3844bb34c5c4a9c6f7bd))
+* **deps:** update dependency @rollup/plugin-typescript to v8.2.4 ([37bbac5](https://github.com/folke/devmoji/commit/37bbac5dc7299bce26e44d8519a2c787fbe74361))
+* **deps:** update dependency @rollup/plugin-typescript to v8.2.5 ([b2893e2](https://github.com/folke/devmoji/commit/b2893e2adc9d709e951e8a7ef63b67d82763ed81))
+* **deps:** update dependency @semantic-release/git to v9.0.1 ([2a77cd0](https://github.com/folke/devmoji/commit/2a77cd00b6777c03748a0a8b95e6e08644d67953))
+* **deps:** update dependency @types/jest to v26.0.24 ([2efeb33](https://github.com/folke/devmoji/commit/2efeb33fb716d911c4369d902ba369653550b65f))
+* **deps:** update dependency @types/node-fetch to v2.5.11 ([02d4050](https://github.com/folke/devmoji/commit/02d4050685d148fd9d5467bbb17308ac863824fd))
+* **deps:** update dependency @types/node-fetch to v2.5.12 ([ab949cc](https://github.com/folke/devmoji/commit/ab949cc53700e56382062842ddbf91c74707c26c))
+* **deps:** update dependency concurrently to v6.2.1 ([c70bffb](https://github.com/folke/devmoji/commit/c70bffba6d1ff16082f123cfcd077951d6942220))
+* **deps:** update dependency concurrently to v6.2.2 ([ef0fbd0](https://github.com/folke/devmoji/commit/ef0fbd0540cacd33f38fec521e30568ba7746536))
+* **deps:** update dependency conventional-changelog-conventionalcommits to v4.6.1 ([6b9dfe2](https://github.com/folke/devmoji/commit/6b9dfe237ac890fb01ccc71ea272d4907898bea8))
+* **deps:** update dependency eslint-plugin-jest to v24.3.7 ([acca395](https://github.com/folke/devmoji/commit/acca395ce45d1c576612c6804a912bc894e20229))
+* **deps:** update dependency eslint-plugin-prettier to v3.4.1 ([b230d3f](https://github.com/folke/devmoji/commit/b230d3f261b4c6d63ebab14a10e5de0127dc8218))
+* **deps:** update dependency jest to v27.0.5 ([f358217](https://github.com/folke/devmoji/commit/f358217ee71bc05ba02cfcc70d3f158f306192f9))
+* **deps:** update dependency jest to v27.0.6 ([2bd8343](https://github.com/folke/devmoji/commit/2bd8343cf2ed0a9a20822fd5f86fdec738d679e6))
+* **deps:** update dependency node-fetch to v2.6.2 ([6a0bc67](https://github.com/folke/devmoji/commit/6a0bc67ce0e97b81fe7bab51c610c2b369fb295c))
+* **deps:** update dependency node-fetch to v2.6.3 ([899e3b5](https://github.com/folke/devmoji/commit/899e3b5dbf0567112a8716b334f26d957da3207b))
+* **deps:** update dependency node-fetch to v2.6.4 ([e4adb3a](https://github.com/folke/devmoji/commit/e4adb3add9afeb4fcea36abf6d73fafc51f0be58))
+* **deps:** update dependency node-fetch to v2.6.5 ([f6121be](https://github.com/folke/devmoji/commit/f6121be035b3f7ec8bc39df9e4421d4383dc3016))
+* **deps:** update dependency prettier to v2.3.2 ([cac6b1a](https://github.com/folke/devmoji/commit/cac6b1afea42aaaddc57286bd069706202a268a6))
+* **deps:** update dependency rollup to v2.52.2 ([de72adb](https://github.com/folke/devmoji/commit/de72adb5b267585e366543b9379eabd724552821))
+* **deps:** update dependency rollup to v2.52.3 ([b757eb0](https://github.com/folke/devmoji/commit/b757eb0bc7e1d17060a3949dfb08dcbdf88f8bbf))
+* **deps:** update dependency rollup to v2.52.4 ([3b41411](https://github.com/folke/devmoji/commit/3b414119d733f2dbed4e50362e1b9c4fc4c7f6d4))
+* **deps:** update dependency rollup to v2.52.6 ([f22a6ec](https://github.com/folke/devmoji/commit/f22a6ec1aba42af7f2a20149dd7e48eaa0a03f11))
+* **deps:** update dependency rollup to v2.52.7 ([17b8fc1](https://github.com/folke/devmoji/commit/17b8fc1bbe8718a7078b0b1610127e1e7d12138f))
+* **deps:** update dependency rollup to v2.52.8 ([308b6d5](https://github.com/folke/devmoji/commit/308b6d5705a4b2cead61648bc3e66158b46db58d))
+* **deps:** update dependency semantic-release to v17.4.5 ([e7e5455](https://github.com/folke/devmoji/commit/e7e5455c027c27e3c2827356739602e792b9b08f))
+* **deps:** update dependency semantic-release to v17.4.6 ([1230c19](https://github.com/folke/devmoji/commit/1230c19de0bf68ff87aaaa93b65055ca32dc02c4))
+* **deps:** update dependency semantic-release to v17.4.7 ([0374380](https://github.com/folke/devmoji/commit/0374380add03e9d2cae5c386b2390edab550a009))
+* **deps:** update dependency ts-interface-builder to v0.3.2 ([ec0fdc9](https://github.com/folke/devmoji/commit/ec0fdc90dbab4cb378ff7bd762228e460bf456c0))
+* **deps:** update dependency ts-jest to v27.0.4 ([d678ebe](https://github.com/folke/devmoji/commit/d678ebe52bb4ffeb74064ca15c2a02ed9c706e3b))
+* **deps:** update dependency ts-jest to v27.0.5 ([09eaea7](https://github.com/folke/devmoji/commit/09eaea7e96d89001f60394e0479b3c0777c36f66))
+* **deps:** update dependency typescript to v4.3.5 ([b58ee42](https://github.com/folke/devmoji/commit/b58ee42e9886496a23020c4b0083eae22f22a8ad))
+
 ## [2.3.0](https://github.com/folke/devmoji/compare/v2.2.1...v2.3.0) (2021-06-18)
 
 
