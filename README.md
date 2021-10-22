@@ -201,7 +201,7 @@ $ git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgree
 
 ### `devmoji --list`
 
-To get a list of all available **Devmiji**, run with `--list`. (see also
+To get a list of all available **Devmoji**, run with `--list`. (see also
 [Default Devmoji](###Default-Devmoji))
 
 ![devmoji --list](https://github.com/folke/devmoji/raw/master/assets/devmoji--list.png)
