@@ -1,3 +1,17 @@
+### [2.3.2](https://github.com/folke/devmoji/compare/v2.3.1...v2.3.2) (2021-10-22)
+
+
+### Bug Fixes
+
+* **docs:** :memo: fixed name devmoji ([#157](https://github.com/folke/devmoji/issues/157)) ([86b7d55](https://github.com/folke/devmoji/commit/86b7d55bd13a1b958d80b9df229f9b74d25e8da7))
+
+
+### Other
+
+* **deps:** update dependency @rollup/plugin-node-resolve to v13.0.6 ([d95075e](https://github.com/folke/devmoji/commit/d95075e0200435201d818d3bab42216c07a99bba))
+* **deps:** update dependency ts-jest to v27.0.6 ([52461cf](https://github.com/folke/devmoji/commit/52461cf5d50656e570405025e825690264e73b3f))
+* **deps:** update dependency ts-jest to v27.0.7 ([eecdf4c](https://github.com/folke/devmoji/commit/eecdf4c3b6accb078f6a16bc9badf82b0615d970))
+
 ### [2.3.1](https://github.com/folke/devmoji/compare/v2.3.0...v2.3.1) (2021-10-12)
 
 
