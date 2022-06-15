@@ -7,6 +7,7 @@ test("should", async () => {
   squash!
   revert something
   Merge branch 'master' of github.com:folke/devmoji
+  Merge remote-tracking branch 'master' of github.com:folke/devmoji
   style: 🎨 Prettier 2.0
   chore(release): 2.1.8 [skip ci]
   fix(deps): update dependency chalk to v4 (#49)
