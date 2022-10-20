@@ -1,3 +1,19 @@
+## [2.4.0](https://github.com/folke/devmoji/compare/v2.3.2...v2.4.0) (2022-10-20)
+
+
+### Features
+
+* Skip lint when merging remote branch ([#207](https://github.com/folke/devmoji/issues/207)) ([55bbef8](https://github.com/folke/devmoji/commit/55bbef891fd3551c0512ef6d2fa94a396584d55a))
+
+
+### Other
+
+* **deps:** update dependency conventional-changelog-conventionalcommits to v4.6.3 ([ef024ef](https://github.com/folke/devmoji/commit/ef024ef0cc63a2f5c2cd8ca7479952be47547978))
+* **deps:** update dependency minimist to v1.2.6 [security] ([9e7ecb7](https://github.com/folke/devmoji/commit/9e7ecb71f691801cb852954042c18188268dc1e2))
+* **deps:** update dependency node-fetch to v2.6.6 ([23d00ce](https://github.com/folke/devmoji/commit/23d00ce106e2889117318333a8a4a92118b66de1))
+* **deps:** update dependency node-fetch to v2.6.7 [security] ([3239b8c](https://github.com/folke/devmoji/commit/3239b8c30908ad8fd1474710395b728719c184fe))
+* **deps:** update dependency ts-interface-builder to v0.3.3 ([7c6392f](https://github.com/folke/devmoji/commit/7c6392fde15d255194c944fc8202adf40846c9c1))
+
 ### [2.3.2](https://github.com/folke/devmoji/compare/v2.3.1...v2.3.2) (2021-10-22)
 
 
