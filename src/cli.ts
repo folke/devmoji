@@ -18,7 +18,7 @@ export class Cli {
 
   lint(text: string) {
     text = text.split("\n")[0]
-    if (text.startsWith("Merge branch")) return []
+    if (/^(Merge (remote-tracking )?branch)/.test(text)) return []
     if (/^(fixup|squash)!/.test(text)) return []
     if (/^([rR]evert)/.test(text)) return []
 
