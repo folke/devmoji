@@ -1,3 +1,16 @@
+### [2.4.1](https://github.com/folke/devmoji/compare/v2.4.0...v2.4.1) (2023-09-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency chalk to v4.1.2 ([39018af](https://github.com/folke/devmoji/commit/39018af8c203ab659c78e9bbd776d32ffc4e6108))
+
+
+### Other
+
+* **deps:** update dependency minimist to v1.2.8 ([a4fd013](https://github.com/folke/devmoji/commit/a4fd013a2dbca3aff120c5932bba0043fa5b5505))
+* **deps:** update dependency rollup-plugin-sizes to v1.0.5 ([2a9aaf6](https://github.com/folke/devmoji/commit/2a9aaf6da79528df47805de3ae3df4577f891314))
+
 ## [2.4.0](https://github.com/folke/devmoji/compare/v2.3.2...v2.4.0) (2022-10-20)
 
 
