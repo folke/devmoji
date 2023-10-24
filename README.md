@@ -150,7 +150,7 @@ only really useful as a `prepare-commit-msg` or `commit-msg` hook.
 When to use what hook?
 
 * `prepare-commit-msg`: use this if you do not use **Devmnojis** `--lint` option and want to use it with something like [commitlint](https://commitlint.js.org/) instead.
-* `commit-msg`: use this hook if you also want to use **Devmoji** for linting 
+* `commit-msg`: use this hook if you also want to use **Devmoji** for linting
 
 Configuration using [Husky](https://typicode.github.io/husky/)
 
@@ -168,8 +168,8 @@ Configuration using [Yorkie](https://www.npmjs.com/package/yorkie)
 // package.json
 {
   "gitHooks": {
-    "prepare-commit-msg": "devmoji -e --lint"
-  }
+  "prepare-commit-msg": "devmoji -e --lint"
+}
 }
 ```
 
@@ -208,18 +208,49 @@ To get a list of all available **Devmoji**, run with `--list`. (see also
 
 ## :gear: Configuration
 
-`devmoji` uses the config file as specified with the `--config` option, or looks
-for `devmoji.config.js` in the following paths:
+`devmoji` uses the config file as specified with the `--config` option, otherwise it looks
+for `devmoji.config.js` or `devmoji.config.ts` in the following paths:
 
 - current directory
 - parent directory that contains a `package.json` file
 - parent directory that is a `git` repository
 - home directory
 
-### Example Config File
+### Example of a JavaScript Config File
 
 ```js
 module.exports = {
+  // extra types used in commit messages
+  types: ["lint"],
+  // custom devmoji
+  devmoji: [
+    // use :boom: instead of :sparkles: for the type 'feat'
+    { code: "feat", emoji: "boom" },
+    // add a custom devmoji
+    {
+      code: "fail",
+      emoji: "poop",
+      description: "something bad happened",
+    },
+    // add a new devmoji based on an existing gitmoji. description will be taken from the gitmoji
+    {
+      code: "css",
+      gitmoji: "art",
+    },
+    // the emoji from the gitmoji can be overriden as well
+    {
+      code: "config",
+      gitmoji: "wrench",
+      emoji: "gear",
+    },
+  ],
+}
+```
+
+### Example of a TypeScript Config File
+
+```typescript
+export default {
   // extra types used in commit messages
   types: ["lint"],
   // custom devmoji

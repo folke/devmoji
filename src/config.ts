@@ -14,6 +14,7 @@ export class Config {
   constructor(options?: ConfigOptions) {
     this._load(defaults)
     if (options) {
+      if (options.default) options = { ...options.default }
       if (!options.types) options.types = []
       if (!options.devmoji) options.devmoji = []
       this.validate(options)
@@ -71,9 +72,14 @@ export class Config {
       ]
       for (const p of searchPaths) {
         if (p) {
-          const file = path.resolve(p, "./devmoji.config.js")
-          if (fs.existsSync(file)) {
-            configFile = file
+          const javascriptConfigFile = path.resolve(p, "./devmoji.config.js")
+          if (fs.existsSync(javascriptConfigFile)) {
+            configFile = javascriptConfigFile
+            break
+          }
+          const typescriptConfigFile = path.resolve(p, "./devmoji.config.ts")
+          if (fs.existsSync(typescriptConfigFile)) {
+            configFile = typescriptConfigFile
             break
           }
         }

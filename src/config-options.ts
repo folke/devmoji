@@ -6,6 +6,7 @@ export type TDevmoji = {
 }
 
 export interface ConfigOptions {
+  default?: ConfigOptions
   types: string[]
   devmoji: TDevmoji[]
 }
