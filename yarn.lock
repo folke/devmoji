@@ -5566,10 +5566,10 @@ rollup-plugin-progress@1.1.2:
   dependencies:
     chalk "^2.4.2"
 
-rollup-plugin-sizes@1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-sizes/-/rollup-plugin-sizes-1.0.5.tgz#cf5a530dbffedc9bd7f5c89bf544cdfad480c0c6"
-  integrity sha512-d3HqHZF6aJeU7Sq0BpVhkdkQ7s3oZci0d3TS3/1srbqjRLHrCmrKocKftjW5TR8LwbvCld6GUP4U2HrOoPtScg==
+rollup-plugin-sizes@1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-sizes/-/rollup-plugin-sizes-1.0.6.tgz#dae5efb5caac9c06934f5dbf54bc4e9cf3aea128"
+  integrity sha512-TQlfd2Ef+1BQjsDIuXyoBPAFFJfA9q4DXSCT5/jsUEtsyn99CzwGH98StQOg+sriq9+j8VgCxPO4yodMbvynPg==
   dependencies:
     filesize "^9.0.0"
     module-details-from-path "^1.0.3"
