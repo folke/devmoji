@@ -7,6 +7,12 @@ test("load config", async () => {
   expect(config.pack.get("fuckup")?.emoji).toBe("poop")
 })
 
+test("load typescript from config file", async () => {
+  const config = await Config.load("__tests__/ignore.devmoji.config.ts")
+  expect(config.pack.get("feat")?.emoji).toBe("poop")
+  expect(config.pack.get("fuckup")?.emoji).toBe("poop")
+})
+
 test("missing prop code", () => {
   expect(() => {
     const config = { devmoji: [{ foo: 1 }] } as unknown as ConfigOptions
@@ -54,5 +60,15 @@ test("no default config file", async () => {
   } catch (error) {
     // eslint-disable-next-line jest/no-try-expect, jest/no-conditional-expect
     expect(error).toMatch(/missing.*/)
+  }
+})
+
+test("config file does not exist", async () => {
+  const configFile = "__tests__/fake.devmoji.config.js"
+  try {
+    await Config.load(configFile, "/")
+  } catch (error) {
+    // eslint-disable-next-line jest/no-try-expect, jest/no-conditional-expect
+    expect(error).toMatch(`Config file not found ${configFile}`)
   }
 })
