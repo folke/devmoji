@@ -159,7 +159,7 @@ Configuration using [Husky](https://typicode.github.io/husky/)
 $ npx husky install
 
 # add a hook for devmoji
-$ npx husky add .husky/prepare-commit-msg "npx devmoji -e --lint"
+$ npx husky add .husky/commit-msg "npx devmoji -e --lint"
 ```
 
 Configuration using [Yorkie](https://www.npmjs.com/package/yorkie)
