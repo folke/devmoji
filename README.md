@@ -149,7 +149,7 @@ only really useful as a `prepare-commit-msg` or `commit-msg` hook.
 
 When to use what hook?
 
-* `prepare-commit-msg`: use this if you do not use **Devmnojis** `--lint` option and want to use it with something like [commitlint](https://commitlint.js.org/) instead.
+* `prepare-commit-msg`: use this if you do not use **Devmojis** `--lint` option and want to use it with something like [commitlint](https://commitlint.js.org/) instead.
 * `commit-msg`: use this hook if you also want to use **Devmoji** for linting 
 
 Configuration using [Husky](https://typicode.github.io/husky/)
@@ -159,7 +159,7 @@ Configuration using [Husky](https://typicode.github.io/husky/)
 $ npx husky install
 
 # add a hook for devmoji
-$ npx husky add .husky/prepare-commit-msg "npx devmoji -e --lint"
+$ npx husky add .husky/commit-msg "npx devmoji -e --lint"
 ```
 
 Configuration using [Yorkie](https://www.npmjs.com/package/yorkie)
