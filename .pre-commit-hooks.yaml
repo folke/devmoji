@@ -1,0 +1,6 @@
+-   id: devmoji
+    name: devmoji
+    language: node
+    entry: devmoji -e --lint
+    args: [-e, --lint]
+    stages: [commit-msg, prepare-commit-msg]
